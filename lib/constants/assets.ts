@@ -5,6 +5,19 @@
  */
 
 export const figmaAssets = {
+  // Investor Relations
+  investorRelations: {
+    heroBackground:
+      "https://www.figma.com/api/mcp/asset/ee5dab9d-8060-4217-96d6-5d5dfca0eaab",
+    boardBackground:
+      "https://www.figma.com/api/mcp/asset/6eed488a-5eea-42ae-b079-cc93b506b285",
+    harshilImage:
+      "https://www.figma.com/api/mcp/asset/74b14f6e-4d1e-44e1-a6a8-feb55372d5f7",
+    deepankImage:
+      "https://www.figma.com/api/mcp/asset/31a1c3db-86a7-43ec-a2e8-d4ee53ae2a3d",
+    companyLogo:
+      "https://www.figma.com/api/mcp/asset/36f95bcc-d73a-42c7-821b-d10b49e82720",
+  },
   // Hero section
   hero: {
     background:

@@ -16,10 +16,11 @@ const buttonVariants = cva(
           "border border-[#FF6333] text-[#FF6333] bg-transparent hover:bg-[#FF6333]/10 rounded-lg",
         secondary:
           "border border-[#02244A] text-[#02244A] bg-transparent hover:bg-[#02244A]/10 rounded-md",
+        navy: "bg-[#022050] text-white hover:bg-[#033070] rounded-md",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 rounded-md",
         link: "text-[#FF6333] underline-offset-4 hover:text-[#E55A3A] hover:underline",
-        cream: "bg-[#FFFBF0] text-[#02244A] hover:bg-[#FBFBEF] rounded-[150px]",
+        cream: "bg-[#FFFBF0] text-[#02244A] hover:bg-[#FBFBEF] rounded-md",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

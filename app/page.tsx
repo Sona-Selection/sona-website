@@ -19,6 +19,8 @@ import Products from "@/components/sections/Products";
 import Sustainability from "@/components/sections/Sustainability";
 import TrustedBrands from "@/components/sections/TrustedBrands";
 import USPs from "@/components/sections/USPs";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 /**
  * Home Page
@@ -27,32 +29,36 @@ import USPs from "@/components/sections/USPs";
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <Hero data={homeHero} />
+      <Navbar />
+      <main>
+        {/* Hero Section */}
+        <Hero data={homeHero} />
 
-      {/* Trusted Brands Section */}
-      <TrustedBrands brands={trustedBrands} />
+        {/* Trusted Brands Section */}
+        <TrustedBrands brands={trustedBrands} />
 
-      {/* About Section */}
-      <About data={aboutSection} />
+        {/* About Section */}
+        <About data={aboutSection} />
 
-      {/* Capabilities Section */}
-      <Capabilities data={capabilitiesSection} />
+        {/* Capabilities Section */}
+        <Capabilities data={capabilitiesSection} />
 
-      {/* USPs Section */}
-      <USPs data={uspsSection} />
+        {/* USPs Section */}
+        <USPs data={uspsSection} />
 
-      {/* Products Section */}
-      <Products data={productsSection} />
+        {/* Products Section */}
+        <Products data={productsSection} />
 
-      {/* Sustainability Section */}
-      <Sustainability data={sustainabilitySection} />
+        {/* Sustainability Section */}
+        <Sustainability data={sustainabilitySection} />
 
-      {/* Leadership Section */}
-      <Leadership data={leadershipSection} />
+        {/* Leadership Section */}
+        <Leadership data={leadershipSection} />
 
-      {/* CTA Section */}
-      <CTA data={ctaSection} />
+        {/* CTA Section */}
+        <CTA data={ctaSection} />
+      </main>
+      <Footer />
     </>
   );
 }

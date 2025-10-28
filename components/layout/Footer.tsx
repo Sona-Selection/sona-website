@@ -18,7 +18,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16">
           {/* Logo */}
           <div className="lg:col-span-3">
-            <Logo size="lg" href="/" variant="light" />
+            <Logo
+              size="lg"
+              href="/"
+              className="text-[#FBFBEF]"
+              iconVariant="white"
+            />
           </div>
 
           {/* Navigation Links */}

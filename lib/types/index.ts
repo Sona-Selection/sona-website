@@ -176,3 +176,97 @@ export interface CTASection {
   ctaHref: string;
   backgroundImage: string;
 }
+
+// Investor Relations Types
+
+export interface InvestorDocument {
+  title: string;
+  href: string;
+  date?: string;
+  type?: string;
+}
+
+export interface InvestorDocumentCategory {
+  title: string;
+  documents: InvestorDocument[];
+}
+
+export interface InvestorHeroSection {
+  title: string;
+  subtitle: string;
+  primaryCTA: {
+    label: string;
+    href: string;
+  };
+  secondaryCTA: {
+    label: string;
+    href: string;
+  };
+  backgroundImage: string;
+}
+
+export interface IPOCornerSection {
+  title: string;
+  badge?: string;
+  documents: InvestorDocument[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+export interface BoardMemberSection {
+  title: string;
+  badge?: string;
+  subtitle?: string;
+  members: TeamMember[];
+  downloadLabel?: string;
+  downloadHref?: string;
+}
+
+export interface BoardSection {
+  title: string;
+  badge?: string;
+  board: BoardMemberSection;
+  committees: BoardMemberSection;
+}
+
+export interface FinancialReportingSection {
+  title: string;
+  badge?: string;
+  categories: InvestorDocumentCategory[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+export interface PoliciesSection {
+  title: string;
+  badge?: string;
+  policies: InvestorDocument[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+export interface ShareholderSection {
+  title: string;
+  badge?: string;
+  categories: InvestorDocumentCategory[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+export interface OtherDisclosuresSection {
+  title: string;
+  badge?: string;
+  items: InvestorDocument[];
+  ctaLabel: string;
+  ctaHref: string;
+}
+
+export interface InvestorRelationsContent {
+  hero: InvestorHeroSection;
+  ipoCorner: IPOCornerSection;
+  board: BoardSection;
+  financialReporting: FinancialReportingSection;
+  policies: PoliciesSection;
+  shareholder: ShareholderSection;
+  otherDisclosures: OtherDisclosuresSection;
+}
