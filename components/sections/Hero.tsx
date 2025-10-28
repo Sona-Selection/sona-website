@@ -54,7 +54,7 @@ export default function Hero({ data }: HeroProps) {
               {data.primaryCTA && (
                 <Button
                   asChild
-                  variant="cream"
+                  variant="default"
                   size="xl"
                   className="w-full sm:w-auto"
                 >
@@ -66,9 +66,9 @@ export default function Hero({ data }: HeroProps) {
               {data.secondaryCTA && (
                 <Button
                   asChild
-                  variant="link"
+                  variant="outline"
                   size="xl"
-                  className="w-full sm:w-auto text-[#310D02] underline"
+                  className="w-full sm:w-auto"
                 >
                   <Link href={data.secondaryCTA.href}>
                     {data.secondaryCTA.label}

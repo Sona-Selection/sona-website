@@ -9,10 +9,13 @@ interface TrustedBrandsProps {
 
 /**
  * Trusted Brands Section Component
- * Displays a horizontal scrolling list of brand logos
+ * Displays an infinite auto-scrolling marquee of brand logos
  * @param {Brand[]} brands - Array of brand logos to display
  */
 export default function TrustedBrands({ brands }: TrustedBrandsProps) {
+  // Duplicate brands for seamless infinite loop
+  const duplicatedBrands = [...brands, ...brands];
+
   return (
     <section
       className="bg-[#FFFBF0] py-12 md:py-16 overflow-hidden"
@@ -29,32 +32,13 @@ export default function TrustedBrands({ brands }: TrustedBrandsProps) {
           </p>
         </div>
 
-        {/* Brands Carousel - Horizontal Scroll on Mobile, Grid on Desktop */}
-        <div className="relative">
-          {/* Mobile: Horizontal Scroll */}
-          <div className="flex md:hidden gap-8 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
-            {brands.map((brand, index) => (
+        {/* Infinite Marquee */}
+        <div className="relative overflow-hidden">
+          <div className="flex gap-12 md:gap-16 lg:gap-20 animate-marquee hover:pause">
+            {duplicatedBrands.map((brand, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 snap-center flex items-center justify-center w-32 h-24"
-              >
-                <Image
-                  src={brand.logo}
-                  alt={brand.name}
-                  width={120}
-                  height={80}
-                  className="object-contain max-w-full max-h-full opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop: Grid Layout */}
-          <div className="hidden md:flex flex-wrap items-center justify-center gap-8 lg:gap-16">
-            {brands.map((brand, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center h-24"
+                className="flex-shrink-0 flex items-center justify-center h-20 md:h-24 w-32 md:w-40"
               >
                 <Image
                   src={brand.logo}
@@ -70,12 +54,27 @@ export default function TrustedBrands({ brands }: TrustedBrandsProps) {
       </div>
 
       <style jsx global>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
+
+        .animate-marquee {
+          animation: marquee 40s linear infinite;
+        }
+
+        .animate-marquee:hover {
+          animation-play-state: paused;
+        }
+
+        @media (max-width: 768px) {
+          .animate-marquee {
+            animation-duration: 30s;
+          }
         }
       `}</style>
     </section>

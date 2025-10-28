@@ -231,16 +231,19 @@ export const leadershipSection: LeadershipSection = {
         "Seasoned entrepreneur with over 35 years of experience in the textile industry. As Chairman of Sona Group, he oversees one of India's largest textile processing capacities, currently 12 million meters per month",
       image: figmaAssets.leadership.member1,
       logo: figmaAssets.leadership.companyLogo,
+      linkedinUrl: "https://www.linkedin.com/in/subhash-nuwal",
     },
     {
       name: "Harshil Nuwal",
       role: "Founder and MD",
       image: figmaAssets.leadership.member2,
+      linkedinUrl: "https://www.linkedin.com/in/harshil-nuwal",
     },
     {
       name: "Deepank Bhandari",
       role: "Founder and MD",
       image: figmaAssets.leadership.member3,
+      linkedinUrl: "https://www.linkedin.com/in/deepank-bhandari",
     },
   ],
 };

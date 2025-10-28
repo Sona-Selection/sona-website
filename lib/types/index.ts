@@ -161,6 +161,7 @@ export interface TeamMember {
   description?: string;
   image: string;
   logo?: string;
+  linkedinUrl?: string;
 }
 
 export interface LeadershipSection {
