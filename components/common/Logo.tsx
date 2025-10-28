@@ -3,12 +3,14 @@ import Link from "next/link";
 import { companyInfo } from "@/lib/constants/company";
 
 type LogoSize = "sm" | "md" | "lg";
+type LogoVariant = "default" | "light";
 
 interface LogoProps {
   size?: LogoSize;
   showText?: boolean;
   className?: string;
   href?: string;
+  variant?: LogoVariant;
 }
 
 const sizeConfig = {
@@ -34,8 +36,10 @@ export default function Logo({
   showText = true,
   className = "",
   href = "/",
+  variant = "default",
 }: LogoProps) {
   const config = sizeConfig[size];
+  const textColor = variant === "light" ? "text-[#FBFBEF]" : "text-foreground";
 
   const LogoContent = () => (
     <div className={`flex items-end relative ${className}`}>
@@ -49,7 +53,7 @@ export default function Logo({
       />
       {showText && (
         <span
-          className={`${config.text} font-semibold ${config.overlap} relative z-0 leading-none`}
+          className={`${config.text} ${textColor} font-semibold ${config.overlap} relative z-0 leading-none`}
           style={{ fontFamily: "var(--font-logo)" }}
         >
           {companyInfo.name}
