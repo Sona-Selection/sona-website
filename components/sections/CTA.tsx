@@ -1,55 +1,47 @@
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import { CTASection } from "@/lib/types";
+import Image from "next/image";
+import Link from "next/link";
 
 interface CTAProps {
-  title: string;
-  description?: string;
-  primaryCTA: {
-    label: string;
-    href: string;
-  };
-  secondaryCTA?: {
-    label: string;
-    href: string;
-  };
-  backgroundColor?: 'default' | 'muted' | 'primary';
+  data: CTASection;
 }
 
-export default function CTA({
-  title,
-  description,
-  primaryCTA,
-  secondaryCTA,
-  backgroundColor = 'muted',
-}: CTAProps) {
-  const bgClasses = {
-    default: '',
-    muted: 'bg-muted/50',
-    primary: 'bg-primary text-primary-foreground',
-  }[backgroundColor];
-
+/**
+ * CTA Section Component
+ * Full-width call-to-action with background image
+ * @param {CTASection} data - CTA section content
+ */
+export default function CTA({ data }: CTAProps) {
   return (
-    <section className={`${bgClasses} py-16 md:py-24`}>
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            {title}
+    <section
+      className="relative h-[500px] md:h-[669px] flex items-center justify-center overflow-hidden bg-[#FFFCF4]"
+      data-figma-node="0:319"
+    >
+      {/* Background Image */}
+      {data.backgroundImage && (
+        <div className="absolute inset-0">
+          <Image
+            src={data.backgroundImage}
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+      )}
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 lg:px-12">
+        <div className="flex flex-col items-center text-center gap-8 md:gap-12 max-w-[664px] mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-[64px] text-[#FFFCF4] leading-tight tracking-tight font-serif">
+            {data.title}
           </h2>
-          {description && (
-            <p className="mt-6 text-lg opacity-90">
-              {description}
-            </p>
-          )}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant={backgroundColor === 'primary' ? 'secondary' : 'default'}>
-              <Link href={primaryCTA.href}>{primaryCTA.label}</Link>
-            </Button>
-            {secondaryCTA && (
-              <Button asChild size="lg" variant="outline">
-                <Link href={secondaryCTA.href}>{secondaryCTA.label}</Link>
-              </Button>
-            )}
-          </div>
+          <Button asChild size="lg" className="px-8">
+            <Link href={data.ctaHref}>{data.ctaLabel}</Link>
+          </Button>
         </div>
       </div>
     </section>

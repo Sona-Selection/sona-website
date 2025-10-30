@@ -1,15 +1,58 @@
-export default function InvestorRelations() {
+import InvestorHero from "@/components/sections/investor/InvestorHero";
+import IPOCorner from "@/components/sections/investor/IPOCorner";
+import BoardSection from "@/components/sections/investor/BoardSection";
+import FinancialReporting from "@/components/sections/investor/FinancialReporting";
+import GroupCompany from "@/components/sections/investor/GroupCompany";
+import Policies from "@/components/sections/investor/Policies";
+import Shareholder from "@/components/sections/investor/Shareholder";
+import OtherDisclosures from "@/components/sections/investor/OtherDisclosures";
+import {
+  investorHero,
+  ipoCorner,
+  boardSection,
+  financialReporting,
+  groupCompany,
+  policies,
+  shareholder,
+  otherDisclosures,
+} from "@/lib/constants/investor-relations";
+
+export const metadata = {
+  title: "Investor Relations | Sona",
+  description:
+    "Welcome to the Investor Relations portal of Sona Selections. Access financial documents, disclosures, policies, and governance updates.",
+};
+
+/**
+ * Investor Relations Page
+ * Complete investor relations portal with all disclosures and documents
+ */
+export default function InvestorRelationsPage() {
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24">
-      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-        Investor Relations
-      </h1>
-      <p className="mt-6 text-lg text-muted-foreground max-w-3xl">
-        Welcome to Sona's Investor Relations page. This page will contain information about our company's financial performance, investor presentations, and other relevant materials.
-      </p>
-      <div className="mt-12 text-muted-foreground">
-        <p>Content coming soon...</p>
-      </div>
-    </div>
+    <>
+      {/* Hero Section */}
+      <InvestorHero data={investorHero} />
+
+      {/* IPO Corner Section */}
+      <IPOCorner data={ipoCorner} />
+
+      {/* Board of Directors & Committees Section */}
+      <BoardSection data={boardSection} />
+
+      {/* Financial Reporting Section */}
+      <FinancialReporting data={financialReporting} />
+
+      {/* Group Company Disclosures Section */}
+      <GroupCompany data={groupCompany} />
+
+      {/* Policies & Governance Section */}
+      <Policies data={policies} />
+
+      {/* Shareholder Communication Section */}
+      <Shareholder data={shareholder} />
+
+      {/* Other Disclosures Section */}
+      <OtherDisclosures data={otherDisclosures} />
+    </>
   );
 }
