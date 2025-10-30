@@ -138,6 +138,7 @@ export interface ProductsSection {
 export interface SustainabilityFeature {
   title: string;
   description: string;
+  image: string;
   highlighted?: boolean;
 }
 

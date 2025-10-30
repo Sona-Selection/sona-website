@@ -169,28 +169,43 @@ export const productsSection: ProductsSection = {
 export const sustainabilitySection: SustainabilitySection = {
   badge: "cut from a different cloth",
   title: "Strong Commitment to Sustainability",
-  mainImage: figmaAssets.sustainability.mainImage,
+  mainImage: figmaAssets.sustainability.waterConservation,
   features: [
     {
       title: "Zero Liquid Discharge (ZLD)",
       description:
         "All water used is treated and recycled on-site, with no liquid waste leaving the facility.",
+      image: figmaAssets.sustainability.waterConservation,
     },
     {
       title: "Renewable Energy",
       description:
         "90% of electricity is generated in-house through solar power and steam turbines.",
-      highlighted: true,
+      image: figmaAssets.sustainability.energyEfficiency,
     },
     {
       title: "Emission Control",
       description:
         "Electrostatic Precipitators are used to control and reduce emissions.",
+      image: figmaAssets.sustainability.emissionControl,
+    },
+    {
+      title: "Waste Management",
+      description:
+        "Fabric scrap recycling and reuse to reduce landfill impact with lean manufacturing to minimize process waste.",
+      image: figmaAssets.sustainability.wasteManagement,
+    },
+    {
+      title: "Safe Chemical Usage",
+      description:
+        "Use of certified chemicals and eco-friendly auxiliaries with strict handling and disposal procedures.",
+      image: figmaAssets.sustainability.safeChemicals,
     },
     {
       title: "Sustainable Materials",
       description:
-        "Product portfolio includes eco-conscious fabrics made from Better Cotton Initiative and Organic Cotton",
+        "Sourcing of organic, BCI, and recycled fibers with traceability programs and focus on low-impact dyes.",
+      image: figmaAssets.sustainability.sustainableMaterials,
     },
   ],
   certifications: [

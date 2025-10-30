@@ -73,23 +73,37 @@ export const figmaAssets = {
   // Products section
   products: {
     mainImage:
-      "https://www.figma.com/api/mcp/asset/a5c0b74b-b1e9-41d1-9e39-96ab9977cd37",
+      "https://www.figma.com/api/mcp/asset/6de2471e-ce28-40ed-b518-80dd0738389c",
+    textureOverlay:
+      "https://www.figma.com/api/mcp/asset/f7710eaa-584a-46fe-9977-33ea5b837eb1",
   },
 
   // Sustainability section
   sustainability: {
-    mainImage:
-      "https://www.figma.com/api/mcp/asset/2f65b0f7-bbdd-4935-8ef6-dc6a6064ccf5",
+    // Feature images for carousel
+    waterConservation:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    energyEfficiency:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    emissionControl:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    wasteManagement:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    safeChemicals:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    sustainableMaterials:
+      "https://www.figma.com/api/mcp/asset/cedd7641-a927-4a83-b5e7-fb54adbefb84",
+    // Certification images
     cert1:
-      "https://www.figma.com/api/mcp/asset/e5945783-5e38-49ed-b277-1bea2bfad5a1",
+      "https://www.figma.com/api/mcp/asset/930b0607-8587-48e5-96cb-a4e8a2c9aa5d",
     cert2:
-      "https://www.figma.com/api/mcp/asset/50aeb3dc-d5f6-4737-a2b9-6dc50cdd5727",
+      "https://www.figma.com/api/mcp/asset/08cec710-b898-49a9-a9d8-6b78d569d0e1",
     cert3:
-      "https://www.figma.com/api/mcp/asset/92569b18-3bcc-4bc3-a1f0-e4ce80d88e5f",
+      "https://www.figma.com/api/mcp/asset/dd2f1269-b0f8-45e7-b485-b71eddd0c446",
     cert4:
-      "https://www.figma.com/api/mcp/asset/66c1028e-22e1-4056-bff1-91dbd8b964d0",
+      "https://www.figma.com/api/mcp/asset/4d4a827f-364a-43ca-aaff-48425ea607db",
     cert5:
-      "https://www.figma.com/api/mcp/asset/57e7bd99-650b-473a-8dbf-755c1e9dc298",
+      "https://www.figma.com/api/mcp/asset/57e988ce-9381-479f-9a2e-5473ceb75511",
   },
 
   // Leadership section
