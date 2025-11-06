@@ -2,6 +2,7 @@ import { AboutSection } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { colors } from "@/lib/theme/colors";
 
 interface AboutProps {
   data: AboutSection;
@@ -14,20 +15,20 @@ interface AboutProps {
  */
 export default function About({ data }: AboutProps) {
   return (
-    <section className="bg-[#FFFBF0] py-16 md:py-24" data-figma-node="0:38">
+    <section className="py-16 md:py-24" style={{ backgroundColor: colors.cream }} data-figma-node="0:38">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start mb-12 md:mb-16">
           {/* Left: Heading */}
           <div>
-            <h2 className="text-4xl md:text-[52px] text-[#FF6333] leading-tight tracking-tight font-serif">
+            <h2 className="text-4xl md:text-[52px] leading-tight tracking-tight font-serif" style={{ color: colors.primary }}>
               {data.heading}
             </h2>
           </div>
 
           {/* Right: Body and CTA */}
           <div className="flex flex-col gap-8 md:gap-10">
-            <p className="text-base md:text-lg text-[#02244A] leading-relaxed tracking-tight">
+            <p className="text-base md:text-lg leading-relaxed tracking-tight" style={{ color: colors.navyDark }}>
               {data.body}
             </p>
             <Button asChild variant="secondary" size="lg" className="w-fit">
@@ -56,7 +57,7 @@ export default function About({ data }: AboutProps) {
 
               {/* Text Overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                <p className="text-2xl md:text-4xl text-[#FBFBEF] leading-snug font-light">
+                <p className="text-2xl md:text-4xl leading-snug font-light" style={{ color: colors.creamLight }}>
                   {card.text}
                 </p>
               </div>

@@ -144,10 +144,15 @@ export default function Sustainability({ data }: SustainabilityProps) {
         </div>
 
         {/* Certifications */}
-        <Card className="bg-[#02244A] p-8 md:p-12 rounded-2xl border-0 shadow-none relative overflow-hidden">
+        <Card className="p-8 md:p-12 rounded-2xl border-0 shadow-none relative overflow-hidden" style={{ backgroundColor: colors.navyDark }}>
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#FF6333]/20 to-transparent" />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(to bottom right, ${colors.primary}33, transparent)`
+              }}
+            />
           </div>
 
           <div className="relative z-10 flex flex-col gap-8 md:gap-10">
@@ -175,10 +180,10 @@ export default function Sustainability({ data }: SustainabilityProps) {
 
               {/* Text */}
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl md:text-4xl text-[#FFFCF4] leading-tight">
+                <h3 className="text-2xl md:text-4xl leading-tight" style={{ color: colors.creamAlt }}>
                   Certified to Global Standards
                 </h3>
-                <p className="text-base md:text-lg text-[#FFFCF4]/90 leading-normal">
+                <p className="text-base md:text-lg opacity-90 leading-normal" style={{ color: colors.creamAlt }}>
                   We uphold the highest benchmarks in textile safety,
                   sustainability, and traceability
                 </p>
@@ -191,15 +196,15 @@ export default function Sustainability({ data }: SustainabilityProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {data.certifications.map((cert, index) => (
                 <div key={index} className="flex flex-col gap-1">
-                  <p className="text-xs md:text-sm text-[#FF6333] uppercase font-semibold tracking-wide">
+                  <p className="text-xs md:text-sm uppercase font-semibold tracking-wide" style={{ color: colors.primary }}>
                     Scope Certificate
                   </p>
-                  <p className="text-sm md:text-base text-[#FFFCF4] leading-relaxed">
+                  <p className="text-sm md:text-base leading-relaxed" style={{ color: colors.creamAlt }}>
                     {cert.name}
                     {cert.description && (
                       <>
                         <br />
-                        <span className="text-[#FFFCF4]/70">
+                        <span className="opacity-70">
                           {cert.description}
                         </span>
                       </>

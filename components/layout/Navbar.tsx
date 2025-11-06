@@ -9,6 +9,7 @@ import { Menu } from "lucide-react";
 import { navigationItems } from "@/lib/constants/navigation";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { colors } from "@/lib/theme/colors";
 
 type NavbarVariant = "default" | "cream";
 
@@ -26,21 +27,23 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
   const pathname = usePathname();
 
   // Variant-specific styles
-  const bgColor = variant === "cream" ? "bg-[#FFFBF0]" : "bg-[#FF6333]";
-  const logoTextColor = variant === "cream" ? "text-[#FF6333]" : "text-white";
+  const bgColor = variant === "cream" ? colors.cream : colors.primary;
+  const logoTextColor = variant === "cream" ? colors.primary : colors.white;
   const logoIconVariant = variant === "cream" ? "orange" : "white";
-  const menuIconColor = variant === "cream" ? "text-[#022050]" : "text-white";
-  const mobileSheetBg = variant === "cream" ? "bg-[#FFFBF0]" : "bg-[#FF6333]";
+  const menuIconColor = variant === "cream" ? colors.navy : colors.white;
+  const mobileSheetBg = variant === "cream" ? colors.cream : colors.primary;
 
   return (
-    <header className={`sticky top-0 z-50 w-full ${bgColor}`}>
+    <header className="sticky top-0 z-50 w-full" style={{ backgroundColor: bgColor }}>
       <nav className="container mx-auto flex h-[72px] items-center justify-between px-6 lg:px-12">
         {/* Logo */}
-        <Logo
-          size="md"
-          className={logoTextColor}
-          iconVariant={logoIconVariant}
-        />
+        <div style={{ color: logoTextColor }}>
+          <Logo
+            size="md"
+            className="transition-colors"
+            iconVariant={logoIconVariant}
+          />
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:items-center lg:gap-12">
@@ -49,15 +52,19 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
             const linkColor =
               variant === "cream"
                 ? isActive
-                  ? "text-[#FF6333]"
-                  : "text-[#022050] hover:text-[#FF6333]"
-                : "text-black hover:text-white";
+                  ? colors.primary
+                  : colors.navy
+                : colors.black;
+            const hoverColor = variant === "cream" ? colors.primary : colors.white;
 
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-base font-normal transition-colors ${linkColor}`}
+                className="text-base font-normal transition-colors"
+                style={{ color: linkColor }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = hoverColor)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = linkColor)}
               >
                 {item.label}
               </Link>
@@ -65,7 +72,11 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           })}
           <Button
             asChild
-            className="bg-[#022050] hover:bg-[#033070] text-white rounded-md px-6 py-2.5 font-medium"
+            className="rounded-md px-6 py-2.5 font-medium"
+            style={{
+              backgroundColor: colors.navy,
+              color: colors.white
+            }}
           >
             <Link href="/contact-us">CONTACT US</Link>
           </Button>
@@ -78,7 +89,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
               <Button
                 variant="ghost"
                 size="icon"
-                className={`${menuIconColor} hover:bg-black/10`}
+                className="hover:bg-black/10"
+                style={{ color: menuIconColor }}
               >
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
@@ -86,7 +98,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className={`w-[300px] sm:w-[400px] ${mobileSheetBg}`}
+              className="w-[300px] sm:w-[400px]"
+              style={{ backgroundColor: mobileSheetBg }}
             >
               <nav className="flex flex-col space-y-6 mt-8">
                 {navigationItems.map((item) => {
@@ -94,15 +107,19 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                   const mobileLinkColor =
                     variant === "cream"
                       ? isActive
-                        ? "text-[#FF6333]"
-                        : "text-[#022050] hover:text-[#FF6333]"
-                      : "text-white hover:text-black";
+                        ? colors.primary
+                        : colors.navy
+                      : colors.white;
+                  const mobileHoverColor = variant === "cream" ? colors.primary : colors.black;
 
                   return (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`text-lg font-medium transition-colors ${mobileLinkColor}`}
+                      className="text-lg font-medium transition-colors"
+                      style={{ color: mobileLinkColor }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = mobileHoverColor)}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = mobileLinkColor)}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
@@ -111,7 +128,11 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                 })}
                 <Button
                   asChild
-                  className="bg-[#022050] hover:bg-[#033070] text-white rounded-md"
+                  className="rounded-md"
+                  style={{
+                    backgroundColor: colors.navy,
+                    color: colors.white
+                  }}
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/contact-us">CONTACT US</Link>

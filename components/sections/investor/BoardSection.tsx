@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import TeamCard from "@/components/common/team-card";
 import { BoardSection as BoardSectionType } from "@/lib/types";
 import Link from "next/link";
+import { colors } from "@/lib/theme/colors";
 
 interface BoardSectionProps {
   data: BoardSectionType;
@@ -15,13 +16,14 @@ interface BoardSectionProps {
 export default function BoardSection({ data }: BoardSectionProps) {
   return (
     <section
-      className="bg-[#FFFBF0] py-12 md:py-16 lg:py-24"
+      className="py-12 md:py-16 lg:py-24"
+      style={{ backgroundColor: colors.cream }}
       data-figma-node="0:442"
     >
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#1C140D]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold" style={{ color: colors.textBlack }}>
             {data.title}
           </h2>
           {data.board.downloadLabel && (
