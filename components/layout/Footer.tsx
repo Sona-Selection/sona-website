@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Logo from "@/components/common/Logo";
 import { Separator } from "@/components/ui/separator";
+import { colors } from "@/lib/theme/colors";
 
 /**
  * Footer Component
@@ -13,7 +14,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#FF6333] text-[#FBFBEF]" data-figma-node="0:325">
+    <footer className="text-[#FBFBEF]" style={{ backgroundColor: colors.primary }} data-figma-node="0:325">
       <div className="container mx-auto px-6 lg:px-12 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16">
           {/* Logo */}
@@ -161,7 +162,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div>
               <h3 className="text-lg font-medium mb-2">Contact Us</h3>
-              <p className="text-sm text-[#FFFBF0]/80 mb-4">
+              <p className="text-sm opacity-80 mb-4" style={{ color: colors.cream }}>
                 We'd love to help. Reach out for partnerships, inquiries, or
                 support.
               </p>
@@ -175,7 +176,8 @@ export default function Footer() {
                 />
                 <Button
                   size="icon"
-                  className="bg-[#FFFBF0] text-[#FF6333] hover:bg-white shrink-0"
+                  className="hover:bg-white shrink-0"
+                  style={{ backgroundColor: colors.cream, color: colors.primary }}
                 >
                   <ArrowRight className="h-4 w-4" />
                 </Button>
@@ -184,7 +186,7 @@ export default function Footer() {
 
             {/* Call Sales */}
             <div>
-              <p className="text-sm text-[#FFFBF0]/80 mb-1">Call Sales</p>
+              <p className="text-sm opacity-80 mb-1" style={{ color: colors.cream }}>Call Sales</p>
               <a
                 href="tel:+919876543210"
                 className="text-lg font-medium hover:text-white transition-colors"

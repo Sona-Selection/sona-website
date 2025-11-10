@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { colors } from "@/lib/theme/colors";
 
 interface SectionHeaderProps {
   badge?: string;
@@ -12,11 +13,6 @@ interface SectionHeaderProps {
 /**
  * Section Header Component
  * Reusable header component for page sections
- * @param {string} badge - Optional badge text
- * @param {string} title - Section title
- * @param {string} subtitle - Optional subtitle
- * @param {'left' | 'center'} alignment - Content alignment
- * @param {string} className - Additional CSS classes
  */
 export default function SectionHeader({
   badge,
@@ -41,11 +37,11 @@ export default function SectionHeader({
           {badge}
         </Badge>
       )}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] text-[#1C140D] leading-tight tracking-tight font-semibold">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[52px] leading-tight tracking-tight font-semibold" style={{ color: colors.textBlack }}>
         {title}
       </h2>
       {subtitle && (
-        <p className="text-base md:text-lg text-[#1C140D] leading-relaxed tracking-tight max-w-2xl">
+        <p className="text-base md:text-lg leading-relaxed tracking-tight max-w-2xl" style={{ color: colors.textBlack }}>
           {subtitle}
         </p>
       )}

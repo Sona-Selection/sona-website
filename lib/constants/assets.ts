@@ -128,6 +128,28 @@ export const figmaAssets = {
   logo: {
     icon: "https://www.figma.com/api/mcp/asset/8ee56c3f-154f-4d06-9b54-bbed98323a2a",
   },
+
+  // About Us page
+  aboutUs: {
+    heroBackground:
+      "https://www.figma.com/api/mcp/asset/eb649094-d915-41ac-a317-d06840cd791f",
+    heroTexture:
+      "https://www.figma.com/api/mcp/asset/2e5f8b15-3331-46b5-8c75-0ee393f94281",
+    heroImage:
+      "https://www.figma.com/api/mcp/asset/8465bbc8-63cf-4519-a2d9-9bf58adbb549",
+    peopleCultureImage:
+      "https://www.figma.com/api/mcp/asset/0ac0740b-4004-403e-ab40-e03acab84831",
+    leadership: {
+      backgroundBlur:
+        "https://www.figma.com/api/mcp/asset/99923845-8f00-4d2e-a83d-acf0601e7689",
+      subhashImage:
+        "https://www.figma.com/api/mcp/asset/5fdfec38-5952-4c5f-8a0c-c6d7ecd9fb40",
+      harshilImage:
+        "https://www.figma.com/api/mcp/asset/5fdfec38-5952-4c5f-8a0c-c6d7ecd9fb40",
+      deepankImage:
+        "https://www.figma.com/api/mcp/asset/37e56141-d03b-41c2-b8e8-d52310a7ebee",
+    },
+  },
 };
 
 /**
@@ -202,6 +224,12 @@ export const localAssets = {
 
   logo: {
     icon: "/images/home/logo/icon.svg",
+  },
+
+  aboutUs: {
+    heroBackground: "/images/about/hero-background.jpg",
+    heroImage: "/images/about/hero-image.jpg",
+    peopleCultureImage: "/images/about/people-culture.jpg",
   },
 };
 

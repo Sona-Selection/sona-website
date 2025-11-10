@@ -7,6 +7,7 @@ import { TeamMember } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useState } from "react";
+import { colors } from "@/lib/theme/colors";
 
 interface TeamCardProps {
   member: TeamMember;
@@ -72,7 +73,7 @@ export default function TeamCard({ member, className }: TeamCardProps) {
             <h3 className="text-2xl md:text-4xl text-white leading-tight font-semibold">
               {member.name}
             </h3>
-            <p className="text-base md:text-xl text-[#FF6333] uppercase tracking-wide font-semibold">
+            <p className="text-base md:text-xl uppercase tracking-wide font-semibold" style={{ color: colors.primary }}>
               {member.role}
             </p>
           </div>
@@ -99,7 +100,7 @@ export default function TeamCard({ member, className }: TeamCardProps) {
         </div>
 
         {/* Back Side - Details with Description and LinkedIn */}
-        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-xl overflow-hidden shadow-md bg-[#FF6333]">
+        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-xl overflow-hidden shadow-md" style={{ backgroundColor: colors.primary }}>
           <div className="w-full h-full flex flex-col p-6 md:p-8 relative">
             {/* Name and Role - Top Left */}
             <div className="flex flex-col gap-2 mb-6">
