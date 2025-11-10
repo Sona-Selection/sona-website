@@ -271,3 +271,41 @@ export interface InvestorRelationsContent {
   shareholder: ShareholderSection;
   otherDisclosures: OtherDisclosuresSection;
 }
+
+// About Us Page Types
+
+export interface AboutUsHeroSection {
+  title: string;
+  subtitle: string;
+  foundingInfo: string;
+  description: string;
+  image: string;
+  backgroundImage?: string;
+  textureImage?: string;
+}
+
+export interface ValueCard {
+  icon: string; // lucide-react icon name
+  title: string;
+  description: string;
+}
+
+export interface ValuesSection {
+  badge: string;
+  title: string;
+  values: ValueCard[];
+}
+
+export interface PeopleCultureSection {
+  heading: string;
+  description: string;
+  image: string;
+}
+
+export interface AboutUsPage {
+  hero: AboutUsHeroSection;
+  peopleCulture: PeopleCultureSection;
+  values: ValuesSection;
+  leadership: LeadershipSection;
+  cta: CTASection;
+}
