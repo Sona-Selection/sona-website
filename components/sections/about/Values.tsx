@@ -28,7 +28,7 @@ export default function Values({ data }: ValuesProps) {
       style={{ backgroundColor: colors.primary }}
     >
       <div className="container mx-auto px-6 lg:px-12">
-        {/* Section Header - */}
+        {/* Section Header */}
         <div className="mb-12 md:mb-16 flex flex-col items-center text-center gap-6">
           <Badge
             variant="section"
