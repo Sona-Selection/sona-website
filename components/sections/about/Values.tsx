@@ -1,6 +1,5 @@
 import { Award, Heart, Lightbulb, Scale } from "lucide-react";
 
-import SectionHeader from "@/components/common/section-header";
 import { Badge } from "@/components/ui/badge";
 import { ValuesSection } from "@/lib/types";
 import { colors } from "@/lib/theme/colors";
@@ -35,9 +34,10 @@ export default function Values({ data }: ValuesProps) {
             variant="section"
             className="text-sm md:text-base px-4 py-2"
             style={{
-              backgroundColor: 'rgba(255, 251, 240, 0.12)',
+              backgroundColor: "rgba(255, 251, 240, 0.12)",
               color: colors.cream,
-              boxShadow: '0px 0px 80px 20px rgba(255, 251, 240, 0.5), 0px 0px 120px 40px rgba(255, 251, 240, 0.3)',
+              boxShadow:
+                "0px 0px 80px 20px rgba(255, 251, 240, 0.5), 0px 0px 120px 40px rgba(255, 251, 240, 0.3)",
             }}
           >
             {data.badge}
