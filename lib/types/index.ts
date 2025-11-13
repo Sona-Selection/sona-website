@@ -309,3 +309,13 @@ export interface AboutUsPage {
   leadership: LeadershipSection;
   cta: CTASection;
 }
+
+// Products Page Types
+
+export interface ProductsHeroSection {
+  badge: string;
+  title: string;
+  subtitle: string;
+  paragraphs: string[];
+  image: string;
+}
