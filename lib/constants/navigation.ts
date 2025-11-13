@@ -14,10 +14,6 @@ export const navigationItems: NavItem[] = [
     href: '/products',
   },
   {
-    label: 'Sustainability',
-    href: '/sustainability',
-  },
-  {
     label: 'Investor Relations',
     href: '/investor-relations',
   },

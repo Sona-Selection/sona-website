@@ -54,6 +54,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                 ? isActive
                   ? colors.primary
                   : colors.navy
+                : isActive
+                ? colors.white
                 : colors.black;
             const hoverColor = variant === "cream" ? colors.primary : colors.white;
 
@@ -109,6 +111,8 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                       ? isActive
                         ? colors.primary
                         : colors.navy
+                      : isActive
+                      ? colors.black
                       : colors.white;
                   const mobileHoverColor = variant === "cream" ? colors.primary : colors.black;
 
