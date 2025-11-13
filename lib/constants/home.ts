@@ -270,5 +270,5 @@ export const ctaSection: CTASection = {
   title: "Let's build the future of fabric together",
   ctaLabel: "Contact us",
   ctaHref: "/contact-us",
-  backgroundImage: assets.cta.background,
+  backgroundImage: "/images/common/banner.png",
 };

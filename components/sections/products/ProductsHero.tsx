@@ -19,7 +19,7 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
       style={{ backgroundColor: colors.cream }}
     >
       <div className="container mx-auto px-6 lg:px-12 py-16 md:py-20 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 lg:gap-16 items-center">
           {/* Left Content - Text */}
           <div className="lg:col-span-3 flex flex-col gap-8">
             {/* Badge */}
@@ -81,7 +81,7 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
           </div>
 
           {/* Right Image - Desktop only, hidden on mobile */}
-          <div className="hidden lg:block lg:col-span-2 relative h-[500px] xl:h-[600px]">
+          <div className="hidden lg:block lg:col-span-3 relative h-[500px] xl:h-[600px]">
             <Image
               src={data.image}
               alt="Sona textile products - stacked colorful fabrics"
