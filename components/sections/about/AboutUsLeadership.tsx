@@ -4,7 +4,7 @@ import { colors } from "@/lib/theme/colors";
 import { Badge } from "@/components/ui/badge";
 import { Linkedin } from "lucide-react";
 import Link from "next/link";
-import { figmaAssets } from "@/lib/constants/assets";
+import { assets } from "@/lib/constants/assets";
 
 interface AboutUsLeadershipProps {
   data: LeadershipSection;
@@ -16,7 +16,7 @@ interface AboutUsLeadershipProps {
  * @param {LeadershipSection} data - Leadership section content
  */
 export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
-  const backgroundBlurImage = figmaAssets.aboutUs.leadership.backgroundBlur;
+  const backgroundBlurImage = assets.aboutUs.leadership.backgroundBlur;
 
   return (
     <section

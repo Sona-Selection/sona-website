@@ -10,7 +10,7 @@ import {
   USPsSection,
 } from "@/lib/types";
 
-import { figmaAssets } from "./assets";
+import { assets } from "./assets";
 
 /**
  * Hero Section Data
@@ -28,24 +28,24 @@ export const homeHero: HeroSection = {
     href: "/contact-us",
   },
   videoLink: "#intro-video",
-  backgroundImage: figmaAssets.hero.background,
+  backgroundImage: assets.hero.background,
 };
 
 /**
  * Trusted Brands Section Data
  */
 export const trustedBrands: Brand[] = [
-  { name: "Brand 1", logo: figmaAssets.brands.brand1 },
-  { name: "Brand 2", logo: figmaAssets.brands.brand2 },
-  { name: "Brand 3", logo: figmaAssets.brands.brand3 },
-  { name: "Brand 4", logo: figmaAssets.brands.brand4 },
-  { name: "Brand 5", logo: figmaAssets.brands.brand5 },
-  { name: "Brand 6", logo: figmaAssets.brands.brand6 },
-  { name: "Brand 7", logo: figmaAssets.brands.brand7 },
-  { name: "Brand 8", logo: figmaAssets.brands.brand8 },
-  { name: "Brand 9", logo: figmaAssets.brands.brand9 },
-  { name: "Brand 10", logo: figmaAssets.brands.brand10 },
-  { name: "Brand 11", logo: figmaAssets.brands.brand11 },
+  { name: "Brand 1", logo: assets.brands.brand1 },
+  { name: "Brand 2", logo: assets.brands.brand2 },
+  { name: "Brand 3", logo: assets.brands.brand3 },
+  { name: "Brand 4", logo: assets.brands.brand4 },
+  { name: "Brand 5", logo: assets.brands.brand5 },
+  { name: "Brand 6", logo: assets.brands.brand6 },
+  { name: "Brand 7", logo: assets.brands.brand7 },
+  { name: "Brand 8", logo: assets.brands.brand8 },
+  { name: "Brand 9", logo: assets.brands.brand9 },
+  { name: "Brand 10", logo: assets.brands.brand10 },
+  { name: "Brand 11", logo: assets.brands.brand11 },
 ];
 
 /**
@@ -58,11 +58,11 @@ export const aboutSection: AboutSection = {
   ctaHref: "/about-us",
   cards: [
     {
-      image: figmaAssets.about.card1,
+      image: assets.about.card1,
       text: "future-ready textile manufacturer that owns its entire supply chain.",
     },
     {
-      image: figmaAssets.about.card2,
+      image: assets.about.card2,
       text: "Built on precision, purpose, and progress.",
     },
   ],
@@ -78,19 +78,19 @@ export const capabilitiesSection: CapabilitiesSection = {
     "Our capabilities cover the full spectrum of textile manufacturing delivering agility, precision, and quality at every stage.",
   capabilities: [
     {
-      image: figmaAssets.capabilities.card1,
+      image: assets.capabilities.card1,
       title: "Yarn to Fabric",
       description:
         "We transform raw materials into high-quality fabrics, utilizing advanced weaving and knitting technologies to create a wide range of textiles.",
     },
     {
-      image: figmaAssets.capabilities.card2,
+      image: assets.capabilities.card2,
       title: "Aggregated Garmenting",
       description:
         "Our garmenting services encompass cutting, sewing, and finishing, ensuring precise construction and attention to detail in every garment.",
     },
     {
-      image: figmaAssets.capabilities.card3,
+      image: assets.capabilities.card3,
       title: "Quality, R&D & Sampling",
       description:
         "We maintain rigorous quality control standards throughout the production process, with dedicated R&D and sampling teams to ensure product excellence and innovation.",
@@ -110,21 +110,21 @@ export const uspsSection: USPsSection = {
     "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
   usps: [
     {
-      image: figmaAssets.about.card1,
+      image: assets.about.card1,
       title: "Faster MOQs",
       description:
         "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry. At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
       link: "#",
     },
     {
-      image: figmaAssets.about.card2,
+      image: assets.about.card2,
       title: "End-to-End Supply Chain",
       description:
         "Complete control from raw materials to finished products, ensuring quality at every step of the manufacturing process.",
       link: "#",
     },
     {
-      image: figmaAssets.capabilities.card1,
+      image: assets.capabilities.card1,
       title: "Sustainable Innovation",
       description:
         "Zero-waste approach with eco-friendly processes and certifications, contributing to a greener future for fashion.",
@@ -141,7 +141,7 @@ export const productsSection: ProductsSection = {
   title: "Textile Solutions Built to Perform",
   description:
     "Our textile catalog spans versatile categories suitable for every application, from fashion to industrial use.",
-  mainImage: figmaAssets.products.mainImage,
+  mainImage: assets.products.mainImage,
   categories: [
     {
       name: "Woven Fabrics ↗",
@@ -169,65 +169,65 @@ export const productsSection: ProductsSection = {
 export const sustainabilitySection: SustainabilitySection = {
   badge: "cut from a different cloth",
   title: "Strong Commitment to Sustainability",
-  mainImage: figmaAssets.sustainability.waterConservation,
+  mainImage: assets.sustainability.waterConservation,
   features: [
     {
       title: "Zero Liquid Discharge (ZLD)",
       description:
         "All water used is treated and recycled on-site, with no liquid waste leaving the facility.",
-      image: figmaAssets.sustainability.waterConservation,
+      image: assets.sustainability.waterConservation,
     },
     {
       title: "Renewable Energy",
       description:
         "90% of electricity is generated in-house through solar power and steam turbines.",
-      image: figmaAssets.sustainability.energyEfficiency,
+      image: assets.sustainability.energyEfficiency,
     },
     {
       title: "Emission Control",
       description:
         "Electrostatic Precipitators are used to control and reduce emissions.",
-      image: figmaAssets.sustainability.emissionControl,
+      image: assets.sustainability.emissionControl,
     },
     {
       title: "Waste Management",
       description:
         "Fabric scrap recycling and reuse to reduce landfill impact with lean manufacturing to minimize process waste.",
-      image: figmaAssets.sustainability.wasteManagement,
+      image: assets.sustainability.wasteManagement,
     },
     {
       title: "Safe Chemical Usage",
       description:
         "Use of certified chemicals and eco-friendly auxiliaries with strict handling and disposal procedures.",
-      image: figmaAssets.sustainability.safeChemicals,
+      image: assets.sustainability.safeChemicals,
     },
     {
       title: "Sustainable Materials",
       description:
         "Sourcing of organic, BCI, and recycled fibers with traceability programs and focus on low-impact dyes.",
-      image: figmaAssets.sustainability.sustainableMaterials,
+      image: assets.sustainability.sustainableMaterials,
     },
   ],
   certifications: [
     {
       name: "Global Organic Textile Standard (GOTS)",
       description: "Scope Certificate - Version 7.0",
-      image: figmaAssets.sustainability.cert1,
+      image: assets.sustainability.cert1,
     },
     {
       name: "Regenagri Chain of Custody",
       description: "Scope Certificate - Textiles Version 1.0",
-      image: figmaAssets.sustainability.cert2,
+      image: assets.sustainability.cert2,
     },
     {
       name: "Organic & Recycled Standards",
       description: "OCS (Version 3.0), GRS (Version 4.0), RCS (Version 2.0)",
-      image: figmaAssets.sustainability.cert3,
+      image: assets.sustainability.cert3,
     },
     {
       name: "OEKO-TEX'",
       description: "standard 100 Certification",
-      image: figmaAssets.sustainability.cert4,
+      image: assets.sustainability.cert4,
     },
   ],
 };
@@ -244,20 +244,20 @@ export const leadershipSection: LeadershipSection = {
       role: "Chairman",
       description:
         "Seasoned entrepreneur with over 35 years of experience in the textile industry. As Chairman of Sona Group, he oversees one of India's largest textile processing capacities, currently 12 million meters per month",
-      image: figmaAssets.leadership.member1,
-      logo: figmaAssets.leadership.companyLogo,
+      image: assets.leadership.member1,
+      logo: assets.leadership.companyLogo,
       linkedinUrl: "https://www.linkedin.com/in/subhash-nuwal",
     },
     {
       name: "Harshil Nuwal",
       role: "Founder and MD",
-      image: figmaAssets.leadership.member2,
+      image: assets.leadership.member2,
       linkedinUrl: "https://www.linkedin.com/in/harshil-nuwal",
     },
     {
       name: "Deepank Bhandari",
       role: "Founder and MD",
-      image: figmaAssets.leadership.member3,
+      image: assets.leadership.member3,
       linkedinUrl: "https://www.linkedin.com/in/deepank-bhandari",
     },
   ],
@@ -270,5 +270,5 @@ export const ctaSection: CTASection = {
   title: "Let's build the future of fabric together",
   ctaLabel: "Contact us",
   ctaHref: "/contact-us",
-  backgroundImage: figmaAssets.cta.background,
+  backgroundImage: assets.cta.background,
 };

@@ -4,6 +4,10 @@
  * After that, images should be downloaded and stored locally
  */
 
+/**
+ * @deprecated Figma asset URLs expire after 7 days. Use localAssets instead.
+ * Kept for reference only.
+ */
 export const figmaAssets = {
   // Investor Relations
   investorRelations: {
@@ -155,83 +159,109 @@ export const figmaAssets = {
 /**
  * Local asset paths (to be used after downloading assets)
  * These paths should be used once images are downloaded locally
+ * Structure matches figmaAssets for compatibility
  */
 export const localAssets = {
+  // Investor Relations
+  investorRelations: {
+    heroBackground: "/images/investor-relations/hero-background.jpg",
+    boardBackground: "/images/investor-relations/board-background.jpg",
+    harshilImage: "/images/investor-relations/harshil-image.jpg",
+    deepankImage: "/images/investor-relations/deepank-image.jpg",
+    companyLogo: "/images/investor-relations/company-logo.png",
+  },
+
+  // Hero section
   hero: {
     background: "/images/home/hero/background.jpg",
     texture: "/images/home/hero/texture.jpg",
   },
 
-  brands: [
-    { name: "Brand 1", logo: "/images/home/brands/brand-1.png" },
-    { name: "Brand 2", logo: "/images/home/brands/brand-2.png" },
-    { name: "Brand 3", logo: "/images/home/brands/brand-3.png" },
-    { name: "Brand 4", logo: "/images/home/brands/brand-4.svg" },
-    { name: "Brand 5", logo: "/images/home/brands/brand-5.png" },
-    { name: "Brand 6", logo: "/images/home/brands/brand-6.png" },
-    { name: "Brand 7", logo: "/images/home/brands/brand-7.png" },
-    { name: "Brand 8", logo: "/images/home/brands/brand-8.png" },
-    { name: "Brand 9", logo: "/images/home/brands/brand-9.png" },
-    { name: "Brand 10", logo: "/images/home/brands/brand-10.png" },
-    { name: "Brand 11", logo: "/images/home/brands/brand-11.png" },
-  ],
+  // Trusted brands logos - object structure to match figmaAssets
+  brands: {
+    brand1: "/images/home/brands/brand-1.png",
+    brand2: "/images/home/brands/brand-2.png",
+    brand3: "/images/home/brands/brand-3.png",
+    brand4: "/images/home/brands/brand-4.png",
+    brand5: "/images/home/brands/brand-5.png",
+    brand6: "/images/home/brands/brand-6.png",
+    brand7: "/images/home/brands/brand-7.png",
+    brand8: "/images/home/brands/brand-8.png",
+    brand9: "/images/home/brands/brand-9.png",
+    brand10: "/images/home/brands/brand-10.png",
+    brand11: "/images/home/brands/brand-11.png",
+  },
 
+  // About section
   about: {
     card1: "/images/home/about/card-1.jpg",
     card2: "/images/home/about/card-2.jpg",
   },
 
-  capabilities: [
-    { image: "/images/home/capabilities/yarn-to-fabric.jpg" },
-    { image: "/images/home/capabilities/garmenting.jpg" },
-    { image: "/images/home/capabilities/quality-rd.jpg" },
-  ],
+  // Capabilities section - object structure to match figmaAssets
+  capabilities: {
+    card1: "/images/home/capabilities/yarn-to-fabric.jpg",
+    card2: "/images/home/capabilities/garmenting.jpg",
+    card3: "/images/home/capabilities/quality-rd.jpg",
+  },
 
+  // Products section
   products: {
     mainImage: "/images/home/products/main.jpg",
+    textureOverlay: "/images/home/products/texture-overlay.jpg",
   },
 
+  // Sustainability section
   sustainability: {
-    mainImage: "/images/home/sustainability/main.jpg",
-    certifications: [
-      { name: "GOTS", image: "/images/home/sustainability/cert-1.png" },
-      { name: "BCI", image: "/images/home/sustainability/cert-2.png" },
-      { name: "Organic", image: "/images/home/sustainability/cert-3.png" },
-      { name: "Recycled", image: "/images/home/sustainability/cert-4.png" },
-      { name: "OEKO-TEX", image: "/images/home/sustainability/cert-5.png" },
-    ],
+    // Feature images for carousel (all use same image)
+    waterConservation: "/images/home/sustainability/main.jpg",
+    energyEfficiency: "/images/home/sustainability/main.jpg",
+    emissionControl: "/images/home/sustainability/main.jpg",
+    wasteManagement: "/images/home/sustainability/main.jpg",
+    safeChemicals: "/images/home/sustainability/main.jpg",
+    sustainableMaterials: "/images/home/sustainability/main.jpg",
+    // Certification images
+    cert1: "/images/home/sustainability/cert-1.png",
+    cert2: "/images/home/sustainability/cert-2.png",
+    cert3: "/images/home/sustainability/cert-3.png",
+    cert4: "/images/home/sustainability/cert-4.png",
+    cert5: "/images/home/sustainability/cert-5.png",
   },
 
-  leadership: [
-    {
-      name: "Subhash Nuwal",
-      image: "/images/home/leadership/member-1.jpg",
-      logo: "/images/home/leadership/company-logo.png",
-    },
-    {
-      name: "Harshil Nuwal",
-      image: "/images/home/leadership/member-2.jpg",
-    },
-    {
-      name: "Deepank Bhandari",
-      image: "/images/home/leadership/member-3.jpg",
-    },
-  ],
+  // Leadership section - object structure to match figmaAssets
+  leadership: {
+    member1: "/images/home/leadership/member-1.jpg",
+    member2: "/images/home/leadership/member-2.jpg",
+    member3: "/images/home/leadership/member-3.jpg",
+    companyLogo: "/images/home/leadership/company-logo.png",
+  },
 
+  // CTA section
   cta: {
     background: "/images/home/cta/background.jpg",
   },
 
+  // Logo
   logo: {
     icon: "/images/home/logo/icon.svg",
   },
 
+  // About Us page
   aboutUs: {
     heroBackground: "/images/about/hero-background.jpg",
+    heroTexture: "/images/about/hero-texture.jpg",
     heroImage: "/images/about/hero-image.jpg",
-    peopleCultureImage: "/images/about/people-culture.jpg",
+    peopleCultureImage: "/images/about/people-culture.png",
+    leadership: {
+      backgroundBlur: "/images/about/leadership-background-blur.png",
+      subhashImage: "/images/about/leadership-subhash.png",
+      harshilImage: "/images/about/leadership-harshil.png",
+      deepankImage: "/images/about/leadership-deepank.png",
+    },
   },
 };
 
-// Use Figma assets for now until images are downloaded
-export const assets = figmaAssets;
+// Use local assets - images should be downloaded and stored in public/images/
+// Note: Some images may not be available if Figma URLs have expired.
+// In that case, images need to be manually downloaded from Figma or provided separately.
+export const assets = localAssets;

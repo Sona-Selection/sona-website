@@ -9,7 +9,7 @@ import {
   ShareholderSection,
 } from "../types";
 
-import { figmaAssets } from "./assets";
+import { assets } from "./assets";
 
 /**
  * Investor Relations Page Content
@@ -28,7 +28,7 @@ export const investorHero: InvestorHeroSection = {
     label: "Download Investor Deck",
     href: "#",
   },
-  backgroundImage: figmaAssets.investorRelations.heroBackground,
+  backgroundImage: assets.investorRelations.heroBackground,
 };
 
 export const ipoCorner: IPOCornerSection = {
@@ -65,20 +65,20 @@ export const boardSection: BoardSection = {
         role: "Chairman",
         description:
           "Seasoned entrepreneur with over 35 years of experience in the textile industry. As Chairman of Sona Group, he oversees one of India's largest textile processing capacities, currently 12 million meters per month",
-        image: figmaAssets.leadership.member1,
-        logo: figmaAssets.investorRelations.companyLogo,
+        image: assets.leadership.member1,
+        logo: assets.investorRelations.companyLogo,
         linkedinUrl: "#",
       },
       {
         name: "Harshil Nuwal",
         role: "Founder and MD",
-        image: figmaAssets.investorRelations.harshilImage,
+        image: assets.investorRelations.harshilImage,
         linkedinUrl: "#",
       },
       {
         name: "Deepank Bhandari",
         role: "Founder and MD",
-        image: figmaAssets.investorRelations.deepankImage,
+        image: assets.investorRelations.deepankImage,
         linkedinUrl: "#",
       },
     ],
@@ -94,20 +94,20 @@ export const boardSection: BoardSection = {
         role: "Chairman",
         description:
           "Seasoned entrepreneur with over 35 years of experience in the textile industry. As Chairman of Sona Group, he oversees one of India's largest textile processing capacities, currently 12 million meters per month",
-        image: figmaAssets.leadership.member1,
-        logo: figmaAssets.investorRelations.companyLogo,
+        image: assets.leadership.member1,
+        logo: assets.investorRelations.companyLogo,
         linkedinUrl: "#",
       },
       {
         name: "Harshil Nuwal",
         role: "Founder and MD",
-        image: figmaAssets.investorRelations.harshilImage,
+        image: assets.investorRelations.harshilImage,
         linkedinUrl: "#",
       },
       {
         name: "Deepank Bhandari",
         role: "Founder and MD",
-        image: figmaAssets.investorRelations.deepankImage,
+        image: assets.investorRelations.deepankImage,
         linkedinUrl: "#",
       },
     ],
