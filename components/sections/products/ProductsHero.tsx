@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 import { ProductsHeroSection } from "@/lib/types";
 import { colors } from "@/lib/theme/colors";
-import Image from "next/image";
 
 interface ProductsHeroProps {
   data: ProductsHeroSection;
@@ -18,7 +18,7 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
       className="relative overflow-hidden"
       style={{ backgroundColor: colors.cream }}
     >
-      <div className="container mx-auto px-6 lg:px-12 py-16 md:py-20 lg:py-24">
+      <div className="container mx-auto px-6 lg:px-12 py-16 md:py-20 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
           {/* Left Content - Text */}
           <div className="lg:col-span-3 flex flex-col gap-8">
@@ -102,14 +102,6 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
             priority
           />
         </div>
-      </div>
-
-      {/* Orange Horizontal Divider Line */}
-      <div className="container mx-auto px-6 lg:px-12">
-        <div
-          className="h-[2px] w-full"
-          style={{ backgroundColor: colors.primary }}
-        />
       </div>
     </section>
   );

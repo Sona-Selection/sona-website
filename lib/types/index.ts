@@ -319,3 +319,28 @@ export interface ProductsHeroSection {
   paragraphs: string[];
   image: string;
 }
+
+export interface ProductItem {
+  image: string;
+  title: string;
+}
+
+export interface ProductCategorySection {
+  title: string;
+  description: string;
+  products: ProductItem[];
+  showViewAll?: boolean;
+  showArrowNav?: boolean;
+  viewAllHref?: string;
+}
+
+export interface AdvancedFinish {
+  image: string;
+  label: string;
+}
+
+export interface AdvancedFinishesSection {
+  title: string;
+  description: string;
+  finishes: AdvancedFinish[];
+}
