@@ -344,3 +344,42 @@ export interface AdvancedFinishesSection {
   description: string;
   finishes: AdvancedFinish[];
 }
+
+// Capabilities Page Types
+
+export interface CapacityCard {
+  label: string;
+  value: string;
+  image: string;
+}
+
+export interface FacilityPartner {
+  name: string;
+  country: string;
+  logo: string;
+}
+
+export interface CapabilitiesHeroSection {
+  title: string;
+  description: string;
+  backgroundImage: string;
+  capacityCards: CapacityCard[];
+  qualityLab: {
+    badge: string;
+    title: string;
+    description: string[];
+    ctaLabel: string;
+    ctaHref: string;
+  };
+  facilities: FacilityPartner[];
+}
+
+export interface FacilityImage {
+  image: string;
+  label: string;
+}
+
+export interface FacilitiesGallerySection {
+  heading: string;
+  images: FacilityImage[];
+}
