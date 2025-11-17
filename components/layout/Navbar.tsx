@@ -1,6 +1,7 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { VisuallyHidden } from "@/components/ui/visually-hidden";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -100,47 +101,96 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[300px] sm:w-[400px]"
+              className="w-[85vw] sm:w-[400px] p-0 flex flex-col"
               style={{ backgroundColor: mobileSheetBg }}
+              closeIconColor={colors.black}
             >
-              <nav className="flex flex-col space-y-6 mt-8">
-                {navigationItems.map((item) => {
-                  const isActive = pathname === item.href;
-                  const mobileLinkColor =
-                    variant === "cream"
-                      ? isActive
-                        ? colors.primary
-                        : colors.navy
-                      : isActive
-                      ? colors.black
-                      : colors.white;
-                  const mobileHoverColor = variant === "cream" ? colors.primary : colors.black;
+              <SheetHeader className="p-6 pb-4">
+                <VisuallyHidden>
+                  <SheetTitle>Navigation Menu</SheetTitle>
+                </VisuallyHidden>
+                <div style={{ color: logoTextColor }}>
+                  <Logo
+                    size="md"
+                    className="transition-colors"
+                    iconVariant={logoIconVariant}
+                  />
+                </div>
+              </SheetHeader>
 
-                  return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="text-lg font-medium transition-colors"
-                      style={{ color: mobileLinkColor }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = mobileHoverColor)}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = mobileLinkColor)}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
-                <Button
-                  asChild
-                  className="rounded-md"
-                  style={{
-                    backgroundColor: colors.navy,
-                    color: colors.white
-                  }}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <Link href="/contact-us">CONTACT US</Link>
-                </Button>
+              {/* Divider */}
+              <div
+                className="h-px mx-6"
+                style={{
+                  backgroundColor: variant === "cream"
+                    ? "rgba(33, 38, 73, 0.1)"
+                    : "rgba(255, 255, 255, 0.1)"
+                }}
+              />
+
+              <nav className="flex flex-col flex-1 px-6 py-8">
+                <div className="flex flex-col space-y-1 mb-8">
+                  {navigationItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    const mobileLinkColor =
+                      variant === "cream"
+                        ? isActive
+                          ? colors.primary
+                          : colors.navy
+                        : isActive
+                        ? colors.white
+                        : "rgba(255, 255, 255, 0.8)";
+                    const mobileHoverColor = variant === "cream" ? colors.primary : colors.white;
+
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="text-base font-medium py-3 px-4 rounded-lg transition-all duration-200"
+                        style={{
+                          color: mobileLinkColor,
+                          backgroundColor: isActive
+                            ? (variant === "cream"
+                              ? "rgba(33, 38, 73, 0.05)"
+                              : "rgba(255, 255, 255, 0.1)")
+                            : "transparent"
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = mobileHoverColor;
+                          if (!isActive) {
+                            e.currentTarget.style.backgroundColor =
+                              variant === "cream"
+                                ? "rgba(33, 38, 73, 0.05)"
+                                : "rgba(255, 255, 255, 0.05)";
+                          }
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = mobileLinkColor;
+                          if (!isActive) {
+                            e.currentTarget.style.backgroundColor = "transparent";
+                          }
+                        }}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                <div className="mt-auto">
+                  <Button
+                    asChild
+                    className="w-full rounded-lg font-semibold h-12 text-base"
+                    style={{
+                      backgroundColor: colors.navy,
+                      color: colors.white
+                    }}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <Link href="/contact-us">CONTACT US</Link>
+                  </Button>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
