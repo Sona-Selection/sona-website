@@ -4,8 +4,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +12,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { USPsSection } from "@/lib/types";
+import { useEffect, useState } from "react";
 
 interface USPsProps {
   data: USPsSection;
@@ -24,6 +24,20 @@ interface USPsProps {
  * @param {USPsSection} data - USPs section content
  */
 export default function USPs({ data }: USPsProps) {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
   return (
     <section className="bg-[#FFFBF0] py-16 md:py-24" data-figma-node="0:141">
       <div className="container mx-auto px-6 lg:px-12">
@@ -42,6 +56,7 @@ export default function USPs({ data }: USPsProps) {
 
         {/* Carousel */}
         <Carousel
+          setApi={setApi}
           opts={{
             align: "start",
             loop: true,
@@ -87,20 +102,19 @@ export default function USPs({ data }: USPsProps) {
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          {/* Navigation - Hidden on Mobile, Visible on Desktop */}
-          <div className="hidden md:flex justify-center gap-2 mt-12">
-            <CarouselPrevious className="static translate-y-0" />
-            <CarouselNext className="static translate-y-0" />
-          </div>
         </Carousel>
 
-        {/* Pagination Dots - Mobile Only */}
-        <div className="flex md:hidden justify-center gap-2 mt-8">
+        {/* Pagination Dots */}
+        <div className="flex justify-center gap-2 mt-8 md:mt-12">
           {data.usps.map((_, index) => (
             <button
               key={index}
-              className="w-3.5 h-3.5 rounded-full border border-[#02244A] transition-colors hover:bg-[#02244A]/20"
+              onClick={() => api?.scrollTo(index)}
+              className={`w-3 h-3 rounded-full transition-all ${
+                current === index
+                  ? "bg-[#02244A]"
+                  : "border border-[#02244A] hover:bg-[#02244A]/20"
+              }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
