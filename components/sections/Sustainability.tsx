@@ -144,26 +144,29 @@ export default function Sustainability({ data }: SustainabilityProps) {
         </div>
 
         {/* Certifications */}
-        <Card className="p-8 md:p-12 rounded-2xl border-0 shadow-none relative overflow-hidden" style={{ backgroundColor: colors.navyDark }}>
+        <Card
+          className="p-8 md:p-12 rounded-2xl border-0 shadow-none relative overflow-hidden"
+          style={{ backgroundColor: colors.navyDark }}
+        >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div
               className="absolute inset-0"
               style={{
-                background: `linear-gradient(to bottom right, ${colors.primary}33, transparent)`
+                background: `linear-gradient(to bottom right, ${colors.primary}33, transparent)`,
               }}
             />
           </div>
 
           <div className="relative z-10 flex flex-col gap-8 md:gap-10">
             {/* Certification Header */}
-            <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div className="flex flex-col md:flex-col gap-6 items-start md:items-start">
               {/* Certification Logos */}
               <div className="flex gap-4 flex-wrap">
-                {data.certifications.slice(0, 5).map((cert, index) => (
+                {data.certifications.map((cert, index) => (
                   <div
                     key={index}
-                    className="w-11 h-11 rounded-full bg-white/10 border border-white/20 flex items-center justify-center"
+                    className="w-14 h-14 rounded-full bg-white/10 p-2 flex items-center justify-center"
                   >
                     {cert.image && (
                       <Image
@@ -180,10 +183,16 @@ export default function Sustainability({ data }: SustainabilityProps) {
 
               {/* Text */}
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl md:text-4xl leading-tight" style={{ color: colors.creamAlt }}>
+                <h3
+                  className="text-2xl md:text-4xl leading-tight"
+                  style={{ color: colors.creamAlt }}
+                >
                   Certified to Global Standards
                 </h3>
-                <p className="text-base md:text-lg opacity-90 leading-normal" style={{ color: colors.creamAlt }}>
+                <p
+                  className="text-base md:text-lg opacity-90 leading-normal"
+                  style={{ color: colors.creamAlt }}
+                >
                   We uphold the highest benchmarks in textile safety,
                   sustainability, and traceability
                 </p>
@@ -196,17 +205,21 @@ export default function Sustainability({ data }: SustainabilityProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {data.certifications.map((cert, index) => (
                 <div key={index} className="flex flex-col gap-1">
-                  <p className="text-xs md:text-sm uppercase font-semibold tracking-wide" style={{ color: colors.primary }}>
+                  <p
+                    className="text-xs md:text-sm uppercase font-semibold tracking-wide"
+                    style={{ color: colors.primary }}
+                  >
                     Scope Certificate
                   </p>
-                  <p className="text-sm md:text-base leading-relaxed" style={{ color: colors.creamAlt }}>
+                  <p
+                    className="text-sm md:text-base leading-relaxed"
+                    style={{ color: colors.creamAlt }}
+                  >
                     {cert.name}
                     {cert.description && (
                       <>
                         <br />
-                        <span className="opacity-70">
-                          {cert.description}
-                        </span>
+                        <span className="opacity-70">{cert.description}</span>
                       </>
                     )}
                   </p>

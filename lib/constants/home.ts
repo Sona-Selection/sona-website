@@ -59,11 +59,11 @@ export const aboutSection: AboutSection = {
   cards: [
     {
       image: assets.about.card1,
-      text: "future-ready textile manufacturer that owns its entire supply chain.",
+      text: "3000 units an hour:\nManufacturing Capabilities.",
     },
     {
       image: assets.about.card2,
-      text: "Built on precision, purpose, and progress.",
+      text: "Faster Turnaround:\nIn-House Testing and Automation",
     },
   ],
 };
@@ -228,6 +228,16 @@ export const sustainabilitySection: SustainabilitySection = {
       name: "OEKO-TEX'",
       description: "standard 100 Certification",
       image: assets.sustainability.cert4,
+    },
+    {
+      name: "Better Cotton Initiative (BCI)",
+      description: "Certified Sustainable Cotton Sourcing",
+      image: assets.sustainability.cert5,
+    },
+    {
+      name: "ISO 14001",
+      description: "Environmental Management System",
+      image: assets.sustainability.cert6,
     },
   ],
 };

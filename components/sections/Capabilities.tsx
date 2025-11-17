@@ -36,7 +36,7 @@ export default function Capabilities({ data }: CapabilitiesProps) {
         </div>
 
         {/* Capabilities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6 mb-12 md:mb-16">
           {data.capabilities.map((capability, index) => (
             <div key={index} className="flex flex-col gap-6">
               {/* Image Card */}

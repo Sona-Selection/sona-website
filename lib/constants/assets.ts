@@ -173,18 +173,18 @@ export const localAssets = {
 
   // Hero section
   hero: {
-    background: "/images/home/hero/background.jpg",
-    texture: "/images/home/hero/texture.jpg",
+    background: "/images/home/hero/1.png",
+    texture: "/images/home/hero/1.png",
   },
 
   // Trusted brands logos - object structure to match figmaAssets
   brands: {
-    brand1: "/images/home/brands/brand-1.png",
-    brand2: "/images/home/brands/brand-2.png",
-    brand3: "/images/home/brands/brand-3.png",
-    brand4: "/images/home/brands/brand-4.png",
-    brand5: "/images/home/brands/brand-5.png",
-    brand6: "/images/home/brands/brand-6.png",
+    brand1: "/images/home/brands/1.png",
+    brand2: "/images/home/brands/2.png",
+    brand3: "/images/home/brands/3.png",
+    brand4: "/images/home/brands/4.png",
+    brand5: "/images/home/brands/5.png",
+    brand6: "/images/home/brands/6.png",
     brand7: "/images/home/brands/brand-7.png",
     brand8: "/images/home/brands/brand-8.png",
     brand9: "/images/home/brands/brand-9.png",
@@ -194,46 +194,47 @@ export const localAssets = {
 
   // About section
   about: {
-    card1: "/images/home/about/card-1.jpg",
-    card2: "/images/home/about/card-2.jpg",
+    card1: "/images/home/about/1.png",
+    card2: "/images/home/about/2.png",
   },
 
   // Capabilities section - object structure to match figmaAssets
   capabilities: {
-    card1: "/images/home/capabilities/yarn-to-fabric.jpg",
-    card2: "/images/home/capabilities/garmenting.jpg",
-    card3: "/images/home/capabilities/quality-rd.jpg",
+    card1: "/images/home/capabilities/1.png",
+    card2: "/images/home/capabilities/2.png",
+    card3: "/images/home/capabilities/3.png",
   },
 
   // Products section
   products: {
-    mainImage: "/images/home/products/main.jpg",
+    mainImage: "/images/home/products/1.png",
     textureOverlay: "/images/home/products/texture-overlay.jpg",
   },
 
   // Sustainability section
   sustainability: {
     // Feature images for carousel (all use same image)
-    waterConservation: "/images/home/sustainability/main.jpg",
-    energyEfficiency: "/images/home/sustainability/main.jpg",
-    emissionControl: "/images/home/sustainability/main.jpg",
+    waterConservation: "/images/home/sustainability/1.png",
+    energyEfficiency: "/images/home/sustainability/1.png",
+    emissionControl: "/images/home/sustainability/1.png",
     wasteManagement: "/images/home/sustainability/main.jpg",
-    safeChemicals: "/images/home/sustainability/main.jpg",
-    sustainableMaterials: "/images/home/sustainability/main.jpg",
+    safeChemicals: "/images/home/sustainability/1.png",
+    sustainableMaterials: "/images/home/sustainability/1.png",
     // Certification images
-    cert1: "/images/home/sustainability/cert-1.png",
-    cert2: "/images/home/sustainability/cert-2.png",
-    cert3: "/images/home/sustainability/cert-3.png",
-    cert4: "/images/home/sustainability/cert-4.png",
-    cert5: "/images/home/sustainability/cert-5.png",
+    cert1: "/images/home/certifications/1.png",
+    cert2: "/images/home/certifications/2.png",
+    cert3: "/images/home/certifications/3.png",
+    cert4: "/images/home/certifications/4.png",
+    cert5: "/images/home/certifications/5.png",
+    cert6: "/images/home/certifications/6.png",
   },
 
   // Leadership section - object structure to match figmaAssets
   leadership: {
-    member1: "/images/home/leadership/member-1.jpg",
-    member2: "/images/home/leadership/member-2.jpg",
-    member3: "/images/home/leadership/member-3.jpg",
-    companyLogo: "/images/home/leadership/company-logo.png",
+    member1: "/images/home/leadership/1.png",
+    member2: "/images/home/leadership/harshil.png",
+    member3: "/images/home/leadership/deepank.png",
+    companyLogo: "/images/home/leadership/4.png",
   },
 
   // CTA section

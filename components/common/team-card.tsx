@@ -54,7 +54,17 @@ export default function TeamCard({ member, className }: TeamCardProps) {
       >
         {/* Front Side - Image with Name and Role */}
         <div className="absolute inset-0 [backface-visibility:hidden] rounded-xl overflow-hidden shadow-md">
-          {/* Background Image */}
+          {/* Background Pattern */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/home/leadership/bg.png"
+              alt=""
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Member Image */}
           <div className="absolute inset-0">
             <Image
               src={member.image}
