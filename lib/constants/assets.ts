@@ -164,10 +164,10 @@ export const figmaAssets = {
 export const localAssets = {
   // Investor Relations
   investorRelations: {
-    heroBackground: "/images/investor-relations/hero-background.jpg",
+    heroBackground: "/images/investor-relations/hero.png",
     boardBackground: "/images/investor-relations/board-background.jpg",
-    harshilImage: "/images/investor-relations/harshil-image.jpg",
-    deepankImage: "/images/investor-relations/deepank-image.jpg",
+    harshilImage: "/images/home/leadership/harshil.png",
+    deepankImage: "/images/home/leadership/deepank.png",
     companyLogo: "/images/investor-relations/company-logo.png",
   },
 
