@@ -6,6 +6,7 @@ import GroupCompany from "@/components/sections/investor/GroupCompany";
 import Policies from "@/components/sections/investor/Policies";
 import Shareholder from "@/components/sections/investor/Shareholder";
 import OtherDisclosures from "@/components/sections/investor/OtherDisclosures";
+import CTA from "@/components/sections/CTA";
 import {
   investorHero,
   ipoCorner,
@@ -16,6 +17,7 @@ import {
   shareholder,
   otherDisclosures,
 } from "@/lib/constants/investor-relations";
+import { ctaSection } from "@/lib/constants/home";
 
 export const metadata = {
   title: "Investor Relations | Sona",
@@ -53,6 +55,9 @@ export default function InvestorRelationsPage() {
 
       {/* Other Disclosures Section */}
       <OtherDisclosures data={otherDisclosures} />
+
+      {/* CTA Section */}
+      <CTA data={ctaSection} />
     </>
   );
 }
