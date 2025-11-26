@@ -153,6 +153,17 @@ export const figmaAssets = {
       deepankImage:
         "https://www.figma.com/api/mcp/asset/37e56141-d03b-41c2-b8e8-d52310a7ebee",
     },
+    journey: {
+      milestone1: "/images/about/journey/1.png",
+      milestone2: "/images/about/journey/2.png",
+      milestone3: "/images/about/journey/3.png",
+      milestone4: "/images/about/journey/4.png",
+      milestone5: "/images/about/journey/5.png",
+      milestone6: "/images/about/journey/6.png",
+      milestone7: "/images/about/journey/7.png",
+      milestone8: "/images/about/journey/8.png",
+      milestone9: "/images/about/journey/9.png",
+    },
   },
 };
 
@@ -258,6 +269,17 @@ export const localAssets = {
       subhashImage: "/images/about/leadership-subhash.png",
       harshilImage: "/images/about/leadership-harshil.png",
       deepankImage: "/images/about/leadership-deepank.png",
+    },
+    journey: {
+      milestone1: "/images/about/journey/1.png",
+      milestone2: "/images/about/journey/2.png",
+      milestone3: "/images/about/journey/3.png",
+      milestone4: "/images/about/journey/4.png",
+      milestone5: "/images/about/journey/5.png",
+      milestone6: "/images/about/journey/6.png",
+      milestone7: "/images/about/journey/7.png",
+      milestone8: "/images/about/journey/8.png",
+      milestone9: "/images/about/journey/9.png",
     },
   },
 };

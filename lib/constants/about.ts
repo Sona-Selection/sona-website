@@ -1,5 +1,6 @@
 import {
   AboutUsHeroSection,
+  JourneySection,
   LeadershipSection,
   PeopleCultureSection,
   ValuesSection,
@@ -96,6 +97,79 @@ export const aboutUsLeadership: LeadershipSection = {
         "Mr Deepank has completed his B.Tech from IIT Delhi in 2007 and obtained an MSc in finance from ESCP Europe in 2011, blending technical expertise with financial acumen. Garnered over 4 years of comprehensive experience in Trading, Investment Banking and Private Equity across Europe, mastering the intricacies of global financial markets. Demonstrated over 9 years of adeptness in India's e-commerce landscape, pioneering the development of the most efficient hyperlocal supply chain in one of the world's most complex demographics. Held key leadership positions at distinguished organizations including Grofers (now Blinkit), leadership roles at 1Mg, Alcazar Capital, BNP Paribas, and Aviva, showcasing a track record of driving success and innovation in diverse sectors.",
       image: assets.aboutUs.leadership.deepankImage,
       linkedinUrl: "https://www.linkedin.com/in/deepank-bhandari",
+    },
+  ],
+};
+
+/**
+ * Journey Section Data for About Us Page
+ */
+export const aboutUsJourney: JourneySection = {
+  badge: "Leadership",
+  title: "Our Journey",
+  milestones: [
+    {
+      year: "1987",
+      title: "The Visionary Start",
+      description:
+        "Subhash Nuwal embarked on his journey in the textiles industry, driven by a passion for excellence and a keen understanding of market dynamics. Starting from humble beginnings, he quickly established a reputation for quality and innovation.",
+      image: assets.aboutUs.journey.milestone1,
+    },
+    {
+      year: "1995",
+      title: "Establishing Sona Processors Ltd.",
+      description:
+        "Recognizing the need for superior processing capabilities, Subhash founded Sona Processors Ltd. in 1995. This unit specialized in PV and Polyester suiting's and soon became the finest in its class, boasting a remarkable capacity of over 5 million meters per month. This achievement marked the beginning of Sona's dominance in the textile processing industry.",
+      image: assets.aboutUs.journey.milestone2,
+    },
+    {
+      year: "2015",
+      title: "Expansion into Natural Fibers",
+      description:
+        "With a keen eye on market trends and growing consumer demand for natural fibers, Sona Group launched a cotton processing facility. This strategic move allowed the company to capture a significant share of the expanding cotton market, diversifying its product portfolio and reinforcing its market position.",
+      image: assets.aboutUs.journey.milestone3,
+    },
+    {
+      year: "1995",
+      title: "Weaving Unit and Strategic Acquisitions",
+      description:
+        "In a year of significant growth, Sona Group made two pivotal advancements",
+      image: assets.aboutUs.journey.milestone4,
+    },
+    {
+      year: "2015",
+      title: "Sona Styles Ltd.",
+      description:
+        "A state-of-the-art weaving unit equipped with brand new Airjet looms was established, with a capacity of 0.7 million meters per month. This addition enhanced Sona’s manufacturing capabilities, ensuring superior quality and efficiency.",
+      image: assets.aboutUs.journey.milestone5,
+    },
+    {
+      year: "1995",
+      title: "Sona Selection (I) Ltd.",
+      description:
+        "To further expand processing capacities, Sona acquired an existing processing unit. Immediate modernization efforts were undertaken, incorporating cutting-edge technology and machinery for cotton processing. This acquisition aimed to meet increasing demand and uphold Sona’s commitment to quality.",
+      image: assets.aboutUs.journey.milestone6,
+    },
+    {
+      year: "2015",
+      title: "Expansion into Natural Fibers",
+      description:
+        "With a keen eye on market trends and growing consumer demand for natural fibers, Sona Group launched a cotton processing facility. This strategic move allowed the company to capture a significant share of the expanding cotton market, diversifying its product portfolio and reinforcing its market position.",
+      image: assets.aboutUs.journey.milestone7,
+    },
+    {
+      year: "1995",
+      title: "Establishing Sona Processors Ltd.",
+      description:
+        "Recognizing the need for superior processing capabilities, Subhash founded Sona Processors Ltd. in 1995. This unit specialized in PV and Polyester suiting’s and soon became the finest in its class, boasting a remarkable capacity of over 5 million meters per month. This achievement marked the beginning of Sona’s dominance in the textile processing industry.",
+      image: assets.aboutUs.journey.milestone8,
+    },
+    {
+      year: "2025",
+      title: "Future Prospects",
+      description:
+        "Looking ahead, Sona Group plans to add another weaving facility with a capacity of 1.8 million meters per month. Equipped with the latest sizing machines, this facility will enable seamless manufacturing of high-quality fabrics, meeting the evolving needs of global markets.",
+      image: assets.aboutUs.journey.milestone9,
     },
   ],
 };

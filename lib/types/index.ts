@@ -302,6 +302,19 @@ export interface PeopleCultureSection {
   image: string;
 }
 
+export interface JourneyMilestone {
+  year: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+export interface JourneySection {
+  badge: string;
+  title: string;
+  milestones: JourneyMilestone[];
+}
+
 export interface AboutUsPage {
   hero: AboutUsHeroSection;
   peopleCulture: PeopleCultureSection;
