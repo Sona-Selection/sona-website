@@ -111,25 +111,40 @@ export const uspsSection: USPsSection = {
     "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
   usps: [
     {
-      image: assets.about.card1,
-      title: "Faster MOQs",
+      image: assets.usp.card1,
+      title: "Consistent Premium Quality & Reliability",
       description:
-        "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry. At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
-      link: "#",
+        "At Sona, we maintain uncompromising quality through rigorous testing, controlled processes, and precise craftsmanship. Every fabric is produced with consistency, durability, and reliability in mind, ensuring that brands receive materials that meet global standards and uphold customer trust.",
     },
     {
-      image: assets.about.card2,
-      title: "End-to-End Supply Chain",
+      image: assets.usp.card2,
+      title: "On-Time & Efficient Delivery",
       description:
-        "Complete control from raw materials to finished products, ensuring quality at every step of the manufacturing process.",
-      link: "#",
+        "At Sona, our tightly coordinated supply chain allows us to deliver every order with exceptional punctuality. From sourcing to finishing, each step is planned for efficiency, enabling faster turnarounds and dependable delivery timelines that support brands in scaling production without delays.",
     },
     {
-      image: assets.capabilities.card1,
-      title: "Sustainable Innovation",
+      image: assets.usp.card3,
+      title: "End-to-End Vertically Integrated Manufacturing",
       description:
-        "Zero-waste approach with eco-friendly processes and certifications, contributing to a greener future for fashion.",
-      link: "#",
+        "We control the entire manufacturing journey under one roof—yarn sourcing, knitting, dyeing, processing, and finishing. This deep integration ensures superior quality, shorter lead times, and seamless communication, giving brands a reliable and fully optimized production ecosystem.",
+    },
+    {
+      image: assets.usp.card4,
+      title: "Experienced & Skilled Workforce",
+      description:
+        "Our team combines years of technical expertise with modern craftsmanship. Trained professionals oversee every stage of production, ensuring accuracy, consistency, and innovation. Their deep understanding of textiles allows us to maintain high standards and deliver exceptional results at scale.",
+    },
+    {
+      image: assets.usp.card5,
+      title: "Global Quality Standards Compliance",
+      description:
+        "We follow globally recognized certifications and quality protocols across all operations. Our facilities are equipped to meet international testing, safety, and sustainability benchmarks, ensuring every fabric we deliver adheres to strict global requirements and supports responsible sourcing.",
+    },
+    {
+      image: assets.usp.card6,
+      title: "Sustainability at Our Core",
+      description:
+        "Sustainability drives every decision—from responsible raw-material sourcing to energy-efficient processes and waste reduction. We invest in eco-friendly technologies and circular practices, enabling brands to create products that are better for people, better for the planet, and built for the future.",
     },
   ],
 };

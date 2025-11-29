@@ -210,6 +210,16 @@ export const localAssets = {
     card2: "/images/home/about/2.png",
   },
 
+  // USP section
+  usp: {
+    card1: "/images/home/usp/1.png",
+    card2: "/images/home/usp/2.png",
+    card3: "/images/home/usp/3.png",
+    card4: "/images/home/usp/4.png",
+    card5: "/images/home/usp/5.png",
+    card6: "/images/home/usp/6.png",
+  },
+
   // Capabilities section - object structure to match figmaAssets
   capabilities: {
     card1: "/images/home/capabilities/1.png",
