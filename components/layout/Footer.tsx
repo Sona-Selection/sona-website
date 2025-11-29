@@ -85,27 +85,27 @@ export default function Footer() {
               <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Yarn to Fabric
+                    Woven Fabrics
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Garmenting
+                    Speciality Weaves
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Quality & Testing
+                    Finished Fabrics
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    R&D + Sampling
+                    Product Applications
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Custom Applications
+                    Advanced Finishes
                   </Link>
                 </li>
               </ul>
@@ -117,27 +117,17 @@ export default function Footer() {
               <ul className="space-y-2.5 text-sm">
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    End-to-End Supply Chain
+                    Capacities
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Small Batch Production
+                    Technology
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    Sustainable Processing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Tech-Enabled Manufacturing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    On-Demand Scalability
+                    Gallery
                   </Link>
                 </li>
               </ul>
@@ -165,12 +155,12 @@ export default function Footer() {
                     href="/contact-us"
                     className="hover:text-white transition-colors"
                   >
-                    Contact
+                    Timeline
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
-                    FAQs
+                    Sustainability
                   </Link>
                 </li>
               </ul>
@@ -180,7 +170,7 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-medium mb-4">Resources</h3>
               <ul className="space-y-2.5 text-sm">
-                <li>
+                {/* <li>
                   <Link href="#" className="hover:text-white transition-colors">
                     Media Kit
                   </Link>
@@ -194,7 +184,7 @@ export default function Footer() {
                   <Link href="#" className="hover:text-white transition-colors">
                     Responsible Manufacturing
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <div>
                     <Link
