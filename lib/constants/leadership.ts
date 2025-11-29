@@ -15,8 +15,9 @@ export const leadershipData: LeadershipSection = {
       description:
         "Seasoned entrepreneur with over 35 years of experience in the textile industry. As Chairman of Sona Group, he oversees one of India's largest textile processing capacities, currently 12 million meters per month",
       image: assets.leadership.subhashImage,
+      aboutImage: assets.aboutUs.leadership.aboutSubhashImage,
       logo: assets.leadership.companyLogo,
-      linkedinUrl: "https://www.linkedin.com/in/subhash-nuwal",
+      linkedinUrl: "https://www.linkedin.com/",
     },
     {
       name: "Harshil Nuwal",
@@ -24,7 +25,8 @@ export const leadershipData: LeadershipSection = {
       description:
         "Under his guidance, Sona Group expanded its capabilities with a state-of-the-art textile weaving unit. With a vision for sustainable expansion, he spearheaded the establishment of a cutting-edge cotton fabrics processing plant, slated for completion in May 2024, positioning us as leaders in cotton fabric processing in India.",
       image: assets.leadership.harshilImage,
-      linkedinUrl: "https://www.linkedin.com/in/harshil-nuwal",
+      aboutImage: assets.aboutUs.leadership.aboutHarshilImage,
+      linkedinUrl: "https://www.linkedin.com/in/harshil-nuwal-75401321",
     },
     {
       name: "Deepank Bhandari",
@@ -32,7 +34,8 @@ export const leadershipData: LeadershipSection = {
       description:
         "Garnered over 4 years of comprehensive experience in Trading, Investment Banking and Private Equity across Europe, mastering the intricacies of global financial markets. Demonstrated over 9 years of adeptness in India's e-commerce landscape.",
       image: assets.leadership.deepankImage,
-      linkedinUrl: "https://www.linkedin.com/in/deepank-bhandari",
+      aboutImage: assets.aboutUs.leadership.aboutDeepankImage,
+      linkedinUrl: "https://www.linkedin.com/in/deepankbhandari",
     },
   ],
 };

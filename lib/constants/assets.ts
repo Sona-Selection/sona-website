@@ -177,9 +177,9 @@ export const localAssets = {
   investorRelations: {
     heroBackground: "/images/investor-relations/hero.png",
     boardBackground: "/images/investor-relations/board-background.jpg",
-    subhashImage: "/images/home/leadership/subash.png",
-    harshilImage: "/images/home/leadership/harshil.png",
-    deepankImage: "/images/home/leadership/deepank.png",
+    subhashImage: "/images/home/leadership/subhash.svg",
+    harshilImage: "/images/home/leadership/harshil.svg",
+    deepankImage: "/images/home/leadership/deepank.svg",
     companyLogo: "/images/investor-relations/company-logo.png",
   },
 
@@ -255,9 +255,9 @@ export const localAssets = {
   // Leadership section - object structure to match figmaAssets
   leadership: {
     background: "/images/home/leadership/bg.png",
-    subhashImage: "/images/home/leadership/subash.png",
-    harshilImage: "/images/home/leadership/harshil.png",
-    deepankImage: "/images/home/leadership/deepank.png",
+    subhashImage: "/images/home/leadership/subhash.svg",
+    harshilImage: "/images/home/leadership/harshil.svg",
+    deepankImage: "/images/home/leadership/deepank.svg",
     companyLogo: "/images/home/leadership/4.png",
   },
 
@@ -278,10 +278,13 @@ export const localAssets = {
     heroImage: "/images/about/hero-image.svg",
     peopleCultureImage: "/images/about/people-culture.png",
     leadership: {
-      backgroundBlur: "/images/home/leadership/bg.png",
-      subhashImage: "/images/home/leadership/subash.png",
-      harshilImage: "/images/home/leadership/harshil.png",
-      deepankImage: "/images/home/leadership/deepank.png",
+      // backgroundBlur: "/images/home/leadership/bg.png",
+      subhashImage: "/images/home/leadership/subhash.svg",
+      harshilImage: "/images/home/leadership/harshil.svg",
+      deepankImage: "/images/home/leadership/deepank.svg",
+      aboutSubhashImage: "/images/about/leadership/subhash.svg",
+      aboutHarshilImage: "/images/about/leadership/harshil.svg",
+      aboutDeepankImage: "/images/about/leadership/deepank.svg",
     },
     journey: {
       milestone1: "/images/about/journey/1.png",

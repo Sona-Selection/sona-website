@@ -69,10 +69,10 @@ export default function Footer() {
                 Call Sales
               </p>
               <a
-                href="tel:+919876543210"
+                href="tel:+919461341476"
                 className="text-lg font-medium hover:text-white transition-colors"
               >
-                +91 9876543210
+                +91 9461341476
               </a>
             </div>
           </div>

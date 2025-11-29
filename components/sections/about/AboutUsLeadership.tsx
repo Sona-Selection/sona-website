@@ -1,10 +1,10 @@
-import { LeadershipSection } from "@/lib/types";
-import Image from "next/image";
-import { colors } from "@/lib/theme/colors";
 import { Badge } from "@/components/ui/badge";
-import { Linkedin } from "lucide-react";
+import Image from "next/image";
+import { LeadershipSection } from "@/lib/types";
 import Link from "next/link";
-import { assets } from "@/lib/constants/assets";
+import { Linkedin } from "lucide-react";
+// import { assets } from "@/lib/constants/assets";
+import { colors } from "@/lib/theme/colors";
 
 interface AboutUsLeadershipProps {
   data: LeadershipSection;
@@ -16,7 +16,7 @@ interface AboutUsLeadershipProps {
  * @param {LeadershipSection} data - Leadership section content
  */
 export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
-  const backgroundBlurImage = assets.aboutUs.leadership.backgroundBlur;
+  // const backgroundBlurImage = assets.aboutUs.leadership.backgroundBlur;
 
   return (
     <section
@@ -60,7 +60,7 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
                   }`}
                 >
                   {/* Background Blur Image */}
-                  <div className="absolute inset-0 blur-[2.75px]">
+                  {/* <div className="absolute inset-0 blur-[2.75px]">
                     <Image
                       src={backgroundBlurImage}
                       alt=""
@@ -68,12 +68,12 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
                       className="object-cover"
                       aria-hidden="true"
                     />
-                  </div>
+                  </div> */}
                   {/* Main Member Image */}
                   <div className="absolute inset-0 flex items-end justify-center">
                     <div className="relative w-full h-full max-w-[487px] max-h-[454px]">
                       <Image
-                        src={member.image}
+                        src={member.aboutImage}
                         alt={member.name}
                         fill
                         className="object-contain object-bottom"
@@ -81,7 +81,7 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
                     </div>
                   </div>
                   {/* Gradient Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 h-[284px] bg-gradient-to-b from-transparent via-transparent to-black opacity-75" />
+                  {/* <div className="absolute bottom-0 left-0 right-0 h-[284px] bg-gradient-to-b from-transparent via-transparent to-black opacity-75" /> */}
                 </div>
 
                 {/* Content */}

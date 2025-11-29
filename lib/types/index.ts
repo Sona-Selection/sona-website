@@ -162,6 +162,7 @@ export interface TeamMember {
   role: string;
   description?: string;
   image: string;
+  aboutImage: string;
   logo?: string;
   linkedinUrl?: string;
 }

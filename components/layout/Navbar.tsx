@@ -83,12 +83,12 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
               return (
                 <div
                   key={item.label}
-                  className="relative"
+                  className="relative group"
                   onMouseEnter={() => setOpenDropdown(item.label)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <button
-                    className="text-base font-normal transition-colors flex items-center gap-1"
+                    className="text-base font-normal transition-colors flex items-center gap-1 py-2"
                     style={{ color: linkColor }}
                     onMouseEnter={(e) =>
                       (e.currentTarget.style.color = hoverColor)
@@ -104,42 +104,46 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                   {/* Dropdown Menu */}
                   {openDropdown === item.label && (
                     <div
-                      className="absolute top-full left-0 mt-2 min-w-[240px] rounded-lg shadow-lg py-2"
-                      style={{
-                        backgroundColor: colors.white,
-                        border: `1px solid ${colors.cream}`,
-                      }}
+                      className="absolute top-full left-0 pt-2"
                     >
-                      {item.items.map((subItem) => {
-                        const isSubActive = pathname === subItem.href;
-                        return (
-                          <Link
-                            key={subItem.href}
-                            href={subItem.href || "#"}
-                            className="block px-4 py-2.5 text-sm font-normal transition-colors"
-                            style={{
-                              color: isSubActive ? colors.primary : colors.navy,
-                              backgroundColor: isSubActive
-                                ? colors.cream
-                                : "transparent",
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor =
-                                colors.cream;
-                              e.currentTarget.style.color = colors.primary;
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor =
-                                isSubActive ? colors.cream : "transparent";
-                              e.currentTarget.style.color = isSubActive
-                                ? colors.primary
-                                : colors.navy;
-                            }}
-                          >
-                            {subItem.label}
-                          </Link>
-                        );
-                      })}
+                      <div
+                        className="min-w-[240px] rounded-lg shadow-lg py-2"
+                        style={{
+                          backgroundColor: colors.white,
+                          border: `1px solid ${colors.cream}`,
+                        }}
+                      >
+                        {item.items.map((subItem) => {
+                          const isSubActive = pathname === subItem.href;
+                          return (
+                            <Link
+                              key={subItem.href}
+                              href={subItem.href || "#"}
+                              className="block px-4 py-2.5 text-sm font-normal transition-colors"
+                              style={{
+                                color: isSubActive ? colors.primary : colors.navy,
+                                backgroundColor: isSubActive
+                                  ? colors.cream
+                                  : "transparent",
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.backgroundColor =
+                                  colors.cream;
+                                e.currentTarget.style.color = colors.primary;
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.backgroundColor =
+                                  isSubActive ? colors.cream : "transparent";
+                                e.currentTarget.style.color = isSubActive
+                                  ? colors.primary
+                                  : colors.navy;
+                              }}
+                            >
+                              {subItem.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
                     </div>
                   )}
                 </div>
