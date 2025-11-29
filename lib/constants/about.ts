@@ -97,38 +97,31 @@ export const aboutUsJourney: JourneySection = {
       image: assets.aboutUs.journey.milestone3,
     },
     {
-      year: "1995",
+      year: "2022",
       title: "Weaving Unit and Strategic Acquisitions",
       description:
         "In a year of significant growth, Sona Group made two pivotal advancements",
       image: assets.aboutUs.journey.milestone4,
     },
     {
-      year: "2015",
+      year: "",
       title: "Sona Styles Ltd.",
       description:
         "A state-of-the-art weaving unit equipped with brand new Airjet looms was established, with a capacity of 0.7 million meters per month. This addition enhanced Sona’s manufacturing capabilities, ensuring superior quality and efficiency.",
       image: assets.aboutUs.journey.milestone5,
     },
     {
-      year: "1995",
+      year: "",
       title: "Sona Selection (I) Ltd.",
       description:
         "To further expand processing capacities, Sona acquired an existing processing unit. Immediate modernization efforts were undertaken, incorporating cutting-edge technology and machinery for cotton processing. This acquisition aimed to meet increasing demand and uphold Sona’s commitment to quality.",
       image: assets.aboutUs.journey.milestone6,
     },
     {
-      year: "2015",
-      title: "Expansion into Natural Fibers",
+      year: "2024",
+      title: "Scaling New Heights",
       description:
-        "With a keen eye on market trends and growing consumer demand for natural fibers, Sona Group launched a cotton processing facility. This strategic move allowed the company to capture a significant share of the expanding cotton market, diversifying its product portfolio and reinforcing its market position.",
-      image: assets.aboutUs.journey.milestone7,
-    },
-    {
-      year: "1995",
-      title: "Establishing Sona Processors Ltd.",
-      description:
-        "Recognizing the need for superior processing capabilities, Subhash founded Sona Processors Ltd. in 1995. This unit specialized in PV and Polyester suiting’s and soon became the finest in its class, boasting a remarkable capacity of over 5 million meters per month. This achievement marked the beginning of Sona’s dominance in the textile processing industry.",
+        "The relentless pursuit of excellence led to the creation of a processing facility capable of handling about 10.15 million meters per month, with 5 million meters dedicated to cotton processing. This expansion solidified Sona’s position as a leader in the textile processing industry.",
       image: assets.aboutUs.journey.milestone8,
     },
     {
