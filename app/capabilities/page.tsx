@@ -26,13 +26,13 @@ export default function CapabilitiesPage() {
 
         <div className="py-10 mb-6">
           {/* SONA Processors Facilities Gallery */}
-          <FacilitiesGallery data={sonaProcessorsFacilities} />
+          {/* <FacilitiesGallery data={sonaProcessorsFacilities} /> */}
 
           {/* SONA Selection Facilities Gallery */}
           <FacilitiesGallery data={sonaSelectionFacilities} />
 
           {/* SONA Styles Facilities Gallery */}
-          <FacilitiesGallery data={sonaStylesFacilities} />
+          {/* <FacilitiesGallery data={sonaStylesFacilities} /> */}
         </div>
 
         {/* CTA Section */}
