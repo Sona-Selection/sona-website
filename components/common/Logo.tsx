@@ -33,9 +33,9 @@ const sizeConfig = {
 
 // Map icon variants to logo files
 const iconSources: Record<IconVariant, string> = {
-  default: "/Icons/logo.png",
-  white: "/Icons/logo-white.png",
-  orange: "/Icons/logo-orange.png",
+  default: "/Icons/logo-white.svg",
+  white: "/Icons/logo-white.svg",
+  orange: "/Icons/logo-orange.svg",
 };
 
 export default function Logo({

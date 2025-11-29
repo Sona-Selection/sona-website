@@ -16,21 +16,21 @@ interface CapabilitiesHeroProps {
 export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
   return (
     <section className="relative overflow-hidden">
-      {/* Top Section: Background Image + Centered Text */}
-      <div className="relative h-[500px] md:h-[600px] lg:h-[550px]">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src={data.backgroundImage}
-            alt="Manufacturing & Capabilities"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+      {/* Background Image for Entire Section */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/capabilties/hero/cover.png"
+          alt="Manufacturing & Capabilities"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-        {/* Centered Text Content */}
-        <div className="relative z-10 h-full flex items-center justify-center">
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Hero Text */}
+        <div className="pt-20 md:pt-24 lg:pt-40 pb-24 md:pb-32 lg:pb-40">
           <div className="container mx-auto px-6 lg:px-12 text-center">
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-serif leading-tight mb-4"
@@ -46,17 +46,9 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
             </p>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Section: Orange Gradient Background */}
-      <div
-        className="relative pb-16 md:pb-20 lg:pb-24 pt-20 md:pt-24 lg:pt-28"
-        style={{
-          background: `linear-gradient(to bottom, #FF8A5C 0%, #E5531F 100%)`,
-        }}
-      >
-        {/* Capacity Cards - Positioned to overlap the image/orange boundary */}
-        <div className="container mx-auto px-6 lg:px-12 -mt-40 md:-mt-48 lg:-mt-44 relative z-20">
+        {/* Capacity Cards */}
+        <div className="container mx-auto px-6 lg:px-12 relative z-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-20 md:mb-24 lg:mb-28">
             {data.capacityCards.map((card, index) => (
               <div
@@ -165,6 +157,9 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
             </div>
           </div>
         </div>
+
+        {/* Bottom Padding */}
+        <div className="pb-16 md:pb-20 lg:pb-24"></div>
       </div>
     </section>
   );
