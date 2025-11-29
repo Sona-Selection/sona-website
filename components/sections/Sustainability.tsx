@@ -46,7 +46,12 @@ export default function Sustainability({ data }: SustainabilityProps) {
     }, AUTO_ADVANCE_INTERVAL);
 
     return () => clearInterval(timer);
-  }, [data.features.length]);
+  }, [data.features.length, activeIndex]);
+
+  // Handle manual feature selection
+  const handleFeatureClick = (index: number) => {
+    setActiveIndex(index);
+  };
 
   return (
     <section
@@ -88,7 +93,8 @@ export default function Sustainability({ data }: SustainabilityProps) {
               {data.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex gap-6 md:gap-8 items-start mb-8 md:mb-10 transition-all duration-500"
+                  onClick={() => handleFeatureClick(index)}
+                  className="flex gap-6 md:gap-8 items-start mb-8 md:mb-10 transition-all duration-500 cursor-pointer hover:opacity-90"
                 >
                   {/* Vertical Line */}
                   <div className="hidden md:block w-1 h-24 relative shrink-0">

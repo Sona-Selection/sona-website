@@ -237,11 +237,11 @@ export const localAssets = {
   sustainability: {
     // Feature images for carousel (all use same image)
     waterConservation: "/images/home/sustainability/1.png",
-    energyEfficiency: "/images/home/sustainability/1.png",
-    emissionControl: "/images/home/sustainability/1.png",
-    wasteManagement: "/images/home/sustainability/main.jpg",
-    safeChemicals: "/images/home/sustainability/1.png",
-    sustainableMaterials: "/images/home/sustainability/1.png",
+    energyEfficiency: "/images/home/sustainability/2.png",
+    emissionControl: "/images/home/sustainability/3.png",
+    wasteManagement: "/images/home/sustainability/4.png",
+    // safeChemicals: "/images/home/sustainability/1.png",
+    // sustainableMaterials: "/images/home/sustainability/1.png",
     // Certification images
     cert1: "/images/home/certifications/1.png",
     cert2: "/images/home/certifications/2.png",

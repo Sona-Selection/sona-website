@@ -160,17 +160,17 @@ export const productsSection: ProductsSection = {
   mainImage: assets.products.mainImage,
   categories: [
     {
-      name: "Woven Fabrics ↗",
+      name: "Woven Fabrics",
       description:
         "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster",
     },
     {
-      name: "finished Fabrics ↗",
+      name: "finished Fabrics",
       description:
         "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
     },
     {
-      name: "Custom applications ↗",
+      name: "Custom applications",
       description:
         "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
     },
@@ -210,18 +210,6 @@ export const sustainabilitySection: SustainabilitySection = {
       description:
         "Fabric scrap recycling and reuse to reduce landfill impact with lean manufacturing to minimize process waste.",
       image: assets.sustainability.wasteManagement,
-    },
-    {
-      title: "Safe Chemical Usage",
-      description:
-        "Use of certified chemicals and eco-friendly auxiliaries with strict handling and disposal procedures.",
-      image: assets.sustainability.safeChemicals,
-    },
-    {
-      title: "Sustainable Materials",
-      description:
-        "Sourcing of organic, BCI, and recycled fibers with traceability programs and focus on low-impact dyes.",
-      image: assets.sustainability.sustainableMaterials,
     },
   ],
   certifications: [
