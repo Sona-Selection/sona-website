@@ -34,10 +34,32 @@ export default function USPs({ data }: USPsProps) {
 
     setCurrent(api.selectedScrollSnap());
 
-    api.on("select", () => {
+    const onSelect = () => {
       setCurrent(api.selectedScrollSnap());
-    });
+    };
+
+    api.on("select", onSelect);
+
+    // Cleanup event listener
+    return () => {
+      api.off("select", onSelect);
+    };
   }, [api]);
+
+  // Auto-scroll effect
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 5000); // Change slide every 5 seconds
+
+    // Cleanup interval
+    return () => clearInterval(intervalId);
+  }, [api]);
+
   return (
     <section className="bg-[#FFFBF0] py-16 md:py-24" data-figma-node="0:141">
       <div className="container mx-auto px-6 lg:px-12">
@@ -60,6 +82,7 @@ export default function USPs({ data }: USPsProps) {
           opts={{
             align: "start",
             loop: true,
+            duration: 30,
           }}
           className="w-full"
         >
