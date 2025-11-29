@@ -40,7 +40,10 @@ export default function Hero({ data }: HeroProps) {
         <div className="flex flex-col items-center text-center max-w-[964px] mx-auto gap-10 md:gap-[42px]">
           {/* Title and Subtitle */}
           <div className="flex flex-col items-center gap-4 md:gap-[19px] text-[#FFFBF0]">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-tight whitespace-pre-line">
+            <h1
+              className="text-4xl sm:text-5xl md:text-6xl font-normal leading-tight whitespace-pre-line"
+              style={{ fontFamily: "'Test Financier Display', serif" }}
+            >
               {data.title}
             </h1>
             <p className="mt-4 md:mt-0 text-base md:text-lg max-w-[561px] leading-relaxed">

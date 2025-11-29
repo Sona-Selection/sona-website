@@ -86,7 +86,7 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
               src={data.image}
               alt="Sona textile products - stacked colorful fabrics"
               fill
-              className="object-contain object-center"
+              className="object-contain object-center scale-110"
               priority
             />
           </div>

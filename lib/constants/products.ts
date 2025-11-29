@@ -1,7 +1,7 @@
 import {
-  ProductsHeroSection,
-  ProductCategorySection,
   AdvancedFinishesSection,
+  ProductCategorySection,
+  ProductsHeroSection,
 } from "@/lib/types";
 
 /**
@@ -26,19 +26,19 @@ export const wovenFabrics: ProductCategorySection = {
     "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
   products: [
     {
-      image: "/images/products/woven_fabrics/1.png",
+      image: "/images/products/woven_fabrics/1.svg",
       title: "100% Cotton Fabrics",
     },
     {
-      image: "/images/products/woven_fabrics/2.png",
+      image: "/images/products/woven_fabrics/2.svg",
       title: "Cotton Blends",
     },
     {
-      image: "/images/products/woven_fabrics/3.png",
+      image: "/images/products/woven_fabrics/3.svg",
       title: "100% Polyester Fabrics",
     },
     {
-      image: "/images/products/woven_fabrics/4.png",
+      image: "/images/products/woven_fabrics/4.svg",
       title: "Polyester Blends",
     },
   ],
@@ -53,15 +53,15 @@ export const specialityWeaves: ProductCategorySection = {
     "At Sona, we own the entire supply chain, from yarn sourcing to finished garments. We deliver faster turnarounds, smaller MOQs, and sustainable innovation for the fashion industry.",
   products: [
     {
-      image: "/images/products/speciality_weaves/1.png",
+      image: "/images/products/speciality_weaves/1.svg",
       title: "TWILLS, GABARDINES, AND BROKEN TWILL",
     },
     {
-      image: "/images/products/speciality_weaves/2.png",
+      image: "/images/products/speciality_weaves/2.svg",
       title: "DUCKS, PLAIN TUSSIOR, AND DOBBY",
     },
     {
-      image: "/images/products/speciality_weaves/3.png",
+      image: "/images/products/speciality_weaves/3.svg",
       title: "CORD, OTTOMAN, AND MORE TWILL",
     },
   ],
@@ -75,15 +75,15 @@ export const finishedFabrics: ProductCategorySection = {
     "We offer a complete range of Ready for Dye (RFD) and dyed fabrics made from 100% cotton and blends, designed for the fashion, apparel, and work wear industries.",
   products: [
     {
-      image: "/images/products/finished_fabrics/1.png",
+      image: "/images/products/finished_fabrics/1.svg",
       title: "100% Cotton And Cotton Spandex Fabrics",
     },
     {
-      image: "/images/products/finished_fabrics/2.png",
+      image: "/images/products/finished_fabrics/2.svg",
       title: "100% Polyester And PV Fabrics",
     },
     {
-      image: "/images/products/finished_fabrics/3.png",
+      image: "/images/products/finished_fabrics/3.svg",
       title: "RFD, Bleached, And Dyed Fabrics",
     },
   ],

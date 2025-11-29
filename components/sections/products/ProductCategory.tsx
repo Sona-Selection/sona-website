@@ -74,7 +74,7 @@ export default function ProductCategory({ data }: ProductCategoryProps) {
             </p>
 
             {/* View All Button - Conditional */}
-            {data.showViewAll && (
+            {/* {data.showViewAll && (
               <Button
                 asChild
                 variant="secondary"
@@ -83,7 +83,7 @@ export default function ProductCategory({ data }: ProductCategoryProps) {
               >
                 <Link href={data.viewAllHref || "/"}>View All</Link>
               </Button>
-            )}
+            )} */}
           </div>
 
           {/* Right Column - Products Carousel */}
@@ -126,13 +126,13 @@ export default function ProductCategory({ data }: ProductCategoryProps) {
                           </h3>
 
                           {/* VIEW Link */}
-                          <Link
+                          {/* <Link
                             href="/"
                             className="text-sm font-medium tracking-wider transition-opacity hover:opacity-80 underline"
                             style={{ color: colors.white }}
                           >
                             VIEW
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>

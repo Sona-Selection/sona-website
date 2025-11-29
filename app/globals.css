@@ -141,6 +141,25 @@
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 
+/* Custom Font - Test Financier Display */
+@font-face {
+  font-family: 'Test Financier Display';
+  src: url('/fonts/TestFinancierDisplay-Regular.woff2') format('woff2'),
+       url('/fonts/TestFinancierDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Test Financier Display';
+  src: url('/fonts/TestFinancierDisplay-Medium.woff2') format('woff2'),
+       url('/fonts/TestFinancierDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
