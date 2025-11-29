@@ -38,18 +38,18 @@ export const ipoCorner: IPOCornerSection = {
       title: "Draft Red Herring Prospectus (DRHP)",
       href: "#",
     },
-    {
-      title: "Red Herring Prospectus (RHP)",
-      href: "#",
-    },
-    {
-      title: "Addendum",
-      href: "#",
-    },
-    {
-      title: "Final Prospectus",
-      href: "#",
-    },
+    // {
+    //   title: "Red Herring Prospectus (RHP)",
+    //   href: "#",
+    // },
+    // {
+    //   title: "Addendum",
+    //   href: "#",
+    // },
+    // {
+    //   title: "Final Prospectus",
+    //   href: "#",
+    // },
   ],
   ctaLabel: "Access All IPO Documents",
   ctaHref: "#",

@@ -254,6 +254,6 @@ export { leadershipSection } from "./leadership";
 export const ctaSection: CTASection = {
   title: "Let's build the future of fabric together",
   ctaLabel: "Contact us",
-  ctaHref: "/contact-us",
+  ctaHref: "mailto:info@sonaselection.com",
   backgroundImage: "/images/common/banner.png",
 };

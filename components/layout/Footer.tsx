@@ -32,7 +32,9 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-medium mb-2">Contact Us</h3>
+              <h3 className="text-lg font-medium mb-2">
+                <a href="mailto:info@sonaselection.com">CONTACT US</a>
+              </h3>
               <p
                 className="text-sm opacity-80 mb-4"
                 style={{ color: colors.cream }}

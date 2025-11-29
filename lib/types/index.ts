@@ -1,6 +1,7 @@
 export interface NavItem {
   label: string;
-  href: string;
+  href?: string;
+  items?: NavItem[];
 }
 
 export interface SocialLink {
