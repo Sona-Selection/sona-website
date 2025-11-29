@@ -77,6 +77,8 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
                         alt={member.name}
                         fill
                         className="object-contain object-bottom"
+                        priority={index === 0}
+                        quality={90}
                       />
                     </div>
                   </div>

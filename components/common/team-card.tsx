@@ -72,6 +72,8 @@ export default function TeamCard({ member, className }: TeamCardProps) {
               fill
               className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              priority
+              quality={90}
             />
           </div>
 
