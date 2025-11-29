@@ -57,7 +57,13 @@ export const capabilitiesHero: CapabilitiesHeroSection = {
 /**
  * Placeholder image path - Update with actual images later
  */
-const PLACEHOLDER_IMAGE = "/images/capabilties/sections/1.png";
+
+const PLACEHOLDER_IMAGE1 = "/images/capabilties/sections/1.svg";
+const PLACEHOLDER_IMAGE2 = "/images/capabilties/sections/2.svg";
+const PLACEHOLDER_IMAGE3 = "/images/capabilties/sections/3.svg";
+const PLACEHOLDER_IMAGE4 = "/images/capabilties/sections/4.svg";
+const PLACEHOLDER_IMAGE5 = "/images/capabilties/sections/5.svg";
+const PLACEHOLDER_IMAGE6 = "/images/capabilties/sections/6.svg";
 
 /**
  * SONA Processors Facilities Gallery Data
@@ -67,27 +73,27 @@ export const sonaProcessorsFacilities: FacilitiesGallerySection = {
   heading: "SONA PROCESSORS",
   images: [
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE1,
       label: "FABRIC TENSILE STRENGTH TESTING",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE2,
       label: "FABRIC QUALITY INSPECTION",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE3,
       label: "AUTOMATED QUALITY CONTROL",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE4,
       label: "LATEST INFRASTRUCTURE",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE5,
       label: "COLOURFASTNESS AND WASH TEST",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE6,
       label: "IN-HOUSE LAB LAUNDERING",
     },
   ],
@@ -101,27 +107,27 @@ export const sonaSelectionFacilities: FacilitiesGallerySection = {
   heading: "SONA SELECTION",
   images: [
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE1,
       label: "WEAVING TECHNOLOGY",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE2,
       label: "FABRIC INSPECTION",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE3,
       label: "QUALITY ASSURANCE",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE4,
       label: "PRODUCTION FLOOR",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE5,
       label: "TEXTILE PROCESSING",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE6,
       label: "FINISHING DEPARTMENT",
     },
   ],
@@ -135,27 +141,27 @@ export const sonaStylesFacilities: FacilitiesGallerySection = {
   heading: "SONA STYLES",
   images: [
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE1,
       label: "CUTTING SECTION",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE2,
       label: "SEWING OPERATIONS",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE3,
       label: "GARMENT ASSEMBLY",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE4,
       label: "FINISHING & PRESSING",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE5,
       label: "QUALITY CHECK",
     },
     {
-      image: PLACEHOLDER_IMAGE,
+      image: PLACEHOLDER_IMAGE6,
       label: "PACKAGING UNIT",
     },
   ],
