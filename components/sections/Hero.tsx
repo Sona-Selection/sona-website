@@ -15,7 +15,7 @@ interface HeroProps {
 export default function Hero({ data }: HeroProps) {
   return (
     <section
-      className="relative min-h-[991px] flex items-center justify-center overflow-hidden bg-[#FFFBF0]"
+      className="relative min-h-[97vh] flex items-center justify-center overflow-hidden bg-[#FFFBF0]"
       data-figma-node="0:4"
     >
       {/* Background Image */}
@@ -63,7 +63,7 @@ export default function Hero({ data }: HeroProps) {
                   </Link>
                 </Button>
               )}
-              {data.secondaryCTA && (
+              {/* {data.secondaryCTA && (
                 <Button
                   asChild
                   variant="outline"
@@ -74,12 +74,12 @@ export default function Hero({ data }: HeroProps) {
                     {data.secondaryCTA.label}
                   </Link>
                 </Button>
-              )}
+              )} */}
             </div>
           )}
 
           {/* Video Link */}
-          {data.videoLink && (
+          {/* {data.videoLink && (
             <div className="mt-4">
               <Link
                 href={data.videoLink}
@@ -88,7 +88,7 @@ export default function Hero({ data }: HeroProps) {
                 Watch 1-min Intro Video
               </Link>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </section>

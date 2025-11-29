@@ -46,6 +46,7 @@ export const trustedBrands: Brand[] = [
   { name: "Brand 9", logo: assets.brands.brand9 },
   { name: "Brand 10", logo: assets.brands.brand10 },
   { name: "Brand 11", logo: assets.brands.brand11 },
+  { name: "Brand 12", logo: assets.brands.brand12 },
 ];
 
 /**

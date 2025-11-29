@@ -196,11 +196,12 @@ export const localAssets = {
     brand4: "/images/home/brands/4.png",
     brand5: "/images/home/brands/5.png",
     brand6: "/images/home/brands/6.png",
-    brand7: "/images/home/brands/brand-7.png",
-    brand8: "/images/home/brands/brand-8.png",
-    brand9: "/images/home/brands/brand-9.png",
-    brand10: "/images/home/brands/brand-10.png",
-    brand11: "/images/home/brands/brand-11.png",
+    brand7: "/images/home/brands/7.png",
+    brand8: "/images/home/brands/8.png",
+    brand9: "/images/home/brands/9.png",
+    brand10: "/images/home/brands/10.png",
+    brand11: "/images/home/brands/11.png",
+    brand12: "/images/home/brands/12.png",
   },
 
   // About section

@@ -13,9 +13,6 @@ interface TrustedBrandsProps {
  * @param {Brand[]} brands - Array of brand logos to display
  */
 export default function TrustedBrands({ brands }: TrustedBrandsProps) {
-  // Duplicate brands for seamless infinite loop
-  const duplicatedBrands = [...brands, ...brands];
-
   return (
     <section
       className="bg-[#FFFBF0] py-12 md:py-16 overflow-hidden"
@@ -33,17 +30,33 @@ export default function TrustedBrands({ brands }: TrustedBrandsProps) {
         </div>
 
         {/* Infinite Marquee */}
-        <div className="relative overflow-hidden">
-          <div className="flex gap-12 md:gap-16 lg:gap-20 animate-marquee hover:pause">
-            {duplicatedBrands.map((brand, index) => (
+        <div className="relative w-full">
+          <div className="flex animate-marquee" style={{ width: 'max-content' }}>
+            {/* First set of brands */}
+            {brands.map((brand, index) => (
               <div
-                key={index}
-                className="flex-shrink-0 flex items-center justify-center h-20 md:h-24 w-32 md:w-40"
+                key={`set1-${index}`}
+                className="flex-shrink-0 flex items-center justify-center h-20 md:h-24 w-32 md:w-40 mx-5 md:mx-7"
               >
                 <Image
                   src={brand.logo}
                   alt={brand.name}
-                  width={150}
+                  width={140}
+                  height={90}
+                  className="object-contain max-w-full max-h-full opacity-70 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            ))}
+            {/* Second set of brands for seamless loop */}
+            {brands.map((brand, index) => (
+              <div
+                key={`set2-${index}`}
+                className="flex-shrink-0 flex items-center justify-center h-20 md:h-24 w-32 md:w-40 mx-5 md:mx-7"
+              >
+                <Image
+                  src={brand.logo}
+                  alt={brand.name}
+                  width={140}
                   height={90}
                   className="object-contain max-w-full max-h-full opacity-70 hover:opacity-100 transition-opacity"
                 />
@@ -64,7 +77,7 @@ export default function TrustedBrands({ brands }: TrustedBrandsProps) {
         }
 
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 18s linear infinite;
         }
 
         .animate-marquee:hover {
@@ -73,7 +86,7 @@ export default function TrustedBrands({ brands }: TrustedBrandsProps) {
 
         @media (max-width: 768px) {
           .animate-marquee {
-            animation-duration: 30s;
+            animation-duration: 22s;
           }
         }
       `}</style>
