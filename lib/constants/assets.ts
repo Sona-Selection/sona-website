@@ -177,6 +177,7 @@ export const localAssets = {
   investorRelations: {
     heroBackground: "/images/investor-relations/hero.png",
     boardBackground: "/images/investor-relations/board-background.jpg",
+    subhashImage: "/images/home/leadership/subash.png",
     harshilImage: "/images/home/leadership/harshil.png",
     deepankImage: "/images/home/leadership/deepank.png",
     companyLogo: "/images/investor-relations/company-logo.png",
@@ -253,9 +254,10 @@ export const localAssets = {
 
   // Leadership section - object structure to match figmaAssets
   leadership: {
-    member1: "/images/home/leadership/1.png",
-    member2: "/images/home/leadership/harshil.png",
-    member3: "/images/home/leadership/deepank.png",
+    background: "/images/home/leadership/bg.png",
+    subhashImage: "/images/home/leadership/subash.png",
+    harshilImage: "/images/home/leadership/harshil.png",
+    deepankImage: "/images/home/leadership/deepank.png",
     companyLogo: "/images/home/leadership/4.png",
   },
 
@@ -276,10 +278,10 @@ export const localAssets = {
     heroImage: "/images/about/hero-image.jpg",
     peopleCultureImage: "/images/about/people-culture.png",
     leadership: {
-      backgroundBlur: "/images/about/leadership-background-blur.png",
-      subhashImage: "/images/about/leadership-subhash.png",
-      harshilImage: "/images/about/leadership-harshil.png",
-      deepankImage: "/images/about/leadership-deepank.png",
+      backgroundBlur: "/images/home/leadership/bg.png",
+      subhashImage: "/images/home/leadership/subash.png",
+      harshilImage: "/images/home/leadership/harshil.png",
+      deepankImage: "/images/home/leadership/deepank.png",
     },
     journey: {
       milestone1: "/images/about/journey/1.png",

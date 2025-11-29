@@ -70,13 +70,13 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
                     />
                   </div>
                   {/* Main Member Image */}
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-end justify-center">
                     <div className="relative w-full h-full max-w-[487px] max-h-[454px]">
                       <Image
                         src={member.image}
                         alt={member.name}
                         fill
-                        className="object-cover"
+                        className="object-contain object-bottom"
                       />
                     </div>
                   </div>
