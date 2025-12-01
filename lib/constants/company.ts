@@ -1,7 +1,7 @@
 import { CompanyInfo, FooterSection, SocialLink } from "@/lib/types";
 
 export const companyInfo: CompanyInfo = {
-  name: "Sonaselection India Limited",
+  name: "Sona",
   tagline: "Excellence in Textile Manufacturing",
   description:
     "Leading textile and fabric manufacturer based in Bhilwara, Rajasthan. Specializing in high-quality textile production and finishing services with a commitment to innovation and quality.",
