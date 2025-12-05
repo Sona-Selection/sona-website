@@ -9,21 +9,21 @@ export const capabilitiesHero: CapabilitiesHeroSection = {
     "Our capabilities cover the full spectrum of textile manufacturing delivering agility, precision, and quality at every stage.",
   backgroundImage: "/images/capabilties/hero/cover.png",
   capacityCards: [
-    {
-      label: "SONA PROCESSORS",
-      value: "5M Meters/Month",
-      image: "/images/capabilties/hero/1.png",
-    },
+    // {
+    //   label: "SONA PROCESSORS",
+    //   value: "5M Meters/Month",
+    //   image: "/images/capabilties/hero/1.png",
+    // },
     {
       label: "SONA SELECTION",
       value: "6.5M Meters/Month",
       image: "/images/capabilties/hero/2.png",
     },
-    {
-      label: "SONA STYLES",
-      value: "2M Meters/Month",
-      image: "/images/capabilties/hero/3.png",
-    },
+    // {
+    //   label: "SONA STYLES",
+    //   value: "2M Meters/Month",
+    //   image: "/images/capabilties/hero/3.png",
+    // },
   ],
   qualityLab: {
     badge: "STATE OF THE ART",

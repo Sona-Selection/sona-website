@@ -20,14 +20,14 @@ export default function PeopleCulture({ data }: PeopleCultureProps) {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left: Image */}
-          <div className="relative h-[300px] md:h-[400px] lg:h-[400px] rounded-lg overflow-hidden order-2 lg:order-1">
+          {/* <div className="relative h-[300px] md:h-[400px] lg:h-[400px] rounded-lg overflow-hidden order-2 lg:order-1">
             <Image
               src={data.image}
               alt="Sona factory and team"
               fill
               className="object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Right: Content */}
           <div className="flex flex-col gap-6 md:gap-8 order-1 lg:order-2">

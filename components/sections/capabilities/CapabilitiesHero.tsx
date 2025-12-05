@@ -49,7 +49,7 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
 
         {/* Capacity Cards */}
         <div className="container mx-auto px-6 lg:px-12 relative z-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-20 md:mb-24 lg:mb-28">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-20 md:mb-24 lg:mb-28">
             {data.capacityCards.map((card, index) => (
               <div
                 key={index}
@@ -126,7 +126,7 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
           </div>
 
           {/* Facilities Section */}
-          <div
+          {/* <div
             className="rounded-2xl p-8 md:p-12 lg:p-16"
             style={{ backgroundColor: "rgba(255, 224, 204, 0.6)" }}
           >
@@ -136,7 +136,6 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
                   key={index}
                   className="flex flex-col items-center text-center"
                 >
-                  {/* Facility Logo */}
                   <div className="relative w-full h-[80px] md:h-[100px] mb-4">
                     <Image
                       src={facility.logo}
@@ -145,7 +144,7 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
                       className="object-contain"
                     />
                   </div>
-                  {/* Facility Name and Country */}
+
                   <p
                     className="text-base md:text-lg font-medium"
                     style={{ color: colors.navy }}
@@ -155,7 +154,7 @@ export default function CapabilitiesHero({ data }: CapabilitiesHeroProps) {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Padding */}
