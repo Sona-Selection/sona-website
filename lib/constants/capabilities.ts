@@ -16,7 +16,7 @@ export const capabilitiesHero: CapabilitiesHeroSection = {
     // },
     {
       label: "SONA SELECTION",
-      value: "6.5M Meters/Month",
+      value: "82.44M Meters per annum",
       image: "/images/capabilties/hero/2.png",
     },
     // {
