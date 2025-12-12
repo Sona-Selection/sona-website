@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 import { IPOCornerSection } from "@/lib/types";
-import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 interface IPOCornerProps {
@@ -33,9 +33,10 @@ export default function IPOCorner({ data }: IPOCornerProps) {
               </p>
               <Link
                 href={doc.href}
+                download={true}
                 className="group inline-flex items-center gap-1 text-sm md:text-base text-[#022050] hover:text-[#FF6333] transition-colors w-fit"
               >
-                <span className="border-b border-current">
+                <span className="font-semibold">
                   {index === 0
                     ? "Download PDF"
                     : index === 1
@@ -44,7 +45,7 @@ export default function IPOCorner({ data }: IPOCornerProps) {
                     ? "View Addenda"
                     : "Download"}
                 </span>
-                <ExternalLink className="w-4 h-4 shrink-0" />
+                <Download className="w-4 h-4 shrink-0" />
               </Link>
             </div>
           ))}

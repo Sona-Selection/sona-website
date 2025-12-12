@@ -36,7 +36,7 @@ export const ipoCorner: IPOCornerSection = {
   documents: [
     {
       title: "Draft Red Herring Prospectus (DRHP)",
-      href: "#",
+      href: "/docs/investor-relations/DRHP.pdf",
     },
     // {
     //   title: "Red Herring Prospectus (RHP)",

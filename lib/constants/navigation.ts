@@ -1,97 +1,99 @@
-import { NavItem } from '@/lib/types';
+import { NavItem } from "@/lib/types";
 
 export const navigationItems: NavItem[] = [
   {
-    label: 'About Us',
-    href: '/about-us',
+    label: "About Us",
+    href: "/about-us",
   },
   {
-    label: 'Capabilities',
-    href: '/capabilities',
+    label: "Capabilities",
+    href: "/capabilities",
   },
   {
-    label: 'Products',
-    href: '/products',
+    label: "Products",
+    href: "/products",
   },
   {
-    label: 'Investor Relations',
-    href: '/investor-relations',
+    label: "Investor Relations",
+    href: "/investor-relations",
     items: [
       {
-        label: 'Corporate Governance',
+        label: "Corporate Governance",
         items: [
           {
-            label: 'Board & KMP',
-            href: '/investor-relations#board',
+            label: "Board & KMP",
+            href: "/investor-relations#board",
           },
           {
-            label: 'Independent Directors',
+            label: "Independent Directors",
             items: [
               {
-                label: 'Code of Conduct of Independent Directors',
-                href: '/investor-relations#code-of-conduct',
+                label: "Code of Conduct of Independent Directors",
+                href: "/investor-relations#code-of-conduct",
               },
               {
-                label: 'Terms and conditions for appointment of Independent Directors',
-                href: '/investor-relations#terms-conditions',
+                label:
+                  "Terms and conditions for appointment of Independent Directors",
+                href: "/investor-relations#terms-conditions",
               },
               {
-                label: 'Familiarization Programme Policy',
-                href: '/investor-relations#familiarization',
+                label: "Familiarization Programme Policy",
+                href: "/investor-relations#familiarization",
               },
             ],
           },
           {
-            label: 'Committee Compositions',
-            href: '/investor-relations#committees',
+            label: "Committee Compositions",
+            href: "/investor-relations#committees",
           },
           {
-            label: 'Disclosure under Regulation 46 of SEBI (LODR) Regulations, 2015',
-            href: '/investor-relations#disclosure-regulation-46',
+            label:
+              "Disclosure under Regulation 46 of SEBI (LODR) Regulations, 2015",
+            href: "/investor-relations#disclosure-regulation-46",
           },
         ],
       },
       {
-        label: 'IPO Documents',
+        label: "IPO Documents",
         items: [
           {
-            label: 'Draft Red Herring Prospectus (DRHP)',
-            href: '/investor-relations#drhp',
+            label: "Draft Red Herring Prospectus (DRHP)",
+            href: "/investor-relations#drhp",
           },
           {
-            label: 'DRHP AV',
-            href: '/investor-relations#drhp-av',
+            label: "DRHP AV",
+            href: "/investor-relations#drhp-av",
           },
         ],
       },
       {
-        label: 'Policies & Others',
-        href: '/investor-relations#policies',
+        label: "Policies & Others",
+        href: "/investor-relations#policies",
       },
       {
-        label: 'Investors Information',
+        label: "Investors Information",
         items: [
           {
-            label: 'Financial Results',
-            href: '/investor-relations#financial-results',
+            label: "Financial Results",
+            href: "/investor-relations#financial-results",
           },
           {
-            label: 'Annual Reports',
-            href: '/investor-relations#annual-reports',
+            label: "Annual Reports",
+            href: "/investor-relations#annual-reports",
           },
           {
-            label: 'Group Company',
-            href: '/investor-relations#group-company',
+            label: "Group Company",
+            href: "/investor-relations#group-company",
           },
           {
-            label: 'Shareholding Pattern',
-            href: '/investor-relations#shareholding-pattern',
+            label: "Shareholding Pattern",
+            href: "/investor-relations#shareholding-pattern",
           },
         ],
       },
       {
-        label: 'Material Contracts & Documents',
-        href: '/investor-relations#material-contracts',
+        label: "Material Contracts & Documents",
+        href: "/investor-relations#material-contracts",
       },
     ],
   },
