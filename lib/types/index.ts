@@ -398,3 +398,73 @@ export interface FacilitiesGallerySection {
   heading: string;
   images: FacilityImage[];
 }
+
+// Metadata & SEO Types
+
+export interface OpenGraphImage {
+  url: string;
+  width: number;
+  height: number;
+  alt: string;
+}
+
+export interface OpenGraphMetadata {
+  type: string;
+  locale: string;
+  url: string;
+  siteName: string;
+  title: string;
+  description: string;
+  images: OpenGraphImage[];
+}
+
+export interface TwitterMetadata {
+  card: string;
+  title: string;
+  description: string;
+  images: string[];
+}
+
+export interface PageMetadata {
+  title: string;
+  description: string;
+  keywords: string[];
+  openGraph: OpenGraphMetadata;
+  twitter: TwitterMetadata;
+}
+
+export interface SiteMetadata {
+  siteUrl: string;
+  siteName: string;
+  locale: string;
+  defaultOgImage: string;
+}
+
+export interface StructuredDataOrganization {
+  "@context": string;
+  "@type": string;
+  name: string;
+  description: string;
+  url: string;
+  logo: string;
+  email: string;
+  telephone: string;
+  address: {
+    "@type": string;
+    streetAddress: string;
+    addressLocality: string;
+    addressRegion: string;
+    postalCode: string;
+    addressCountry: string;
+  };
+  sameAs: string[];
+}
+
+export interface StructuredDataLocalBusiness extends StructuredDataOrganization {
+  "@type": "LocalBusiness";
+  geo?: {
+    "@type": "GeoCoordinates";
+    latitude: number;
+    longitude: number;
+  };
+}

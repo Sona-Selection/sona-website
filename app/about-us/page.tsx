@@ -15,6 +15,20 @@ import OurJourney from "@/components/sections/about/OurJourney";
 import PeopleCulture from "@/components/sections/about/PeopleCulture";
 import Values from "@/components/sections/about/Values";
 import { ctaSection } from "@/lib/constants/home";
+import { pageMetadata } from "@/lib/constants/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: pageMetadata.aboutUs.title,
+  description: pageMetadata.aboutUs.description,
+  keywords: pageMetadata.aboutUs.keywords,
+  openGraph: {
+    ...pageMetadata.aboutUs.openGraph,
+  },
+  twitter: {
+    ...pageMetadata.aboutUs.twitter,
+  },
+};
 
 /**
  * About Us Page

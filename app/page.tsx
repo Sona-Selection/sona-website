@@ -21,6 +21,20 @@ import TrustedBrands from "@/components/sections/TrustedBrands";
 import USPs from "@/components/sections/USPs";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { pageMetadata } from "@/lib/constants/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: pageMetadata.home.title,
+  description: pageMetadata.home.description,
+  keywords: pageMetadata.home.keywords,
+  openGraph: {
+    ...pageMetadata.home.openGraph,
+  },
+  twitter: {
+    ...pageMetadata.home.twitter,
+  },
+};
 
 /**
  * Home Page

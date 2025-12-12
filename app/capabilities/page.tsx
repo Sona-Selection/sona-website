@@ -11,6 +11,20 @@ import FacilitiesGallery from "@/components/sections/capabilities/FacilitiesGall
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { ctaSection } from "@/lib/constants/home";
+import { pageMetadata } from "@/lib/constants/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: pageMetadata.capabilities.title,
+  description: pageMetadata.capabilities.description,
+  keywords: pageMetadata.capabilities.keywords,
+  openGraph: {
+    ...pageMetadata.capabilities.openGraph,
+  },
+  twitter: {
+    ...pageMetadata.capabilities.twitter,
+  },
+};
 
 /**
  * Capabilities (Manufacturing and Capabilities) Page

@@ -18,11 +18,19 @@ import {
   otherDisclosures,
 } from "@/lib/constants/investor-relations";
 import { ctaSection } from "@/lib/constants/home";
+import { pageMetadata } from "@/lib/constants/metadata";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Investor Relations | Sona",
-  description:
-    "Welcome to the Investor Relations portal of Sona Selections. Access financial documents, disclosures, policies, and governance updates.",
+export const metadata: Metadata = {
+  title: pageMetadata.investorRelations.title,
+  description: pageMetadata.investorRelations.description,
+  keywords: pageMetadata.investorRelations.keywords,
+  openGraph: {
+    ...pageMetadata.investorRelations.openGraph,
+  },
+  twitter: {
+    ...pageMetadata.investorRelations.twitter,
+  },
 };
 
 /**

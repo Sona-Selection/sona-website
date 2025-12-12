@@ -15,6 +15,20 @@ import ProductsHero from "@/components/sections/products/ProductsHero";
 import AdvancedFinishes from "@/components/sections/products/AdvancedFinishes";
 import { colors } from "@/lib/theme/colors";
 import { ctaSection } from "@/lib/constants/home";
+import { pageMetadata } from "@/lib/constants/metadata";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: pageMetadata.products.title,
+  description: pageMetadata.products.description,
+  keywords: pageMetadata.products.keywords,
+  openGraph: {
+    ...pageMetadata.products.openGraph,
+  },
+  twitter: {
+    ...pageMetadata.products.twitter,
+  },
+};
 
 /**
  * Products Page
