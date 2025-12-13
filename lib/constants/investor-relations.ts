@@ -299,6 +299,34 @@ export const boardMembers: BoardMember[] = [
     name: "Mr. Harshil Nuwal",
     category: "Managing Director",
   },
+  {
+    name: "Mr. Subhash Chandra Nuwal",
+    category: "Non-executive Director and Chairman",
+  },
+  {
+    name: "Ms. Uma Nuwal",
+    category: "Whole-time Director",
+  },
+  {
+    name: "Ms. Aditi Kakhani",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Kanhaiya Lal Acharya",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Kamlesh Kumar Choudhary",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Ramesh Chandra Vyas",
+    category: "Chief Financial Officer",
+  },
+  {
+    name: "Mr. Harish Sharma",
+    category: "Company Secretary & Compliance Officer",
+  },
 ];
 
 export const committees: Committee[] = [
@@ -311,6 +339,24 @@ export const committees: Committee[] = [
         position: "Chairperson",
         designation: "Independent Director",
       },
+      {
+        srNo: 3,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Kamlesh Kumar Choudhary",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 4,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
     ],
   },
   {
@@ -322,15 +368,71 @@ export const committees: Committee[] = [
         position: "Chairperson",
         designation: "Independent Director",
       },
+      {
+        srNo: 2,
+        name: "Kanahiya Lal Acharya",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Subhash Chandra Nuwal",
+        position: "Member",
+        designation: "Non-Executive Director & Non- Independent Director",
+      },
     ],
   },
   {
     title: "Stakeholders' Relationship Committee",
-    members: [],
+    members: [
+      {
+        srNo: 1,
+        name: "Kamlesh Kumar Choudhary",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 2,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Subhash Chandra Nuwal",
+        position: "Member",
+        designation: "Non-Executive Director & Non- Independent Director",
+      },
+      {
+        srNo: 4,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
+    ],
   },
   {
     title: "Corporate Social Responsibility Committee",
-    members: [],
+    members: [
+      {
+        srNo: 1,
+        name: "Uma Nuwal",
+        position: "Chairperson",
+        designation: "Whole-time Director",
+      },
+      {
+        srNo: 2,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
+      {
+        srNo: 3,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+    ],
   },
 ];
 
@@ -338,12 +440,15 @@ export const regulation46Disclosures: DisclosureDocument[] = [
   {
     srNo: 1,
     description: "Code of Conduct for Board of Directors and Senior Management",
-    fileName: "1. Code of conduct for Board of Directors and Senior Management.pdf",
+    fileName:
+      "1. Code of conduct for Board of Directors and Senior Management.pdf",
   },
   {
     srNo: 2,
-    description: "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
-    fileName: "2. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+    description:
+      "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName:
+      "2. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
   },
   {
     srNo: 3,
@@ -367,8 +472,10 @@ export const regulation46Disclosures: DisclosureDocument[] = [
   },
   {
     srNo: 7,
-    description: "Terms and Conditions for Appointment of Independent Directors",
-    fileName: "7. Terms and conditions for appointment of Independent Directors.pdf",
+    description:
+      "Terms and Conditions for Appointment of Independent Directors",
+    fileName:
+      "7. Terms and conditions for appointment of Independent Directors.pdf",
   },
   {
     srNo: 8,
@@ -395,8 +502,10 @@ export const policiesAndOthers: DisclosureDocument[] = [
   },
   {
     srNo: 4,
-    description: "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
-    fileName: "4. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+    description:
+      "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName:
+      "4. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
   },
   {
     srNo: 5,
@@ -406,7 +515,8 @@ export const policiesAndOthers: DisclosureDocument[] = [
   {
     srNo: 6,
     description: "Code of Conduct for Directors and Senior Management",
-    fileName: "6. Code of conduct for Board of Directors and Senior Management.pdf",
+    fileName:
+      "6. Code of conduct for Board of Directors and Senior Management.pdf",
   },
   {
     srNo: 7,
@@ -415,8 +525,10 @@ export const policiesAndOthers: DisclosureDocument[] = [
   },
   {
     srNo: 8,
-    description: "Code of Conduct to Regulate, Monitor and Report Trading by Insiders",
-    fileName: "8. CODE OF CONDUCT TO REGULATE, MONITOR AND REPORT TRADING BY INSIDERS.pdf",
+    description:
+      "Code of Conduct to Regulate, Monitor and Report Trading by Insiders",
+    fileName:
+      "8. CODE OF CONDUCT TO REGULATE, MONITOR AND REPORT TRADING BY INSIDERS.pdf",
   },
   {
     srNo: 9,
@@ -436,12 +548,15 @@ export const policiesAndOthers: DisclosureDocument[] = [
   {
     srNo: 12,
     description: "Policy on Terms of Appointment of Independent Directors",
-    fileName: "16. Terms and conditions for appointment of Independent Directors.pdf",
+    fileName:
+      "16. Terms and conditions for appointment of Independent Directors.pdf",
   },
   {
     srNo: 13,
-    description: "Policy on Identification of Material Creditors, Group Companies and Material Litigation",
-    fileName: "17. SonaMaterialCreditorsGroupCompaniesMaterialLitigation....pdf",
+    description:
+      "Policy on Identification of Material Creditors, Group Companies and Material Litigation",
+    fileName:
+      "17. SonaMaterialCreditorsGroupCompaniesMaterialLitigation....pdf",
   },
   {
     srNo: 14,

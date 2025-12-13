@@ -37,8 +37,8 @@ export default function CommitteeCompositionsPage() {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    {committee.members.map((member) => (
-                      <TableRow key={member.srNo}>
+                    {committee.members.map((member, memberIndex) => (
+                      <TableRow key={`${member.name}-${memberIndex}`}>
                         <TableCell>{member.srNo}</TableCell>
                         <TableCell>{member.name}</TableCell>
                         <TableCell>{member.position}</TableCell>
