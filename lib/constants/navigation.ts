@@ -61,7 +61,8 @@ export const navigationItems: NavItem[] = [
         items: [
           {
             label: "Draft Red Herring Prospectus (DRHP)",
-            href: "/investor-relations#drhp",
+            href: "/docs/investor-relations/DRHP.pdf",
+            target: "_blank",
           },
           {
             label: "DRHP AV",
