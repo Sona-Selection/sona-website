@@ -1,5 +1,8 @@
 import {
+  BoardMember,
   BoardSection,
+  Committee,
+  DisclosureDocument,
   FinancialReportingSection,
   IPOCornerSection,
   InvestorHeroSection,
@@ -290,3 +293,305 @@ export const investorRelationsContent: InvestorRelationsContent = {
   shareholder,
   otherDisclosures,
 };
+
+export const boardMembers: BoardMember[] = [
+  {
+    name: "Mr. Harshil Nuwal",
+    category: "Managing Director",
+  },
+  {
+    name: "Mr. Subhash Chandra Nuwal",
+    category: "Non-executive Director and Chairman",
+  },
+  {
+    name: "Ms. Uma Nuwal",
+    category: "Whole-time Director",
+  },
+  {
+    name: "Ms. Aditi Kakhani",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Kanhaiya Lal Acharya",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Kamlesh Kumar Choudhary",
+    category: "Independent Director",
+  },
+  {
+    name: "Mr. Ramesh Chandra Vyas",
+    category: "Chief Financial Officer",
+  },
+  {
+    name: "Mr. Harish Sharma",
+    category: "Company Secretary & Compliance Officer",
+  },
+];
+
+export const committees: Committee[] = [
+  {
+    title: "Audit and Compliance Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Kanhaiya Lal Acharya",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Kamlesh Kumar Choudhary",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 4,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
+    ],
+  },
+  {
+    title: "Nomination and Remuneration Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Aditi Kakhani",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 2,
+        name: "Kanahiya Lal Acharya",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Subhash Chandra Nuwal",
+        position: "Member",
+        designation: "Non-Executive Director & Non- Independent Director",
+      },
+    ],
+  },
+  {
+    title: "Stakeholders' Relationship Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Kamlesh Kumar Choudhary",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 2,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+      {
+        srNo: 3,
+        name: "Subhash Chandra Nuwal",
+        position: "Member",
+        designation: "Non-Executive Director & Non- Independent Director",
+      },
+      {
+        srNo: 4,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
+    ],
+  },
+  {
+    title: "Corporate Social Responsibility Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Uma Nuwal",
+        position: "Chairperson",
+        designation: "Whole-time Director",
+      },
+      {
+        srNo: 2,
+        name: "Harshil Nuwal",
+        position: "Member",
+        designation: "Managing Director",
+      },
+      {
+        srNo: 3,
+        name: "Aditi Kakhani",
+        position: "Member",
+        designation: "Independent Director",
+      },
+    ],
+  },
+];
+
+export const regulation46Disclosures: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Code of Conduct for Board of Directors and Senior Management",
+    fileName:
+      "1. Code of conduct for Board of Directors and Senior Management.pdf",
+  },
+  {
+    srNo: 2,
+    description:
+      "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName:
+      "2. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+  },
+  {
+    srNo: 3,
+    description: "Familiarization Programme Policy",
+    fileName: "3. Familiarization Programme Policy.pdf",
+  },
+  {
+    srNo: 4,
+    description: "Dividend Distribution Policy",
+    fileName: "4. Dividend Distribution Policy.pdf",
+  },
+  {
+    srNo: 5,
+    description: "Policy for Determination of Material Subsidiaries",
+    fileName: "5. Policy for Determination of Material Subsidiaries.pdf",
+  },
+  {
+    srNo: 6,
+    description: "Related Party Transaction Policy",
+    fileName: "6. Policy on RPT.pdf",
+  },
+  {
+    srNo: 7,
+    description:
+      "Terms and Conditions for Appointment of Independent Directors",
+    fileName:
+      "7. Terms and conditions for appointment of Independent Directors.pdf",
+  },
+  {
+    srNo: 8,
+    description: "CARE EDGE Rating Report",
+    fileName: "8. Final Textile Report - Sona Selection.pdf",
+  },
+];
+
+export const policiesAndOthers: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Corporate Social Responsibility Policy",
+    fileName: "1. CSR Policy.pdf",
+  },
+  {
+    srNo: 2,
+    description: "Nomination and Remuneration Policy",
+    fileName: "2. Nomination and Remuneration Policy.pdf",
+  },
+  {
+    srNo: 3,
+    description: "Policy on Related Party Transactions",
+    fileName: "3. Policy on RPT.pdf",
+  },
+  {
+    srNo: 4,
+    description:
+      "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName:
+      "4. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+  },
+  {
+    srNo: 5,
+    description: "Prevention of Sexual Harassment at Workplace",
+    fileName: "5. POSH Policy.pdf",
+  },
+  {
+    srNo: 6,
+    description: "Code of Conduct for Directors and Senior Management",
+    fileName:
+      "6. Code of conduct for Board of Directors and Senior Management.pdf",
+  },
+  {
+    srNo: 7,
+    description: "Dividend Distribution Policy",
+    fileName: "7. Dividend Distribution Policy.pdf",
+  },
+  {
+    srNo: 8,
+    description:
+      "Code of Conduct to Regulate, Monitor and Report Trading by Insiders",
+    fileName:
+      "8. CODE OF CONDUCT TO REGULATE, MONITOR AND REPORT TRADING BY INSIDERS.pdf",
+  },
+  {
+    srNo: 9,
+    description: "Policy for Determination of Material Events and Disclosure",
+    fileName: "10. Policy for determining materiality of events.pdf",
+  },
+  {
+    srNo: 10,
+    description: "Policy on Preservation of Documents and Archival Policy",
+    fileName: "12. Policy on preservation of documents and archival policy.pdf",
+  },
+  {
+    srNo: 11,
+    description: "Policy for Determination of Material Subsidiaries",
+    fileName: "15. Policy for Determination of Material Subsidiaries.pdf",
+  },
+  {
+    srNo: 12,
+    description: "Policy on Terms of Appointment of Independent Directors",
+    fileName:
+      "16. Terms and conditions for appointment of Independent Directors.pdf",
+  },
+  {
+    srNo: 13,
+    description:
+      "Policy on Identification of Material Creditors, Group Companies and Material Litigation",
+    fileName:
+      "17. SonaMaterialCreditorsGroupCompaniesMaterialLitigation....pdf",
+  },
+  {
+    srNo: 14,
+    description: "Familiarization Program for Independent Directors",
+    fileName: "18. Familiarization Programme Policy.pdf",
+  },
+  {
+    srNo: 15,
+    description: "Risk Management Policy",
+    fileName: "19. Risk Management Policy.pdf",
+  },
+  {
+    srNo: 16,
+    description: "Criteria for Making Payments to Non-Executive Directors",
+    fileName: "20. Criteria for making payments to NEDs.pdf",
+  },
+];
+
+export const annualReports: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Annual Report FY 2025",
+    fileName: "Annual Report FY 2025.pdf",
+  },
+  {
+    srNo: 2,
+    description: "Annual Report FY 2024",
+    fileName: "Annual Report FY 2024.pdf",
+  },
+];
+
+export const materialContractsAndDocuments: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Industry Report",
+    fileName: "Final Textile Report - Sona Selection.pdf",
+  },
+];

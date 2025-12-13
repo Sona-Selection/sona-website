@@ -22,34 +22,37 @@ export const navigationItems: NavItem[] = [
         items: [
           {
             label: "Board & KMP",
-            href: "/investor-relations#board",
+            href: "/investor-relations/board-and-kmp",
           },
           {
             label: "Independent Directors",
             items: [
               {
                 label: "Code of Conduct of Independent Directors",
-                href: "/investor-relations#code-of-conduct",
+                href: "/docs/investor-relations/Independent Directors/CODE FOR INDEPENDENT DIRECTORS.pdf",
+                target: "_blank",
               },
               {
                 label:
                   "Terms and conditions for appointment of Independent Directors",
-                href: "/investor-relations#terms-conditions",
+                href: "/docs/investor-relations/Independent Directors/Terms and conditions for appointment of Independent Directors.pdf",
+                target: "_blank",
               },
               {
                 label: "Familiarization Programme Policy",
-                href: "/investor-relations#familiarization",
+                href: "/docs/investor-relations/Independent Directors/Familiarization Programme Policy.pdf",
+                target: "_blank",
               },
             ],
           },
           {
             label: "Committee Compositions",
-            href: "/investor-relations#committees",
+            href: "/investor-relations/committee-compositions",
           },
           {
             label:
               "Disclosure under Regulation 46 of SEBI (LODR) Regulations, 2015",
-            href: "/investor-relations#disclosure-regulation-46",
+            href: "/investor-relations/regulation-46-disclosure",
           },
         ],
       },
@@ -58,7 +61,8 @@ export const navigationItems: NavItem[] = [
         items: [
           {
             label: "Draft Red Herring Prospectus (DRHP)",
-            href: "/investor-relations#drhp",
+            href: "/docs/investor-relations/DRHP.pdf",
+            target: "_blank",
           },
           {
             label: "DRHP AV",
@@ -68,7 +72,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         label: "Policies & Others",
-        href: "/investor-relations#policies",
+        href: "/investor-relations/policies-and-others",
       },
       {
         label: "Investors Information",
@@ -79,7 +83,7 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Annual Reports",
-            href: "/investor-relations#annual-reports",
+            href: "/investor-relations/annual-reports",
           },
           {
             label: "Group Company",
@@ -87,13 +91,14 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Shareholding Pattern",
-            href: "/investor-relations#shareholding-pattern",
+            href: "/docs/investor-relations/Investor Information/Shareholding Pattern.pdf",
+            target: "_blank",
           },
         ],
       },
       {
         label: "Material Contracts & Documents",
-        href: "/investor-relations#material-contracts",
+        href: "/investor-relations/material-contracts-and-documents",
       },
     ],
   },

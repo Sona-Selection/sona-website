@@ -2,6 +2,7 @@ export interface NavItem {
   label: string;
   href?: string;
   items?: NavItem[];
+  target?: string;
 }
 
 export interface SocialLink {
@@ -272,6 +273,29 @@ export interface InvestorRelationsContent {
   policies: PoliciesSection;
   shareholder: ShareholderSection;
   otherDisclosures: OtherDisclosuresSection;
+}
+
+export interface BoardMember {
+  name: string;
+  category: string;
+}
+
+export interface CommitteeMember {
+  srNo: number;
+  name: string;
+  position: string;
+  designation: string;
+}
+
+export interface Committee {
+  title: string;
+  members: CommitteeMember[];
+}
+
+export interface DisclosureDocument {
+  srNo: number;
+  description: string;
+  fileName: string;
 }
 
 // About Us Page Types
