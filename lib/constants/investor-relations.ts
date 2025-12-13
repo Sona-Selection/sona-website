@@ -1,4 +1,5 @@
 import {
+  BoardMember,
   BoardSection,
   FinancialReportingSection,
   IPOCornerSection,
@@ -290,3 +291,10 @@ export const investorRelationsContent: InvestorRelationsContent = {
   shareholder,
   otherDisclosures,
 };
+
+export const boardMembers: BoardMember[] = [
+  {
+    name: "Mr. Harshil Nuwal",
+    category: "Managing Director",
+  },
+];

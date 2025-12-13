@@ -274,6 +274,11 @@ export interface InvestorRelationsContent {
   otherDisclosures: OtherDisclosuresSection;
 }
 
+export interface BoardMember {
+  name: string;
+  category: string;
+}
+
 // About Us Page Types
 
 export interface AboutUsHeroSection {

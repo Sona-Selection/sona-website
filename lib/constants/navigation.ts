@@ -22,7 +22,7 @@ export const navigationItems: NavItem[] = [
         items: [
           {
             label: "Board & KMP",
-            href: "/investor-relations#board",
+            href: "/investor-relations/board-and-kmp",
           },
           {
             label: "Independent Directors",
