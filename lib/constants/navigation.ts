@@ -44,7 +44,7 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Committee Compositions",
-            href: "/investor-relations#committees",
+            href: "/investor-relations/committee-compositions",
           },
           {
             label:

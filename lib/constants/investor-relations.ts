@@ -1,6 +1,7 @@
 import {
   BoardMember,
   BoardSection,
+  Committee,
   FinancialReportingSection,
   IPOCornerSection,
   InvestorHeroSection,
@@ -296,5 +297,38 @@ export const boardMembers: BoardMember[] = [
   {
     name: "Mr. Harshil Nuwal",
     category: "Managing Director",
+  },
+];
+
+export const committees: Committee[] = [
+  {
+    title: "Audit and Compliance Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Kanhaiya Lal Acharya",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+    ],
+  },
+  {
+    title: "Nomination and Remuneration Committee",
+    members: [
+      {
+        srNo: 1,
+        name: "Aditi Kakhani",
+        position: "Chairperson",
+        designation: "Independent Director",
+      },
+    ],
+  },
+  {
+    title: "Stakeholders' Relationship Committee",
+    members: [],
+  },
+  {
+    title: "Corporate Social Responsibility Committee",
+    members: [],
   },
 ];

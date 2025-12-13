@@ -279,6 +279,18 @@ export interface BoardMember {
   category: string;
 }
 
+export interface CommitteeMember {
+  srNo: number;
+  name: string;
+  position: string;
+  designation: string;
+}
+
+export interface Committee {
+  title: string;
+  members: CommitteeMember[];
+}
+
 // About Us Page Types
 
 export interface AboutUsHeroSection {
