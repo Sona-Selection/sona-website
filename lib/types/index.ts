@@ -291,6 +291,12 @@ export interface Committee {
   members: CommitteeMember[];
 }
 
+export interface DisclosureDocument {
+  srNo: number;
+  description: string;
+  fileName: string;
+}
+
 // About Us Page Types
 
 export interface AboutUsHeroSection {

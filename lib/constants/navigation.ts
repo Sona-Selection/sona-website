@@ -49,7 +49,7 @@ export const navigationItems: NavItem[] = [
           {
             label:
               "Disclosure under Regulation 46 of SEBI (LODR) Regulations, 2015",
-            href: "/investor-relations#disclosure-regulation-46",
+            href: "/investor-relations/regulation-46-disclosure",
           },
         ],
       },

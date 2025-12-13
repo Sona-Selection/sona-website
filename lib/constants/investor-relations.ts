@@ -2,6 +2,7 @@ import {
   BoardMember,
   BoardSection,
   Committee,
+  DisclosureDocument,
   FinancialReportingSection,
   IPOCornerSection,
   InvestorHeroSection,
@@ -330,5 +331,48 @@ export const committees: Committee[] = [
   {
     title: "Corporate Social Responsibility Committee",
     members: [],
+  },
+];
+
+export const regulation46Disclosures: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Code of Conduct for Board of Directors and Senior Management",
+    fileName: "1. Code of conduct for Board of Directors and Senior Management.pdf",
+  },
+  {
+    srNo: 2,
+    description: "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName: "2. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+  },
+  {
+    srNo: 3,
+    description: "Familiarization Programme Policy",
+    fileName: "3. Familiarization Programme Policy.pdf",
+  },
+  {
+    srNo: 4,
+    description: "Dividend Distribution Policy",
+    fileName: "4. Dividend Distribution Policy.pdf",
+  },
+  {
+    srNo: 5,
+    description: "Policy for Determination of Material Subsidiaries",
+    fileName: "5. Policy for Determination of Material Subsidiaries.pdf",
+  },
+  {
+    srNo: 6,
+    description: "Related Party Transaction Policy",
+    fileName: "6. Policy on RPT.pdf",
+  },
+  {
+    srNo: 7,
+    description: "Terms and Conditions for Appointment of Independent Directors",
+    fileName: "7. Terms and conditions for appointment of Independent Directors.pdf",
+  },
+  {
+    srNo: 8,
+    description: "CARE EDGE Rating Report",
+    fileName: "8. Final Textile Report - Sona Selection.pdf",
   },
 ];
