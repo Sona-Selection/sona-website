@@ -93,7 +93,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         label: "Material Contracts & Documents",
-        href: "/investor-relations#material-contracts",
+        href: "/investor-relations/material-contracts-and-documents",
       },
     ],
   },

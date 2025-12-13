@@ -472,3 +472,11 @@ export const annualReports: DisclosureDocument[] = [
     fileName: "Annual Report FY 2024.pdf",
   },
 ];
+
+export const materialContractsAndDocuments: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Industry Report",
+    fileName: "Final Textile Report - Sona Selection.pdf",
+  },
+];
