@@ -459,3 +459,16 @@ export const policiesAndOthers: DisclosureDocument[] = [
     fileName: "20. Criteria for making payments to NEDs.pdf",
   },
 ];
+
+export const annualReports: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Annual Report FY 2025",
+    fileName: "Annual Report FY 2025.pdf",
+  },
+  {
+    srNo: 2,
+    description: "Annual Report FY 2024",
+    fileName: "Annual Report FY 2024.pdf",
+  },
+];

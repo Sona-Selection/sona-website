@@ -79,7 +79,7 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Annual Reports",
-            href: "/investor-relations#annual-reports",
+            href: "/investor-relations/annual-reports",
           },
           {
             label: "Group Company",
