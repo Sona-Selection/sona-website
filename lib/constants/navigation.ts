@@ -68,7 +68,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         label: "Policies & Others",
-        href: "/investor-relations#policies",
+        href: "/investor-relations/policies-and-others",
       },
       {
         label: "Investors Information",

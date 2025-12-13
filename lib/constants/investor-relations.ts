@@ -376,3 +376,86 @@ export const regulation46Disclosures: DisclosureDocument[] = [
     fileName: "8. Final Textile Report - Sona Selection.pdf",
   },
 ];
+
+export const policiesAndOthers: DisclosureDocument[] = [
+  {
+    srNo: 1,
+    description: "Corporate Social Responsibility Policy",
+    fileName: "1. CSR Policy.pdf",
+  },
+  {
+    srNo: 2,
+    description: "Nomination and Remuneration Policy",
+    fileName: "2. Nomination and Remuneration Policy.pdf",
+  },
+  {
+    srNo: 3,
+    description: "Policy on Related Party Transactions",
+    fileName: "3. Policy on RPT.pdf",
+  },
+  {
+    srNo: 4,
+    description: "Vigil Mechanism Whistle Blower Policy for Directors and Employees",
+    fileName: "4. Vigil Mechanism Whistle Blower Policy For Directors And Employees.pdf",
+  },
+  {
+    srNo: 5,
+    description: "Prevention of Sexual Harassment at Workplace",
+    fileName: "5. POSH Policy.pdf",
+  },
+  {
+    srNo: 6,
+    description: "Code of Conduct for Directors and Senior Management",
+    fileName: "6. Code of conduct for Board of Directors and Senior Management.pdf",
+  },
+  {
+    srNo: 7,
+    description: "Dividend Distribution Policy",
+    fileName: "7. Dividend Distribution Policy.pdf",
+  },
+  {
+    srNo: 8,
+    description: "Code of Conduct to Regulate, Monitor and Report Trading by Insiders",
+    fileName: "8. CODE OF CONDUCT TO REGULATE, MONITOR AND REPORT TRADING BY INSIDERS.pdf",
+  },
+  {
+    srNo: 9,
+    description: "Policy for Determination of Material Events and Disclosure",
+    fileName: "10. Policy for determining materiality of events.pdf",
+  },
+  {
+    srNo: 10,
+    description: "Policy on Preservation of Documents and Archival Policy",
+    fileName: "12. Policy on preservation of documents and archival policy.pdf",
+  },
+  {
+    srNo: 11,
+    description: "Policy for Determination of Material Subsidiaries",
+    fileName: "15. Policy for Determination of Material Subsidiaries.pdf",
+  },
+  {
+    srNo: 12,
+    description: "Policy on Terms of Appointment of Independent Directors",
+    fileName: "16. Terms and conditions for appointment of Independent Directors.pdf",
+  },
+  {
+    srNo: 13,
+    description: "Policy on Identification of Material Creditors, Group Companies and Material Litigation",
+    fileName: "17. SonaMaterialCreditorsGroupCompaniesMaterialLitigation....pdf",
+  },
+  {
+    srNo: 14,
+    description: "Familiarization Program for Independent Directors",
+    fileName: "18. Familiarization Programme Policy.pdf",
+  },
+  {
+    srNo: 15,
+    description: "Risk Management Policy",
+    fileName: "19. Risk Management Policy.pdf",
+  },
+  {
+    srNo: 16,
+    description: "Criteria for Making Payments to Non-Executive Directors",
+    fileName: "20. Criteria for making payments to NEDs.pdf",
+  },
+];
