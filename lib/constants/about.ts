@@ -13,7 +13,7 @@ import { assets } from "./assets";
 export const aboutUsHero: AboutUsHeroSection = {
   title: "Welcome to Sona.",
   subtitle: "Where tradition meets innovation in the fabric of excellence.",
-  foundingInfo: "Founded in 1987, by visionary entrepreneur Subhash Nuwal.",
+  foundingInfo: "",
   description:
     "At Sona, we specialize in producing a wide range of textile products, including PV and polyester suitings, as well as a variety of cotton fabrics. With a production capacity exceeding 12 million meters per month, we are equipped to meet the diverse needs of our global clientele.",
   image: assets.aboutUs.heroImage,
