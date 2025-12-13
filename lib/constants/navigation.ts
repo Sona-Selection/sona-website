@@ -29,16 +29,19 @@ export const navigationItems: NavItem[] = [
             items: [
               {
                 label: "Code of Conduct of Independent Directors",
-                href: "/investor-relations#code-of-conduct",
+                href: "/docs/investor-relations/Independent Directors/CODE FOR INDEPENDENT DIRECTORS.pdf",
+                target: "_blank",
               },
               {
                 label:
                   "Terms and conditions for appointment of Independent Directors",
-                href: "/investor-relations#terms-conditions",
+                href: "/docs/investor-relations/Independent Directors/Terms and conditions for appointment of Independent Directors.pdf",
+                target: "_blank",
               },
               {
                 label: "Familiarization Programme Policy",
-                href: "/investor-relations#familiarization",
+                href: "/docs/investor-relations/Independent Directors/Familiarization Programme Policy.pdf",
+                target: "_blank",
               },
             ],
           },
@@ -87,7 +90,8 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Shareholding Pattern",
-            href: "/investor-relations#shareholding-pattern",
+            href: "/docs/investor-relations/Investor Information/Shareholding Pattern.pdf",
+            target: "_blank",
           },
         ],
       },

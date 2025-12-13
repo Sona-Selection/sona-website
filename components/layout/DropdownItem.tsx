@@ -75,6 +75,7 @@ export default function DropdownItem({
   return (
     <Link
       href={item.href || "#"}
+      target={item.target}
       className="block px-4 py-2.5 text-sm font-normal transition-colors"
       style={{
         color: isActive ? colors.primary : colors.navy,

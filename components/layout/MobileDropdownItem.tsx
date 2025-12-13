@@ -93,6 +93,7 @@ export default function MobileDropdownItem({
   return (
     <Link
       href={item.href || "#"}
+      target={item.target}
       className="block text-sm font-normal py-2.5 px-4 rounded-lg transition-all duration-200"
       style={{
         color: linkColor,
