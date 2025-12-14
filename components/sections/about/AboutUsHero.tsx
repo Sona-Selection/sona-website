@@ -64,12 +64,15 @@ export default function AboutUsHero({ data }: AboutUsHeroProps) {
         >
           <div className="container mx-auto px-6 lg:px-12">
             <div className="lg:w-1/2 lg:pr-12">
-              <p
-                className="text-base md:text-lg leading-relaxed"
-                style={{ color: colors.primary }}
-              >
-                {data.description}
-              </p>
+              {data.description.split('\n\n').map((paragraph, index) => (
+                <p
+                  key={index}
+                  className="text-base md:text-lg leading-relaxed mb-6 last:mb-0"
+                  style={{ color: colors.primary }}
+                >
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </div>

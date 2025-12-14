@@ -41,10 +41,9 @@ export default function PeopleCulture({ data }: PeopleCultureProps) {
               className="text-base md:text-lg leading-relaxed space-y-4"
               style={{ color: colors.textBlack }}
             >
-              {data.description.split("suite. ").map((part, index, array) => (
+              {data.description.split('\n\n').map((paragraph, index) => (
                 <p key={index}>
-                  {part}
-                  {index < array.length - 1 ? "suite." : ""}
+                  {paragraph}
                 </p>
               ))}
             </div>
