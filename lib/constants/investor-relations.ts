@@ -579,7 +579,7 @@ export const annualReports: DisclosureDocument[] = [
   {
     srNo: 1,
     description: "Annual Report FY 2025",
-    fileName: "Annual Report FY 2025.pdf",
+    fileName: "Final Sonaselection Annual Report 2025.pdf",
   },
   {
     srNo: 2,
