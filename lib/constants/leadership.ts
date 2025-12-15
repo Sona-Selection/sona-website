@@ -6,8 +6,8 @@ import { assets } from "./assets";
  * Used across both Home and About Us pages
  */
 export const leadershipData: LeadershipSection = {
-  badge: "Leadership",
-  title: "Meet Our Leadership",
+  badge: "Promoters",
+  title: "Meet Our Individual Promoters",
   team: [
     {
       name: "Subhash Nuwal",

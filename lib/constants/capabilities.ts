@@ -6,7 +6,7 @@ import { CapabilitiesHeroSection, FacilitiesGallerySection } from "@/lib/types";
 export const capabilitiesHero: CapabilitiesHeroSection = {
   title: "Manufacturing & Capabilities",
   description:
-    "Our capabilities cover the full spectrum of textile manufacturing delivering agility, precision, and quality at every stage.",
+    "Our Company’s manufacturing facility is located in Bhilwara, Rajasthan, which is widely known as the “Vastranagari” or the “Manchester of Rajasthan” and is spread across an aggregate land area of approximately 49,540 Sq. Mtr. Our manufacturing facility has an installed processing capacity of 82.44 million meters per annum.",
   backgroundImage: "/images/capabilties/hero/cover.png",
   capacityCards: [
     // {
