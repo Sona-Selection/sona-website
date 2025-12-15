@@ -276,6 +276,7 @@ export const localAssets = {
     heroBackground: "/images/about/hero-background.jpg",
     heroTexture: "/images/about/hero-texture.jpg",
     heroImage: "/images/about/hero-image.svg",
+    factoryImage: "/images/about/aboutus-factory.jpeg",
     peopleCultureImage: "/images/about/people-culture.png",
     leadership: {
       // backgroundBlur: "/images/home/leadership/bg.png",

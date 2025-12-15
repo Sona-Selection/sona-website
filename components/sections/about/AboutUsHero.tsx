@@ -1,6 +1,7 @@
 import { AboutUsHeroSection } from "@/lib/types";
 import Image from "next/image";
 import { colors } from "@/lib/theme/colors";
+import { assets } from "@/lib/constants/assets";
 
 interface AboutUsHeroProps {
   data: AboutUsHeroSection;
@@ -8,15 +9,25 @@ interface AboutUsHeroProps {
 
 /**
  * About Us Hero Section Component
- * Features split background (navy top, cream bottom) with overlapping hero image
+ * Features split background (navy top, cream bottom) with overlapping hero images
  * @param {AboutUsHeroSection} data - Hero section content
  */
 export default function AboutUsHero({ data }: AboutUsHeroProps) {
   return (
     <section className="relative overflow-hidden">
-      {/* Right Image - Absolute positioned to match Figma design */}
-      {/* Figma: left-[716px] top-[302px] w-[651px] h-[327px] on 1421px wide frame */}
-      <div className="hidden lg:block absolute bg-white h-[327px] left-[50.4%] overflow-hidden rounded-[12px] top-[230px] w-[651px] z-[40]">
+      {/* Factory Image - Top right */}
+      <div className="hidden lg:block absolute bg-white h-[327px] left-[50.4%] overflow-hidden rounded-[12px] top-[230px] w-[651px] z-[50]">
+        <Image
+          src={data.factoryImage || assets.aboutUs.factoryImage}
+          alt="Sona Factory"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+      </div>
+
+      {/* Hero Image - Below factory image with 40px gap */}
+      <div className="hidden lg:block absolute bg-white h-[327px] left-[50.4%] overflow-hidden rounded-[12px] top-[597px] w-[651px] z-[40]">
         <Image
           src={data.image}
           alt="Sona textile products"
@@ -78,15 +89,29 @@ export default function AboutUsHero({ data }: AboutUsHeroProps) {
         </div>
       </div>
 
-      {/* Mobile Image - Below content on mobile */}
-      <div className="lg:hidden relative h-[300px] md:h-[400px]">
-        <Image
-          src={data.image}
-          alt="Sona textile products"
-          fill
-          className="object-cover"
-          priority
-        />
+      {/* Mobile Images - Both stacked below content */}
+      <div className="lg:hidden space-y-4 px-6">
+        {/* Factory Image */}
+        <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+          <Image
+            src={data.factoryImage || assets.aboutUs.factoryImage}
+            alt="Sona Factory"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        {/* Hero Image */}
+        <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+          <Image
+            src={data.image}
+            alt="Sona textile products"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
     </section>
   );

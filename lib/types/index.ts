@@ -306,6 +306,7 @@ export interface AboutUsHeroSection {
   foundingInfo: string;
   description: string;
   image: string;
+  factoryImage?: string;
   backgroundImage?: string;
   textureImage?: string;
 }
