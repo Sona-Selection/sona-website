@@ -33,7 +33,7 @@ export const capabilitiesHero: CapabilitiesHeroSection = {
       "Latest machines & updated global quality standards",
     ],
     ctaLabel: "See All Facilities",
-    ctaHref: "#facilities",
+    ctaHref: "/facilities",
   },
   facilities: [
     {
@@ -166,3 +166,70 @@ export const sonaStylesFacilities: FacilitiesGallerySection = {
     },
   ],
 };
+
+/**
+ * Facilities/Machines Data
+ */
+export interface Facility {
+  srNo: number;
+  name: string;
+  category: string;
+}
+
+export const facilities: Facility[] = [
+  {
+    srNo: 1,
+    name: "Titans (Universal Strength Tester)",
+    category: "In-house laboratory",
+  },
+  {
+    srNo: 2,
+    name: "Elmatear 1555 (Intelligent Digital Tear Tester)",
+    category: "In-house laboratory",
+  },
+  {
+    srNo: 3,
+    name: "Auto Colour Dispencer",
+    category: "In-house laboratory",
+  },
+  {
+    srNo: 4,
+    name: "Stenter",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 5,
+    name: "Merceriser",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 6,
+    name: "Washing range",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 7,
+    name: "Sanforiser",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 8,
+    name: "Singeing",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 9,
+    name: "Microsand suiding machine",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 10,
+    name: "KD jaguar",
+    category: "Manufacturing process",
+  },
+  {
+    srNo: 11,
+    name: "Cloth pressing machine model formula 1 multipla",
+    category: "Manufacturing process",
+  },
+];
