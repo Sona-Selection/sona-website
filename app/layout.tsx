@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   authors: [{ name: companyInfo.name }],
   creator: companyInfo.name,
   publisher: companyInfo.name,
+  icons: {
+    icon: "/Icons/logo-orange.svg",
+  },
   formatDetection: {
     email: false,
     address: false,
