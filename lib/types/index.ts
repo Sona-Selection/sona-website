@@ -385,6 +385,20 @@ export interface AdvancedFinishesSection {
   finishes: AdvancedFinish[];
 }
 
+export interface ProductRangeItem {
+  id: string;
+  title: string;
+  image: string;
+  detailTitle: string;
+  detailDescription: string;
+  detailImages: string[];
+}
+
+export interface ProductRangeSection {
+  title: string;
+  items: ProductRangeItem[];
+}
+
 // Capabilities Page Types
 
 export interface CapacityCard {

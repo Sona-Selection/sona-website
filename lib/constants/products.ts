@@ -1,6 +1,7 @@
 import {
   AdvancedFinishesSection,
   ProductCategorySection,
+  ProductRangeSection,
   ProductsHeroSection,
 } from "@/lib/types";
 
@@ -18,6 +19,64 @@ export const productsHero: ProductsHeroSection = {
     "Our commitment to sustainability is reflected in our range of health and eco-friendly fabrics, including those made from Better Cotton Initiative (BCI) and organic cotton. These fabrics promote responsible cotton production and environmental stewardship.",
   ],
   image: "/images/products/hero.png",
+};
+
+export const productRange: ProductRangeSection = {
+  title: "Our Product Range",
+  items: [
+    {
+      id: "100-cotton",
+      title: "100% Cotton Fabric",
+      image: "/images/products/woven_fabrics/1.svg",
+      detailTitle: "100% Cotton Fabric",
+      detailDescription:
+        "Our 100% cotton fabrics are known for their breathability, softness, and durability, making them suitable for applications in fashion apparel and casual wear. With controlled processing and quality-focused manufacturing, we ensure consistent fabric strength, color fastness, and comfort-oriented performance.",
+      detailImages: [
+        "/images/products/woven_fabrics/1.svg",
+        "/images/products/product_applications/1.png",
+        "/images/products/woven_fabrics/2.svg",
+      ],
+    },
+    {
+      id: "cotton-lycra",
+      title: "Cotton Lycra Fabric",
+      image: "/images/products/woven_fabrics/2.svg", // Using 2 as placeholder
+      detailTitle: "Cotton Lycra (Stretch) Fabric",
+      detailDescription:
+        "Our cotton Lycra (stretch) fabrics combine the natural comfort of cotton with the stretch and recovery properties of elastane, offering flexibility and enhanced fit. These fabrics are widely used in garment industry. Through our Company's precise finishing processes, we achieve uniform stretchability, shape retention, and long-lasting performance, meeting the requirements of both casual and formal segment.",
+      detailImages: [
+        "/images/products/woven_fabrics/2.svg",
+        "/images/products/product_applications/2.png",
+        "/images/products/woven_fabrics/3.svg",
+      ],
+    },
+    {
+      id: "cotton-blends",
+      title: "Cotton Blends",
+      image: "/images/products/woven_fabrics/2.svg",
+      detailTitle: "Cotton Blends",
+      detailDescription:
+        "We produce a variety of cotton blend fabrics that integrate cotton with fibres such as polyester, viscose, to achieve enhanced durability, drape, and ease of maintenance. These blends offer balanced characteristics including improved wrinkle resistance, and reduced shrinkage, making them suitable for a wide range of apparel.",
+      detailImages: [
+        "/images/products/woven_fabrics/2.svg",
+        "/images/products/product_applications/3.png",
+        "/images/products/woven_fabrics/4.svg",
+      ],
+    },
+    {
+      id: "polyester-blends",
+      title: "Polyester Blends",
+      image: "/images/products/woven_fabrics/4.svg",
+      detailTitle: "Polyester Blends",
+      detailDescription:
+        "Polyester blends are designed to create textiles that are more durable, wrinkle-resistant, and resilient than natural fibers alone, while also offering advantages like softness and breathability from the blended fibre.",
+      detailImages: [
+        "/images/products/woven_fabrics/4.svg",
+        "/images/products/product_applications/4.png",
+        "/images/products/woven_fabrics/1.svg",
+      ],
+    },
+  ],
 };
 
 export const wovenFabrics: ProductCategorySection = {

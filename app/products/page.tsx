@@ -1,18 +1,17 @@
 import {
-  finishedFabrics,
-  productApplications,
   productsHero,
-  specialityWeaves,
-  wovenFabrics,
+  // wovenFabrics,
   advancedFinishes,
+  productRange,
 } from "@/lib/constants/products";
 
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import ProductCategory from "@/components/sections/products/ProductCategory";
+
 import ProductsHero from "@/components/sections/products/ProductsHero";
 import AdvancedFinishes from "@/components/sections/products/AdvancedFinishes";
+import ProductRange from "@/components/sections/products/ProductRange";
 import { colors } from "@/lib/theme/colors";
 import { ctaSection } from "@/lib/constants/home";
 import { pageMetadata } from "@/lib/constants/metadata";
@@ -52,17 +51,10 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        {/* Woven Fabrics Section */}
-        <ProductCategory data={wovenFabrics} />
+        {/* Product Range Section */}
+        <ProductRange data={productRange} />
 
-        {/* Speciality Weaves Section */}
-        <ProductCategory data={specialityWeaves} />
 
-        {/* Finished Fabrics Section */}
-        <ProductCategory data={finishedFabrics} />
-
-        {/* Product Applications Section */}
-        <ProductCategory data={productApplications} />
 
         {/* Advanced Finishes Section */}
         <AdvancedFinishes data={advancedFinishes} />

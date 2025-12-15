@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ProductsHeroSection } from "@/lib/types";
 import { colors } from "@/lib/theme/colors";
@@ -78,15 +79,23 @@ export default function ProductsHero({ data }: ProductsHeroProps) {
                 );
               })}
             </div>
+
+            {/* CTA Button */}
+            <Button
+              className="w-fit mt-2 rounded-sm px-8 py-6 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: colors.navy, color: colors.white }}
+            >
+              See Textile Options
+            </Button>
           </div>
 
           {/* Right Image - Desktop only, hidden on mobile */}
-          <div className="hidden lg:block lg:col-span-3 relative h-[500px] xl:h-[600px]">
+          <div className="hidden lg:block lg:col-span-3 relative h-[400px] xl:h-[500px]">
             <Image
               src={data.image}
               alt="Sona textile products - stacked colorful fabrics"
               fill
-              className="object-contain object-center scale-110"
+              className="object-contain object-center"
               priority
             />
           </div>
