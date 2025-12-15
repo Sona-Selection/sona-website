@@ -53,13 +53,13 @@ export const trustedBrands: Brand[] = [
  */
 export const aboutSection: AboutSection = {
   heading: "Redefining Modern Textile Manufacturing",
-  body: "Sona Selections is a future-ready textile manufacturer that owns its entire supply chain — from sourcing yarn to delivering finished garments. Headquartered in Bhilwara, Rajasthan, our innovation-led, zero-waste approach ensures faster turnarounds, flexible MOQs, and uncompromising quality. We are cut from a different cloth — built on precision, purpose, and progress.",
+  body: "We operate through our manufacturing facility located in Bhilwara, Rajasthan, a region that is recognised as the ‘Textile City’ or “Manchester City of Rajasthan”. Our manufacturing facility is equipped with advanced machinery sourced from reputed manufacturers. We also integrate human expertise with automation and digital process controls to drive efficiency and optimize energy use throughout our operations. The team is dedicated to developing value-added fabrics and finishes using our existing infrastructure and machinery to deliver customised, made-to-order textile solutions. This technological foundation not only refine each new product in accordance with international standards but also enables responsiveness to changing customer and market needs.",
   ctaLabel: "Learn more",
   ctaHref: "/about-us",
   cards: [
     {
       image: assets.about.card1,
-      text: "3000 units an hour:\nManufacturing Capabilities.",
+      text: "82.44 million meters per annum",
     },
     {
       image: assets.about.card2,
@@ -79,21 +79,21 @@ export const capabilitiesSection: CapabilitiesSection = {
   capabilities: [
     {
       image: assets.capabilities.card1,
-      title: "Yarn to Fabric",
+      title: "Greige Fabric to Fabric",
       description:
-        "We transform raw materials into high-quality fabrics, utilizing advanced weaving and knitting technologies to create a wide range of textiles.",
+        "We transform raw materials into high-quality fabrics, utilizing advanced technologies to create a range of fabrics.",
     },
     {
       image: assets.capabilities.card2,
-      title: "Aggregated Garmenting",
+      title: "",
       description:
-        "Our garmenting services encompass cutting, sewing, and finishing, ensuring precise construction and attention to detail in every garment.",
+        "",
     },
     {
       image: assets.capabilities.card3,
       title: "Quality, R&D & Sampling",
       description:
-        "We maintain rigorous quality control standards throughout the production process, with dedicated R&D and sampling teams to ensure product excellence and innovation.",
+        "We maintain quality control standards throughout the production process, with dedicated R&D and sampling teams to ensure product excellence and innovation.",
     },
   ],
   ctaLabel: "Explore Full Capabilities",
@@ -189,13 +189,13 @@ export const sustainabilitySection: SustainabilitySection = {
     {
       title: "Zero Liquid Discharge (ZLD)",
       description:
-        "All water used is treated and recycled on-site, with no liquid waste leaving the facility.",
+        "Our Company has installed a zero liquid discharge effluent treatment plant, integrated with ultra-filtration and a four-stage reverse osmosis (RO) system supplied by Italian company, at our manufacturing facility for the treatment of wastewater generated during the manufacturing process.",
       image: assets.sustainability.waterConservation,
     },
     {
       title: "Renewable Energy",
       description:
-        "90% of electricity is generated in-house through solar power and steam turbines.",
+        "Electricity is generated in-house through solar power and steam turbines.",
       image: assets.sustainability.energyEfficiency,
     },
     {
@@ -213,33 +213,33 @@ export const sustainabilitySection: SustainabilitySection = {
   ],
   certifications: [
     {
-      name: "Global Organic Textile Standard (GOTS)",
-      description: "Scope Certificate - Version 7.0",
+      name: "OEKO-TEX® Standard 100 Certification",
+      description: "",
       image: assets.sustainability.cert1,
     },
     {
-      name: "Regenagri Chain of Custody",
-      description: "Scope Certificate - Textiles Version 1.0",
+      name: "Global Organic Textile Standard (GOTS)",
+      description: "Version 7.0",
       image: assets.sustainability.cert2,
     },
     {
-      name: "Organic & Recycled Standards",
-      description: "OCS (Version 3.0), GRS (Version 4.0), RCS (Version 2.0)",
+      name: "Organic Content Standard (OCS)",
+      description: "Version 3.0",
       image: assets.sustainability.cert3,
     },
     {
-      name: "OEKO-TEX'",
-      description: "standard 100 Certification",
+      name: "Regenagri Chain of Custody Criteria",
+      description: "Textiles Version 1.0",
       image: assets.sustainability.cert4,
     },
     {
-      name: "Better Cotton Initiative (BCI)",
-      description: "Certified Sustainable Cotton Sourcing",
+      name: "Global Recycled Standard (GRS)",
+      description: "Version 4.0",
       image: assets.sustainability.cert5,
     },
     {
-      name: "ISO 14001",
-      description: "Environmental Management System",
+      name: "Regenagri Chain Standard (RCS)",
+      description: "Version 2.0",
       image: assets.sustainability.cert6,
     },
   ],

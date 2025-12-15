@@ -25,14 +25,14 @@ export default function Capabilities({ data }: CapabilitiesProps) {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-6 md:gap-8 mb-12 md:mb-20">
           <Badge variant="section">{data.badge}</Badge>
-          <div className="flex flex-col items-center gap-4">
+          {/* <div className="flex flex-col items-center gap-4">
             <h2 className="text-4xl md:text-[64px] text-[#02244A] leading-tight tracking-tight font-serif">
               {data.title}
             </h2>
             <p className="text-base md:text-lg text-[#02244A] max-w-[669px] leading-relaxed tracking-tight">
               {data.description}
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Capabilities Grid */}

@@ -14,7 +14,7 @@ interface SustainabilityProps {
 
 const MAX_VISIBLE_ITEMS = 4;
 const AUTO_ADVANCE_INTERVAL = 4500; // 4.5 seconds
-const ITEM_HEIGHT = 137.5; // Approximate height of each feature item in pixels
+const ITEM_HEIGHT = 145; // Approximate height of each feature item in pixels
 
 /**
  * Sustainability Section Component
@@ -82,7 +82,7 @@ export default function Sustainability({ data }: SustainabilityProps) {
           <div
             ref={containerRef}
             className="relative overflow-hidden order-2 lg:order-1"
-            style={{ height: "518px" }}
+            style={{ height: "700px" }}
           >
             <div
               className="transition-transform duration-700 ease-in-out"
@@ -94,7 +94,7 @@ export default function Sustainability({ data }: SustainabilityProps) {
                 <div
                   key={index}
                   onClick={() => handleFeatureClick(index)}
-                  className="flex gap-6 md:gap-8 items-start mb-8 md:mb-10 transition-all duration-500 cursor-pointer hover:opacity-90"
+                  className="flex gap-6 md:gap-8 items-start mb-6 md:mb-7 transition-all duration-500 cursor-pointer hover:opacity-90"
                 >
                   {/* Vertical Line */}
                   <div className="hidden md:block w-1 h-24 relative shrink-0">
@@ -135,7 +135,7 @@ export default function Sustainability({ data }: SustainabilityProps) {
           </div>
 
           {/* Right: Dynamic Image */}
-          <Card className="relative h-[350px] md:h-[518px] overflow-hidden rounded-xl border-0 shadow-none order-1 lg:order-2">
+          <Card className="relative h-[300px] md:h-[700px] overflow-hidden rounded-xl border-0 shadow-none order-1 lg:order-2">
             <Image
               key={activeIndex}
               src={data.features[activeIndex].image}
@@ -208,9 +208,9 @@ export default function Sustainability({ data }: SustainabilityProps) {
             <Separator className="bg-white/10" />
 
             {/* Certification Details */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 auto-rows-max">
               {data.certifications.map((cert, index) => (
-                <div key={index} className="flex flex-col gap-1">
+                <div key={index} className="flex flex-col gap-1 min-h-min">
                   <p
                     className="text-xs md:text-sm uppercase font-semibold tracking-wide"
                     style={{ color: colors.primary }}

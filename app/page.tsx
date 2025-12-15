@@ -49,7 +49,7 @@ export default function Home() {
         <Hero data={homeHero} />
 
         {/* Trusted Brands Section */}
-        <TrustedBrands brands={trustedBrands} />
+        {/* <TrustedBrands brands={trustedBrands} /> */}
 
         {/* About Section */}
         <About data={aboutSection} />
@@ -58,7 +58,7 @@ export default function Home() {
         <Capabilities data={capabilitiesSection} />
 
         {/* USPs Section */}
-        <USPs data={uspsSection} />
+        {/* <USPs data={uspsSection} /> */}
 
         {/* Products Section */}
         <Products data={productsSection} />
