@@ -479,8 +479,8 @@ export const regulation46Disclosures: DisclosureDocument[] = [
   },
   {
     srNo: 8,
-    description: "CARE EDGE Rating Report",
-    fileName: "8. Final Textile Report - Sona Selection.pdf",
+    description: "CRISIL Rating Report",
+    fileName: "8. Rating Rationale CRISIL_Oct28_2025.pdf",
   },
 ];
 

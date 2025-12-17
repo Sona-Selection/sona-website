@@ -42,7 +42,7 @@ export default function MaterialContractsAndDocumentsPage() {
                     target="_blank"
                     className="text-orange-600 hover:underline"
                   >
-                    View
+                    View File
                   </Link>
                 </TableCell>
               </TableRow>
