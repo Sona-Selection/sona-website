@@ -116,7 +116,7 @@ export const boardSection: BoardSection = {
           "Under his guidance, Sona Group expanded its capabilities with a state-of-the-art textile weaving unit. With a vision for sustainable expansion, he spearheaded the establishment of a cutting-edge cotton fabrics processing plant, slated for completion in May 2024, positioning us as leaders in cotton fabric processing in India.",
         image: assets.leadership.harshilImage,
         aboutImage: assets.aboutUs.leadership.aboutHarshilImage,
-        linkedinUrl: "#",
+        linkedinUrl: "https://www.linkedin.com/in/harshil-nuwal-75401321",
       },
       {
         name: "Deepank Bhandari",
@@ -125,7 +125,7 @@ export const boardSection: BoardSection = {
           "Garnered over 4 years of comprehensive experience in Trading, Investment Banking and Private Equity across Europe, mastering the intricacies of global financial markets. Demonstrated over 9 years of adeptness in India's e-commerce landscape.",
         image: assets.leadership.deepankImage,
         aboutImage: assets.aboutUs.leadership.aboutDeepankImage,
-        linkedinUrl: "#",
+        linkedinUrl: "https://www.linkedin.com/in/deepankbhandari",
       },
     ],
   },
