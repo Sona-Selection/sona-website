@@ -4,6 +4,8 @@ import {
   Committee,
   DisclosureDocument,
   FinancialReportingSection,
+  FinancialYear,
+  GroupCompanyData,
   IPOCornerSection,
   InvestorHeroSection,
   InvestorRelationsContent,
@@ -593,5 +595,131 @@ export const materialContractsAndDocuments: DisclosureDocument[] = [
     srNo: 1,
     description: "Industry Report",
     fileName: "Final Textile Report - Sona Selection.pdf",
+  },
+];
+
+// Group Company Financial Data
+export const financialYears: FinancialYear[] = [
+  { label: "FY 2022-23", value: "2022-23" },
+  { label: "FY 2023-24", value: "2023-24" },
+  { label: "FY 2024-25", value: "2024-25" },
+];
+
+export const groupCompanies: GroupCompanyData[] = [
+  {
+    companyName: "I. Sona Processors (India) Limited",
+    tableData: [
+      {
+        particulars: "Reserves (Excluding Revaluation Reserve)",
+        values: { "2022-23": "381.42", "2023-24": "444.82", "2024-25": "457.65" },
+      },
+      {
+        particulars: "Sales",
+        values: { "2022-23": "1,432.15", "2023-24": "1,488.18", "2024-25": "1,158.97" },
+      },
+      {
+        particulars: "Profit / Loss After Tax",
+        values: { "2022-23": "12.06", "2023-24": "75.57", "2024-25": "16.28" },
+      },
+      {
+        particulars: "Earnings Per Share (Basic) (Face Value of Rs. 10)",
+        values: { "2022-23": "1.38", "2023-24": "8.62", "2024-25": "1.86" },
+      },
+      {
+        particulars: "Net Assets Value",
+        values: { "2022-23": "53.53", "2023-24": "60.76", "2024-25": "62.22" },
+      },
+      {
+        particulars: "Equity Capital",
+        values: { "2022-23": "87.63", "2023-24": "87.63", "2024-25": "87.63" },
+      },
+    ],
+  },
+  {
+    companyName: "II. Sona Styles Limited",
+    tableData: [
+      {
+        particulars: "Reserves (Excluding Revaluation Reserve)",
+        values: { "2022-23": "152.01", "2023-24": "235.29", "2024-25": "261.36" },
+      },
+      {
+        particulars: "Sales",
+        values: { "2022-23": "876.27", "2023-24": "1,671.86", "2024-25": "2,133.82" },
+      },
+      {
+        particulars: "Profit / Loss After Tax",
+        values: { "2022-23": "30.08", "2023-24": "64.31", "2024-25": "27.63" },
+      },
+      {
+        particulars: "Earnings Per Share (Basic) (Face Value of Rs. 10)",
+        values: { "2022-23": "9.20", "2023-24": "19.67", "2024-25": "8.45" },
+      },
+      {
+        particulars: "Net Assets Value",
+        values: { "2022-23": "56.49", "2023-24": "81.96", "2024-25": "89.93" },
+      },
+      {
+        particulars: "Equity Capital",
+        values: { "2022-23": "32.70", "2023-24": "32.70", "2024-25": "32.70" },
+      },
+    ],
+  },
+  {
+    companyName: "III. SonaTexfab Private Limited",
+    tableData: [
+      {
+        particulars: "Reserves (Excluding Revaluation Reserve)",
+        values: { "2022-23": "4.45", "2023-24": "8.18", "2024-25": "8.35" },
+      },
+      {
+        particulars: "Sales",
+        values: { "2022-23": "79.33", "2023-24": "302.60", "2024-25": "264.69" },
+      },
+      {
+        particulars: "Profit / Loss After Tax",
+        values: { "2022-23": "0.38", "2023-24": "3.72", "2024-25": "0.17" },
+      },
+      {
+        particulars: "Earnings Per Share (Basic) (Face Value of Rs. 10)",
+        values: { "2022-23": "4.20", "2023-24": "41.39", "2024-25": "1.91" },
+      },
+      {
+        particulars: "Net Assets Value",
+        values: { "2022-23": "59.48", "2023-24": "100.87", "2024-25": "102.78" },
+      },
+      {
+        particulars: "Equity Capital",
+        values: { "2022-23": "0.90", "2023-24": "0.90", "2024-25": "0.90" },
+      },
+    ],
+  },
+  {
+    companyName: "IV. Starnet Real Estate and Projects Limited",
+    tableData: [
+      {
+        particulars: "Reserves (Excluding Revaluation Reserve)",
+        values: { "2022-23": "(4.56)", "2023-24": "(4.58)", "2024-25": "(3.57)" },
+      },
+      {
+        particulars: "Sales",
+        values: { "2022-23": "-", "2023-24": "-", "2024-25": "4.52" },
+      },
+      {
+        particulars: "Profit / Loss After Tax",
+        values: { "2022-23": "(0.05)", "2023-24": "(0.03)", "2024-25": "1.01" },
+      },
+      {
+        particulars: "Earnings Per Share (Basic) (Face Value of Rs. 10)",
+        values: { "2022-23": "(1.02)", "2023-24": "(0.53)", "2024-25": "20.27" },
+      },
+      {
+        particulars: "Net Assets Value",
+        values: { "2022-23": "(81.10)", "2023-24": "(81.62)", "2024-25": "(61.34)" },
+      },
+      {
+        particulars: "Equity Capital",
+        values: { "2022-23": "0.50", "2023-24": "0.50", "2024-25": "0.50" },
+      },
+    ],
   },
 ];

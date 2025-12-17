@@ -87,7 +87,7 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "Group Company",
-            href: "/investor-relations#group-company",
+            href: "/investor-relations/group-company",
           },
           {
             label: "Shareholding Pattern",

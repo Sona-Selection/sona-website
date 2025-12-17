@@ -298,6 +298,24 @@ export interface DisclosureDocument {
   fileName: string;
 }
 
+// Group Company Types
+export interface FinancialYear {
+  label: string; // e.g., "FY 2022-23"
+  value: string; // e.g., "2022-23"
+}
+
+export interface GroupCompanyFinancialRow {
+  particulars: string;
+  values: {
+    [yearValue: string]: string | number;
+  };
+}
+
+export interface GroupCompanyData {
+  companyName: string;
+  tableData: GroupCompanyFinancialRow[];
+}
+
 // About Us Page Types
 
 export interface AboutUsHeroSection {
