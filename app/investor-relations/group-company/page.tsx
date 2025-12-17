@@ -35,7 +35,7 @@ export default function GroupCompanyPage() {
                 <h3 className="text-base font-semibold">
                   Details of Our Group Companies as per SEBI ICDR Regulations
                 </h3>
-                <h3 className="text-base font-normal">
+                <h3 className="text-base font-normal italic">
                   Audited Financial Information for the preceding three (3)
                   years
                 </h3>
@@ -43,14 +43,16 @@ export default function GroupCompanyPage() {
 
               {/* "in INR Million" text - right aligned */}
               <div className="flex justify-end mb-2">
-                <p className="text-sm text-gray-600">in INR Million</p>
+                <p className="text-sm text-gray-600 italic">in INR Million</p>
               </div>
 
               {/* Financial Table */}
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>Particulars</TableHead>
+                    <TableHead className="w-64 md:w-auto whitespace-normal">
+                      Particulars
+                    </TableHead>
                     {financialYears.map((fy) => (
                       <TableHead key={fy.value} className="text-center">
                         {fy.label}
@@ -61,7 +63,9 @@ export default function GroupCompanyPage() {
                 <TableBody>
                   {company.tableData.map((row, rowIndex) => (
                     <TableRow key={rowIndex}>
-                      <TableCell>{row.particulars}</TableCell>
+                      <TableCell className="w-64 md:w-auto whitespace-normal">
+                        {row.particulars}
+                      </TableCell>
                       {financialYears.map((fy) => (
                         <TableCell key={fy.value} className="text-center">
                           {row.values[fy.value] ?? "-"}
