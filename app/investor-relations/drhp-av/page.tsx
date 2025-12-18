@@ -2,12 +2,14 @@ export default function DRHPAVPage() {
   const videos = [
     {
       title: "DRHP AV - English",
-      embedUrl: "https://drive.google.com/file/d/1IM4zhdrw62W6NJc9K_md-cgcmayVHSbm/preview",
+      embedUrl:
+        "https://drive.google.com/file/d/1IM4zhdrw62W6NJc9K_md-cgcmayVHSbm/preview",
     },
     {
       title: "DRHP AV - Hindi",
       // Placeholder - replace with actual Hindi video link
-      embedUrl: "https://drive.google.com/file/d/1IM4zhdrw62W6NJc9K_md-cgcmayVHSbm/preview",
+      embedUrl:
+        "https://drive.google.com/file/d/1iB3XGLMttDfy4riDkvrICTW0QYoq0LKd/preview",
     },
   ];
 
