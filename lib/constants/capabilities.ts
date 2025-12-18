@@ -108,7 +108,7 @@ export const sonaSelectionFacilities: FacilitiesGallerySection = {
   images: [
     {
       image: PLACEHOLDER_IMAGE1,
-      label: "WEAVING TECHNOLOGY",
+      label: "LAB EQUIPMENT",
     },
     {
       image: PLACEHOLDER_IMAGE2,
