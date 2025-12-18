@@ -66,7 +66,7 @@ export const navigationItems: NavItem[] = [
           },
           {
             label: "DRHP AV",
-            href: "/investor-relations#drhp-av",
+            href: "/investor-relations/drhp-av",
           },
         ],
       },
