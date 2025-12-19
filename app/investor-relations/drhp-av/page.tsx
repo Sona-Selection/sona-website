@@ -3,13 +3,12 @@ export default function DRHPAVPage() {
     {
       title: "DRHP AV - English",
       embedUrl:
-        "https://drive.google.com/file/d/1IM4zhdrw62W6NJc9K_md-cgcmayVHSbm/preview",
+        "https://drive.google.com/file/d/1upGV4VVhC06CWfvFa-6hV1rYq0dICc3-/preview",
     },
     {
       title: "DRHP AV - Hindi",
-      // Placeholder - replace with actual Hindi video link
       embedUrl:
-        "https://drive.google.com/file/d/1iB3XGLMttDfy4riDkvrICTW0QYoq0LKd/preview",
+        "https://drive.google.com/file/d/1DusD9qS5bgavLVTzxmVcRoTiwu21qWHi/preview",
     },
   ];
 
