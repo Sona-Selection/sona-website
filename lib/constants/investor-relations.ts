@@ -581,12 +581,17 @@ export const annualReports: DisclosureDocument[] = [
   {
     srNo: 1,
     description: "Annual Report FY 2025",
-    fileName: "Final Sonaselection Annual Report 2025.pdf",
+    fileName: "Annual Report FY 2025.pdf",
   },
   {
     srNo: 2,
     description: "Annual Report FY 2024",
     fileName: "Annual Report FY 2024.pdf",
+  },
+  {
+    srNo: 3,
+    description: "Annual Report FY 2023",
+    fileName: "Annual Report FY 2023.pdf",
   },
 ];
 
@@ -611,11 +616,19 @@ export const groupCompanies: GroupCompanyData[] = [
     tableData: [
       {
         particulars: "Reserves (Excluding Revaluation Reserve)",
-        values: { "2022-23": "381.42", "2023-24": "444.82", "2024-25": "457.65" },
+        values: {
+          "2022-23": "381.42",
+          "2023-24": "444.82",
+          "2024-25": "457.65",
+        },
       },
       {
         particulars: "Sales",
-        values: { "2022-23": "1,432.15", "2023-24": "1,488.18", "2024-25": "1,158.97" },
+        values: {
+          "2022-23": "1,432.15",
+          "2023-24": "1,488.18",
+          "2024-25": "1,158.97",
+        },
       },
       {
         particulars: "Profit / Loss After Tax",
@@ -640,11 +653,19 @@ export const groupCompanies: GroupCompanyData[] = [
     tableData: [
       {
         particulars: "Reserves (Excluding Revaluation Reserve)",
-        values: { "2022-23": "152.01", "2023-24": "235.29", "2024-25": "261.36" },
+        values: {
+          "2022-23": "152.01",
+          "2023-24": "235.29",
+          "2024-25": "261.36",
+        },
       },
       {
         particulars: "Sales",
-        values: { "2022-23": "876.27", "2023-24": "1,671.86", "2024-25": "2,133.82" },
+        values: {
+          "2022-23": "876.27",
+          "2023-24": "1,671.86",
+          "2024-25": "2,133.82",
+        },
       },
       {
         particulars: "Profit / Loss After Tax",
@@ -673,7 +694,11 @@ export const groupCompanies: GroupCompanyData[] = [
       },
       {
         particulars: "Sales",
-        values: { "2022-23": "79.33", "2023-24": "302.60", "2024-25": "264.69" },
+        values: {
+          "2022-23": "79.33",
+          "2023-24": "302.60",
+          "2024-25": "264.69",
+        },
       },
       {
         particulars: "Profit / Loss After Tax",
@@ -685,7 +710,11 @@ export const groupCompanies: GroupCompanyData[] = [
       },
       {
         particulars: "Net Assets Value",
-        values: { "2022-23": "59.48", "2023-24": "100.87", "2024-25": "102.78" },
+        values: {
+          "2022-23": "59.48",
+          "2023-24": "100.87",
+          "2024-25": "102.78",
+        },
       },
       {
         particulars: "Equity Capital",
@@ -698,7 +727,11 @@ export const groupCompanies: GroupCompanyData[] = [
     tableData: [
       {
         particulars: "Reserves (Excluding Revaluation Reserve)",
-        values: { "2022-23": "(4.56)", "2023-24": "(4.58)", "2024-25": "(3.57)" },
+        values: {
+          "2022-23": "(4.56)",
+          "2023-24": "(4.58)",
+          "2024-25": "(3.57)",
+        },
       },
       {
         particulars: "Sales",
@@ -710,11 +743,19 @@ export const groupCompanies: GroupCompanyData[] = [
       },
       {
         particulars: "Earnings Per Share (Basic) (Face Value of Rs. 10)",
-        values: { "2022-23": "(1.02)", "2023-24": "(0.53)", "2024-25": "20.27" },
+        values: {
+          "2022-23": "(1.02)",
+          "2023-24": "(0.53)",
+          "2024-25": "20.27",
+        },
       },
       {
         particulars: "Net Assets Value",
-        values: { "2022-23": "(81.10)", "2023-24": "(81.62)", "2024-25": "(61.34)" },
+        values: {
+          "2022-23": "(81.10)",
+          "2023-24": "(81.62)",
+          "2024-25": "(61.34)",
+        },
       },
       {
         particulars: "Equity Capital",
