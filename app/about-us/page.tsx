@@ -5,9 +5,11 @@ import {
   aboutUsPeopleCulture,
   aboutUsValues,
 } from "@/lib/constants/about";
+import { executionTeamData } from "@/lib/constants/leadership";
 
 import AboutUsHero from "@/components/sections/about/AboutUsHero";
 import AboutUsLeadership from "@/components/sections/about/AboutUsLeadership";
+import ExecutionTeamLeadership from "@/components/sections/about/ExecutionTeamLeadership";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -50,6 +52,9 @@ export default function AboutUsPage() {
 
         {/* Leadership Section */}
         <AboutUsLeadership data={aboutUsLeadership} />
+
+        {/* Execution Team Section */}
+        <ExecutionTeamLeadership data={executionTeamData} />
 
         {/* Journey Section */}
         <OurJourney data={aboutUsJourney} />

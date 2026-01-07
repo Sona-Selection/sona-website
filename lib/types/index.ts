@@ -173,6 +173,7 @@ export interface LeadershipSection {
   title: string;
   subtitle?: string;
   team: TeamMember[];
+  bottomParagraph?: string;
 }
 
 export interface CTASection {

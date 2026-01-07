@@ -55,3 +55,34 @@ export const leadershipSection: LeadershipSection = {
  * Leadership Section for About Us Page
  */
 export const aboutUsLeadership: LeadershipSection = leadershipData;
+
+/**
+ * Execution Team Section for About Us Page
+ * Features management team members with operational expertise
+ */
+export const executionTeamData: LeadershipSection = {
+  badge: "Management Team",
+  title: "Execution-Focused Management Team",
+  subtitle:
+    "The promoters are supported by a seasoned management team with deep domain expertise.",
+  team: [
+    {
+      name: "Rajnikant Saraswat",
+      role: "General Manager",
+      description: "39+ years of experience in operations and financial planning",
+      image: "/placeholder-rajnikant.jpg",
+      aboutImage: "/placeholder-rajnikant.jpg",
+      linkedinUrl: "/",
+    },
+    {
+      name: "Ajay Jain",
+      role: "Plant Head",
+      description: "24+ years of experience in fabric processing",
+      image: "/placeholder-ajay.jpg",
+      aboutImage: "/placeholder-ajay.jpg",
+      linkedinUrl: "/",
+    },
+  ],
+  bottomParagraph:
+    "The broader team blends engineering expertise with digital process controls to deliver scalable, customised textile solutions while maintaining operational efficiency and quality discipline.",
+};
