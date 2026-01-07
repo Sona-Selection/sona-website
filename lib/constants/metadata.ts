@@ -62,7 +62,7 @@ export const seoKeywords = {
   company: [
     "Sonaselection India Limited",
     "Sona Group",
-    "Subhash Nuwal",
+    "Subhash Chandra Nuwal",
     "textile company Bhilwara",
     "vertically integrated manufacturing",
   ],

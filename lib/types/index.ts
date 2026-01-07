@@ -171,6 +171,7 @@ export interface TeamMember {
 export interface LeadershipSection {
   badge: string;
   title: string;
+  subtitle?: string;
   team: TeamMember[];
 }
 

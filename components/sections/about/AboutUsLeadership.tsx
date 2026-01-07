@@ -25,23 +25,33 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
     >
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="mb-12 md:mb-16 flex flex-col items-center text-center gap-4">
+        <div className="mb-4 md:mb-8 lg:mb-10 flex flex-col items-center text-center gap-2 md:gap-4 lg:gap-6">
           <Badge
             variant="section"
             className="text-sm md:text-base uppercase tracking-wider"
           >
             {data.badge}
           </Badge>
-          <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight"
-            style={{ color: colors.navyDark }}
-          >
-            {data.title}
-          </h2>
+          <div className="flex flex-col gap-1.5 md:gap-3 lg:gap-4">
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl font-normal leading-tight"
+              style={{ color: colors.navyDark }}
+            >
+              {data.title}
+            </h2>
+            {data.subtitle && (
+              <p
+                className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
+                style={{ color: colors.textBlack }}
+              >
+                {data.subtitle}
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Team Members - Alternating Layout */}
-        <div className="space-y-12 md:space-y-20">
+        <div className="space-y-4 md:space-y-8 lg:space-y-12">
           {data.team.map((member, index) => {
             const isEven = index % 2 === 0;
             const imageOnLeft = isEven;
@@ -49,7 +59,7 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
             return (
               <div
                 key={index}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center ${
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-8 lg:gap-10 items-center ${
                   !imageOnLeft ? "lg:grid-flow-dense" : ""
                 }`}
               >
@@ -88,7 +98,7 @@ export default function AboutUsLeadership({ data }: AboutUsLeadershipProps) {
 
                 {/* Content */}
                 <div
-                  className={`flex flex-col gap-4 md:gap-6 ${
+                  className={`flex flex-col gap-1 md:gap-2 lg:gap-3 ${
                     !imageOnLeft ? "lg:col-start-1 lg:row-start-1" : ""
                   }`}
                 >
