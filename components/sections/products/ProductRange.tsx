@@ -105,13 +105,34 @@ export default function ProductRange({ data }: ProductRangeProps) {
               >
                 {expandedItem.detailTitle}
               </h3>
-              
+
               <p
-                className="text-base md:text-lg leading-relaxed max-w-4xl mb-12"
+                className="text-base md:text-lg leading-relaxed max-w-4xl mb-8"
                 style={{ color: colors.textDark }}
               >
                 {expandedItem.detailDescription}
               </p>
+
+              {/* Applications Section */}
+              <div className="mb-12">
+                <h4
+                  className="text-xl md:text-2xl font-semibold mb-4"
+                  style={{ color: colors.navyDeep }}
+                >
+                  Applications
+                </h4>
+                <ul className="space-y-2.5">
+                  {expandedItem.applications.map((app, idx) => (
+                    <li
+                      key={idx}
+                      className="ml-5 list-disc text-base md:text-lg"
+                      style={{ color: colors.textDark }}
+                    >
+                      {app}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
               {/* Detail Images Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

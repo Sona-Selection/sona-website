@@ -11,18 +11,17 @@ import {
 
 export const productsHero: ProductsHeroSection = {
   badge: "Product Range",
-  title: "Textile Solutions:",
-  subtitle: "Built to Perform.",
+  title: "Engineered Fabrics. ",
+  subtitle: "Market-Ready Solutions.",
   paragraphs: [
-    "Since 1987, we have been at the forefront of India's textile evolution, seamlessly blending tradition with modern advancements.",
-    "We currently produce approximately 8.5 million meters of fabric annually, with plans to increase our annual production capacity to almost 30 million meters. These fabrics cater to a wide range of industries and applications.",
-    "Our commitment to sustainability is reflected in our range of health and eco-friendly fabrics, including those made from Better Cotton Initiative (BCI) and organic cotton. These fabrics promote responsible cotton production and environmental stewardship.",
+    "Sona Selection offers a diversified portfolio of finished fabrics engineered for performance, consistency, and scale. Our product range supports a wide spectrum of fashion and apparel applications, enabling brands to move efficiently from concept to commercialisation.",
+    "By combining material expertise with controlled processing and finishing, Sona Selection delivers fabrics that meet evolving aesthetic, functional, and sustainability expectations across domestic and international markets.",
   ],
   image: "/images/products/hero.png",
 };
 
 export const productRange: ProductRangeSection = {
-  title: "Our Product Range",
+  title: "Core Fabric Categories:",
   items: [
     {
       id: "100-cotton",
@@ -30,7 +29,12 @@ export const productRange: ProductRangeSection = {
       image: "/images/products/woven_fabrics/1.svg",
       detailTitle: "100% Cotton Fabric",
       detailDescription:
-        "Our 100% cotton fabrics are known for their breathability, softness, and durability, making them suitable for applications in fashion apparel and casual wear. With controlled processing and quality-focused manufacturing, we ensure consistent fabric strength, color fastness, and comfort-oriented performance.",
+        "Premium cotton fabrics developed for comfort, breathability, and durability. Designed to deliver consistent hand-feel, colour depth, and performance across casualwear, formalwear, and everyday essentials.",
+      applications: [
+        "Shirts and tops",
+        "Bottomwear",
+        "Casual and lifestyle apparel",
+      ],
       detailImages: [
         "/images/products/woven_fabrics/1.svg",
         "/images/products/product_applications/1.png",
@@ -43,7 +47,12 @@ export const productRange: ProductRangeSection = {
       image: "/images/products/woven_fabrics/2.svg", // Using 2 as placeholder
       detailTitle: "Cotton Lycra (Stretch) Fabric",
       detailDescription:
-        "Our cotton Lycra (stretch) fabrics combine the natural comfort of cotton with the stretch and recovery properties of elastane, offering flexibility and enhanced fit. These fabrics are widely used in garment industry. Through our Company's precise finishing processes, we achieve uniform stretchability, shape retention, and long-lasting performance, meeting the requirements of both casual and formal segment.",
+        "Stretch-enabled cotton fabrics offering enhanced comfort, flexibility, and fit retention. These fabrics combine natural fibre appeal with performance-driven stretch properties.",
+      applications: [
+        "Bottomwear",
+        "Contemporary casualwear",
+        "Fashion-led silhouettes",
+      ],
       detailImages: [
         "/images/products/woven_fabrics/2.svg",
         "/images/products/product_applications/2.png",
@@ -56,7 +65,12 @@ export const productRange: ProductRangeSection = {
       image: "/images/products/woven_fabrics/2.svg",
       detailTitle: "Cotton Blends",
       detailDescription:
-        "We produce a variety of cotton blend fabrics that integrate cotton with fibres such as polyester, viscose, to achieve enhanced durability, drape, and ease of maintenance. These blends offer balanced characteristics including improved wrinkle resistance, and reduced shrinkage, making them suitable for a wide range of apparel.",
+        "Blended fabrics engineered to balance comfort, durability, and cost efficiency. These fabrics are optimised for high-volume programs while maintaining aesthetic and performance consistency.",
+      applications: [
+        "Workwear",
+        "Uniforms",
+        "Mass-market apparel",
+      ],
       detailImages: [
         "/images/products/woven_fabrics/2.svg",
         "/images/products/product_applications/3.png",
@@ -69,7 +83,12 @@ export const productRange: ProductRangeSection = {
       image: "/images/products/woven_fabrics/4.svg",
       detailTitle: "Polyester Blends",
       detailDescription:
-        "Polyester blends are designed to create textiles that are more durable, wrinkle-resistant, and resilient than natural fibers alone, while also offering advantages like softness and breathability from the blended fibre.",
+        "Performance-oriented blends designed for strength, colourfastness, and long-term wear. These fabrics support demanding use-cases and offer superior dimensional stability.",
+      applications: [
+        "Formalwear",
+        "Functional apparel",
+        "High-rotation garments",
+      ],
       detailImages: [
         "/images/products/woven_fabrics/4.svg",
         "/images/products/product_applications/4.png",

@@ -412,6 +412,7 @@ export interface ProductRangeItem {
   image: string;
   detailTitle: string;
   detailDescription: string;
+  applications: string[];
   detailImages: string[];
 }
 
