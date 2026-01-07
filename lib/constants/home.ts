@@ -15,9 +15,9 @@ import { assets } from "./assets";
  * Hero Section Data
  */
 export const homeHero: HeroSection = {
-  title: "Crafting fabric, reimagining fashion\nMastering speed.",
+  title: "Crafting Fabric.\n Reimagining Fashion.",
   subtitle:
-    "Legacy backed modern textile manufacturer offering fast, sustainable fabric & garment solutions in India",
+    "At Sona Selection, manufacturing excellence meets speed, scale, and consistency. We transform raw textiles into refined, high-performance fabrics—engineered for today’s fashion and lifestyle brands.",
   primaryCTA: {
     label: "Explore Our Capabilities",
     href: "#capabilities",
@@ -52,8 +52,8 @@ export const trustedBrands: Brand[] = [
  * About Section Data
  */
 export const aboutSection: AboutSection = {
-  heading: "Redefining Modern Textile Manufacturing",
-  body: "We operate through our manufacturing facility located in Bhilwara, Rajasthan, a region that is recognised as the ‘Textile City’ or “Manchester City of Rajasthan”. Our manufacturing facility is equipped with advanced machinery sourced from reputed manufacturers. We also integrate human expertise with automation and digital process controls to drive efficiency and optimize energy use throughout our operations. The team is dedicated to developing value-added fabrics and finishes using our existing infrastructure and machinery to deliver customised, made-to-order textile solutions. This technological foundation not only refine each new product in accordance with international standards but also enables responsiveness to changing customer and market needs.",
+  heading: "A Vertically Integrated. Textile Platform",
+  body: "Sona Selection is an integrated fabric manufacturing and processing company delivering value-added textile solutions at scale. Backed by advanced technology, robust infrastructure, and rigorous quality systems, Sona Selection enables brands to move faster—from fibre to finished fabric—with precision and reliability.\nOur vertically integrated model allows us to:\n* Maintain consistent quality across large volumes\n* Accelerate product development and delivery cycles\n* Optimise cost efficiencies without compromising performance\n* Support innovation across fabric categories and finishes\nSona Selection specialises in 100% cotton, stretch fabrics, cotton blends, and polyester blends, serving a diverse range of end-use applications across fashion and apparel.",
   ctaLabel: "Learn more",
   ctaHref: "/about-us",
   cards: [
@@ -86,8 +86,7 @@ export const capabilitiesSection: CapabilitiesSection = {
     {
       image: assets.capabilities.card2,
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       image: assets.capabilities.card3,

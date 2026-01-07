@@ -15,22 +15,47 @@ interface AboutProps {
  */
 export default function About({ data }: AboutProps) {
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: colors.cream }} data-figma-node="0:38">
+    <section
+      className="py-16 md:py-24"
+      style={{ backgroundColor: colors.cream }}
+      data-figma-node="0:38"
+    >
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start mb-12 md:mb-16">
           {/* Left: Heading */}
           <div>
-            <h2 className="text-4xl md:text-[52px] leading-tight tracking-tight font-serif" style={{ color: colors.primary }}>
+            <h2
+              className="text-4xl md:text-[52px] leading-tight tracking-tight font-serif"
+              style={{ color: colors.primary }}
+            >
               {data.heading}
             </h2>
           </div>
 
           {/* Right: Body and CTA */}
           <div className="flex flex-col gap-8 md:gap-10">
-            <p className="text-base md:text-lg leading-relaxed tracking-tight" style={{ color: colors.navyDark }}>
-              {data.body}
-            </p>
+            <div
+              className="text-base md:text-lg leading-relaxed tracking-tight space-y-2"
+              style={{ color: colors.navyDark }}
+            >
+              {data.body.split("\n").map((line, index) => {
+                if (line.trim().startsWith("*")) {
+                  // Render bullet points
+                  return (
+                    <li key={index} className="ml-5 list-disc">
+                      {line.trim().substring(1).trim()}
+                    </li>
+                  );
+                } else if (line.trim() === "") {
+                  // Skip empty lines
+                  return null;
+                } else {
+                  // Render regular paragraphs
+                  return <p key={index}>{line}</p>;
+                }
+              })}
+            </div>
             <Button asChild variant="secondary" size="lg" className="w-fit">
               <Link href={data.ctaHref}>{data.ctaLabel}</Link>
             </Button>
@@ -57,7 +82,10 @@ export default function About({ data }: AboutProps) {
 
               {/* Text Overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                <p className="text-2xl md:text-4xl leading-snug font-light" style={{ color: colors.creamLight }}>
+                <p
+                  className="text-2xl md:text-4xl leading-snug font-light"
+                  style={{ color: colors.creamLight }}
+                >
                   {card.text}
                 </p>
               </div>

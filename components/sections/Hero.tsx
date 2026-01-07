@@ -46,7 +46,9 @@ export default function Hero({ data }: HeroProps) {
             >
               {data.title}
             </h1>
-            
+            <p className="text-base md:text-lg lg:text-lg max-w-[561px] leading-relaxed tracking-tight mt-2 text-center">
+              {data.subtitle}
+            </p>
           </div>
 
           {/* CTAs */}
