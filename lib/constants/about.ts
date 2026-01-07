@@ -74,8 +74,10 @@ export { aboutUsLeadership } from "./leadership";
  * Journey Section Data for About Us Page
  */
 export const aboutUsJourney: JourneySection = {
-  badge: "Leadership",
-  title: "Our Journey",
+  badge: "Our Journey",
+  title: "Growth & Evolution",
+  subtitle:
+    "Sona Selection's evolution reflects a disciplined approach to scale, integration, and value creation—anchored by a single-location manufacturing strategy, modern processing technologies, and continuous investment in capability expansion.",
   milestones: [
     {
       year: "1987",

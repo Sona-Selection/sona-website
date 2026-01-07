@@ -359,6 +359,7 @@ export interface JourneyMilestone {
 export interface JourneySection {
   badge: string;
   title: string;
+  subtitle?: string;
   milestones: JourneyMilestone[];
 }
 

@@ -1,12 +1,13 @@
 "use client";
 
-import { JourneySection } from "@/lib/types";
-import Image from "next/image";
-import { colors } from "@/lib/theme/colors";
-import { Badge } from "@/components/ui/badge";
 import { useEffect, useRef } from "react";
-import gsap from "gsap";
+
+import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import { JourneySection } from "@/lib/types";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { colors } from "@/lib/theme/colors";
+import gsap from "gsap";
 
 interface OurJourneyProps {
   data: JourneySection;
@@ -61,7 +62,7 @@ export default function OurJourney({ data }: OurJourneyProps) {
     >
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="mb-12 md:mb-16 flex flex-col items-center text-center gap-4">
+        <div className="mb-16 md:mb-20 flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
           <Badge
             variant="section"
             className="text-sm md:text-base uppercase tracking-wider"
@@ -74,6 +75,14 @@ export default function OurJourney({ data }: OurJourneyProps) {
           >
             {data.title}
           </h2>
+          {data.subtitle && (
+            <p
+              className="text-base md:text-lg leading-relaxed"
+              style={{ color: colors.textBlack }}
+            >
+              {data.subtitle}
+            </p>
+          )}
         </div>
 
         {/* Timeline */}
@@ -127,9 +136,7 @@ export default function OurJourney({ data }: OurJourneyProps) {
                     {/* Content */}
                     <div
                       className={`flex flex-col gap-4 ${
-                        !imageOnLeft
-                          ? "col-start-1 row-start-1 pr-12"
-                          : "pl-12"
+                        !imageOnLeft ? "col-start-1 row-start-1 pr-12" : "pl-12"
                       }`}
                     >
                       <p

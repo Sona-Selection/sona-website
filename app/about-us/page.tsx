@@ -5,20 +5,20 @@ import {
   aboutUsPeopleCulture,
   aboutUsValues,
 } from "@/lib/constants/about";
-import { executionTeamData } from "@/lib/constants/leadership";
 
 import AboutUsHero from "@/components/sections/about/AboutUsHero";
 import AboutUsLeadership from "@/components/sections/about/AboutUsLeadership";
-import ExecutionTeamLeadership from "@/components/sections/about/ExecutionTeamLeadership";
 import CTA from "@/components/sections/CTA";
+import ExecutionTeamLeadership from "@/components/sections/about/ExecutionTeamLeadership";
 import Footer from "@/components/layout/Footer";
+import { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import OurJourney from "@/components/sections/about/OurJourney";
 import PeopleCulture from "@/components/sections/about/PeopleCulture";
 import Values from "@/components/sections/about/Values";
 import { ctaSection } from "@/lib/constants/home";
+import { executionTeamData } from "@/lib/constants/leadership";
 import { pageMetadata } from "@/lib/constants/metadata";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: pageMetadata.aboutUs.title,
@@ -54,7 +54,7 @@ export default function AboutUsPage() {
         <AboutUsLeadership data={aboutUsLeadership} />
 
         {/* Execution Team Section */}
-        <ExecutionTeamLeadership data={executionTeamData} />
+        {/* <ExecutionTeamLeadership data={executionTeamData} /> */}
 
         {/* Journey Section */}
         <OurJourney data={aboutUsJourney} />
