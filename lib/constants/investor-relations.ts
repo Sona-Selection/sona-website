@@ -26,12 +26,8 @@ export const investorHero: InvestorHeroSection = {
   subtitle:
     "Welcome to the Investor Relations portal of Sona Selections. Here you can access our financial documents, disclosures, policies, and governance updates in one place.",
   primaryCTA: {
-    label: "Download Investor Deck",
-    href: "#",
-  },
-  secondaryCTA: {
-    label: "Download Investor Deck",
-    href: "#",
+    label: "View Annual Reports",
+    href: "/investor-relations/annual-reports",
   },
   backgroundImage: assets.investorRelations.heroBackground,
 };
@@ -56,8 +52,8 @@ export const ipoCorner: IPOCornerSection = {
     //   href: "#",
     // },
   ],
-  ctaLabel: "Access All IPO Documents",
-  ctaHref: "#",
+  ctaLabel: "View DRHP AV",
+  ctaHref: "/investor-relations/drhp-av",
 };
 
 export const boardSection: BoardSection = {
@@ -94,8 +90,8 @@ export const boardSection: BoardSection = {
         linkedinUrl: "https://www.linkedin.com/in/deepankbhandari",
       },
     ],
-    downloadLabel: "Download Corporate Governance Structure",
-    downloadHref: "#",
+    downloadLabel: "View Board & KMP",
+    downloadHref: "/investor-relations/board-and-kmp",
   },
   committees: {
     title: "Board Committees",
@@ -137,79 +133,51 @@ export const financialReporting: FinancialReportingSection = {
   title: "Financial Reporting",
   categories: [
     {
-      title: "Financial Statements",
+      title: "Annual Reports",
       documents: [
-        {
-          title: "View Quarterly Results",
-          href: "#",
-        },
-        {
-          title: "View Annual Report",
-          href: "#",
-        },
+        { title: "View Annual Reports", href: "/investor-relations/annual-reports" },
       ],
     },
     {
       title: "Annual Return",
       documents: [
-        {
-          title: "Download MGT-7",
-          href: "#",
-        },
+        { title: "Download MGT-7", href: "/investor-relations/annual-return" },
       ],
     },
     {
-      title: "Auditor's Reports",
+      title: "CSR Reports",
       documents: [
-        {
-          title: "Download Reports",
-          href: "#",
-        },
+        { title: "View CSR Reports", href: "/investor-relations/csr-report" },
       ],
     },
   ],
-  ctaLabel: "See All Financial Disclosures",
-  ctaHref: "#",
+  ctaLabel: "View Annual Reports",
+  ctaHref: "/investor-relations/annual-reports",
 };
 
 export const groupCompany: IPOCornerSection = {
   title: "Group Company Disclosures",
   documents: [
-    {
-      title: "ABC Limited",
-      href: "#",
-    },
+    { title: "Sona Processors (India) Limited", href: "/investor-relations/group-company" },
+    { title: "Sona Styles Limited", href: "/investor-relations/group-company" },
+    { title: "SonaTexfab Private Limited", href: "/investor-relations/group-company" },
+    { title: "Starnet Real Estate and Projects Limited", href: "/investor-relations/group-company" },
   ],
   ctaLabel: "View Group Structure",
-  ctaHref: "#",
+  ctaHref: "/investor-relations/group-company",
 };
 
 export const policies: PoliciesSection = {
   title: "Policies & Governance",
   policies: [
-    {
-      title: "Code of Conduct",
-      href: "#",
-    },
-    {
-      title: "CSR Policy",
-      href: "#",
-    },
-    {
-      title: "Insider Trading Policy",
-      href: "#",
-    },
-    {
-      title: "Nomination Policy",
-      href: "#",
-    },
-    {
-      title: "Download All Policies",
-      href: "#",
-    },
+    { title: "Code of Conduct", href: "/investor-relations/policies-and-others" },
+    { title: "CSR Policy", href: "/investor-relations/policies-and-others" },
+    { title: "Insider Trading Policy", href: "/investor-relations/policies-and-others" },
+    { title: "Nomination Policy", href: "/investor-relations/policies-and-others" },
+    { title: "View All Policies", href: "/investor-relations/policies-and-others" },
   ],
   ctaLabel: "View Compliance & Disclosures",
-  ctaHref: "#",
+  ctaHref: "/investor-relations/policies-and-others",
 };
 
 export const shareholder: ShareholderSection = {
@@ -454,35 +422,69 @@ export const regulation46Disclosures: DisclosureDocument[] = [
   },
   {
     srNo: 3,
+    description: "Memorandum of Association",
+    fileName: "../MOA and AOA/Memorandum of Association.pdf",
+  },
+  {
+    srNo: 4,
+    description: "Articles of Association",
+    fileName: "../MOA and AOA/Articles of Association.pdf",
+  },
+  {
+    srNo: 5,
     description: "Familiarization Programme Policy",
     fileName: "3. Familiarization Programme Policy.pdf",
   },
   {
-    srNo: 4,
+    srNo: 6,
     description: "Dividend Distribution Policy",
     fileName: "4. Dividend Distribution Policy.pdf",
   },
   {
-    srNo: 5,
+    srNo: 7,
     description: "Policy for Determination of Material Subsidiaries",
     fileName: "5. Policy for Determination of Material Subsidiaries.pdf",
   },
   {
-    srNo: 6,
+    srNo: 8,
     description: "Related Party Transaction Policy",
     fileName: "6. Policy on RPT.pdf",
   },
   {
-    srNo: 7,
+    srNo: 9,
     description:
       "Terms and Conditions for Appointment of Independent Directors",
     fileName:
       "7. Terms and conditions for appointment of Independent Directors.pdf",
   },
   {
-    srNo: 8,
+    srNo: 10,
     description: "CRISIL Rating Report",
     fileName: "8. Rating Rationale CRISIL_Oct28_2025.pdf",
+  },
+  {
+    srNo: 11,
+    description: "New name and old name of the entity",
+    fileName: "",
+    fileLabel: "NA — no change of name since incorporation",
+  },
+  {
+    srNo: 12,
+    description: "Employee Benefit Scheme Documents",
+    fileName: "",
+    fileLabel: "NA",
+  },
+  {
+    srNo: 13,
+    description: "Shareholding Pattern",
+    fileName: "",
+    fileLabel: "To be updated",
+  },
+  {
+    srNo: 14,
+    description: "Details of agreements with media companies",
+    fileName: "",
+    fileLabel: "To be updated",
   },
 ];
 
@@ -575,6 +577,31 @@ export const policiesAndOthers: DisclosureDocument[] = [
     description: "Criteria for Making Payments to Non-Executive Directors",
     fileName: "20. Criteria for making payments to NEDs.pdf",
   },
+  {
+    srNo: 17,
+    description:
+      "Code of Practices and Procedures for Fair Disclosure of Unpublished Price Sensitive Information",
+    fileName: "",
+    fileLabel: "To be updated",
+  },
+  {
+    srNo: 18,
+    description: "Health, Safety and Environment Policy",
+    fileName: "",
+    fileLabel: "To be updated",
+  },
+  {
+    srNo: 19,
+    description: "Policy on Succession Planning for the Board and Senior Management",
+    fileName: "",
+    fileLabel: "To be updated",
+  },
+  {
+    srNo: 20,
+    description: "Policy on Diversity of the Board",
+    fileName: "",
+    fileLabel: "To be updated",
+  },
 ];
 
 export const annualReports: DisclosureDocument[] = [
@@ -593,6 +620,17 @@ export const annualReports: DisclosureDocument[] = [
     description: "Annual Report FY 2023",
     fileName: "Annual Report FY 2023.pdf",
   },
+];
+
+export const annualReturns: DisclosureDocument[] = [
+  { srNo: 1, description: "Annual Return FY 2024-25", fileName: "Annual Return FY 2024-25.pdf" },
+  { srNo: 2, description: "Annual Return FY 2023-24", fileName: "Annual Return FY 2023-24.pdf" },
+  { srNo: 3, description: "Annual Return FY 2022-23", fileName: "Annual Return FY 2022-23.pdf" },
+];
+
+export const csrReports: DisclosureDocument[] = [
+  { srNo: 1, description: "CSR Report FY 2024-25", fileName: "CSR Report FY 2024-25.pdf" },
+  { srNo: 2, description: "CSR Report FY 2023-24", fileName: "CSR Report FY 2023-24.pdf" },
 ];
 
 export const materialContractsAndDocuments: DisclosureDocument[] = [

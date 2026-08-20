@@ -38,13 +38,18 @@ export default function Regulation46DisclosurePage() {
                 <TableCell>{doc.srNo}</TableCell>
                 <TableCell>{doc.description}</TableCell>
                 <TableCell>
-                  <Link
-                    href={`${basePath}/${doc.fileName}`}
-                    target="_blank"
-                    className="text-orange-600 hover:underline"
-                  >
-                    View File
-                  </Link>
+                  {doc.fileName ? (
+                    <Link
+                      href={`${basePath}/${doc.fileName}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-600 hover:underline"
+                    >
+                      View File
+                    </Link>
+                  ) : (
+                    <span className="text-gray-500">{doc.fileLabel}</span>
+                  )}
                 </TableCell>
               </TableRow>
             ))}

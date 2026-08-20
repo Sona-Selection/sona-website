@@ -204,7 +204,7 @@ export interface InvestorHeroSection {
     label: string;
     href: string;
   };
-  secondaryCTA: {
+  secondaryCTA?: {
     label: string;
     href: string;
   };
@@ -295,9 +295,10 @@ export interface Committee {
 }
 
 export interface DisclosureDocument {
-  srNo: number;
+  srNo: number | string;
   description: string;
   fileName: string;
+  fileLabel?: string;
 }
 
 // Group Company Types

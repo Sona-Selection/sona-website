@@ -28,7 +28,7 @@ export default function BoardSection({ data }: BoardSectionProps) {
           </h2>
           {data.board.downloadLabel && (
             <Button asChild variant="navy" size="lg" className="w-fit">
-              <Link href={data.board.downloadHref || "#"}>
+              <Link href={data.board.downloadHref!}>
                 {data.board.downloadLabel}
               </Link>
             </Button>

@@ -56,16 +56,18 @@ export default function InvestorHero({ data }: InvestorHeroProps) {
             >
               <Link href={data.primaryCTA.href}>{data.primaryCTA.label}</Link>
             </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="xl"
-              className="w-full sm:w-auto border-[#FBFBEF] text-[#FBFBEF] hover:bg-[#FBFBEF]/10"
-            >
-              <Link href={data.secondaryCTA.href}>
-                {data.secondaryCTA.label}
-              </Link>
-            </Button>
+            {data.secondaryCTA && (
+              <Button
+                asChild
+                variant="outline"
+                size="xl"
+                className="w-full sm:w-auto border-[#FBFBEF] text-[#FBFBEF] hover:bg-[#FBFBEF]/10"
+              >
+                <Link href={data.secondaryCTA.href}>
+                  {data.secondaryCTA.label}
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>

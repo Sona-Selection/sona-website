@@ -71,10 +71,23 @@ export default function DropdownItem({
     );
   }
 
+  // Inert items remain visible but cannot be clicked until content exists.
+  if (!item.href) {
+    return (
+      <div
+        className="px-4 py-2.5 text-sm font-normal cursor-default opacity-50"
+        style={{ color: colors.navy }}
+        aria-disabled="true"
+      >
+        {item.label}
+      </div>
+    );
+  }
+
   // Regular link item without nested items
   return (
     <Link
-      href={item.href || "#"}
+      href={item.href}
       target={item.target}
       className="block px-4 py-2.5 text-sm font-normal transition-colors"
       style={{

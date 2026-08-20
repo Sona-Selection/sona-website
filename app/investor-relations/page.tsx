@@ -4,8 +4,6 @@ import BoardSection from "@/components/sections/investor/BoardSection";
 import FinancialReporting from "@/components/sections/investor/FinancialReporting";
 import GroupCompany from "@/components/sections/investor/GroupCompany";
 import Policies from "@/components/sections/investor/Policies";
-import Shareholder from "@/components/sections/investor/Shareholder";
-import OtherDisclosures from "@/components/sections/investor/OtherDisclosures";
 import CTA from "@/components/sections/CTA";
 import {
   investorHero,
@@ -14,8 +12,6 @@ import {
   financialReporting,
   groupCompany,
   policies,
-  shareholder,
-  otherDisclosures,
 } from "@/lib/constants/investor-relations";
 import { ctaSection } from "@/lib/constants/home";
 import { pageMetadata } from "@/lib/constants/metadata";
@@ -57,12 +53,6 @@ export default function InvestorRelationsPage() {
 
       {/* Policies & Governance Section */}
       <Policies data={policies} />
-
-      {/* Shareholder Communication Section */}
-      <Shareholder data={shareholder} />
-
-      {/* Other Disclosures Section */}
-      <OtherDisclosures data={otherDisclosures} />
 
       {/* CTA Section */}
       <CTA data={ctaSection} />

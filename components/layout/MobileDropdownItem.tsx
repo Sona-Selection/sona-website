@@ -89,10 +89,23 @@ export default function MobileDropdownItem({
     );
   }
 
+  // Inert items remain visible but cannot be clicked until content exists.
+  if (!item.href) {
+    return (
+      <div
+        className="block text-sm font-normal py-2.5 px-4 rounded-lg cursor-default opacity-50"
+        style={{ color: linkColor, paddingLeft }}
+        aria-disabled="true"
+      >
+        {item.label}
+      </div>
+    );
+  }
+
   // Regular link item without nested items
   return (
     <Link
-      href={item.href || "#"}
+      href={item.href}
       target={item.target}
       className="block text-sm font-normal py-2.5 px-4 rounded-lg transition-all duration-200"
       style={{
