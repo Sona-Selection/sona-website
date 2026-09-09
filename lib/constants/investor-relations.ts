@@ -334,21 +334,21 @@ export const committees: Committee[] = [
     members: [
       {
         srNo: 1,
-        name: "Aditi Kakhani",
+        name: "Kamlesh Kumar Choudhary",
         position: "Chairperson",
-        designation: "Independent Director",
+        designation: "Non-Executive Independent Director",
       },
       {
         srNo: 2,
-        name: "Kanahiya Lal Acharya",
+        name: "Aditi Kakhani",
         position: "Member",
-        designation: "Independent Director",
+        designation: "Non-Executive Independent Director",
       },
       {
         srNo: 3,
         name: "Subhash Chandra Nuwal",
         position: "Member",
-        designation: "Non-Executive Director & Non- Independent Director",
+        designation: "Non-Executive Director",
       },
     ],
   },
@@ -607,16 +607,21 @@ export const policiesAndOthers: DisclosureDocument[] = [
 export const annualReports: DisclosureDocument[] = [
   {
     srNo: 1,
+    description: "4th Annual Report of Sonaselection India Limited",
+    fileName: "4th Annual Report of Sonaselection India Limited.pdf",
+  },
+  {
+    srNo: 2,
     description: "Annual Report FY 2025",
     fileName: "Annual Report FY 2025.pdf",
   },
   {
-    srNo: 2,
+    srNo: 3,
     description: "Annual Report FY 2024",
     fileName: "Annual Report FY 2024.pdf",
   },
   {
-    srNo: 3,
+    srNo: 4,
     description: "Annual Report FY 2023",
     fileName: "Annual Report FY 2023.pdf",
   },

@@ -7,6 +7,7 @@ import {
   TableCell,
 } from "@/components/ui/table";
 import { boardMembers } from "@/lib/constants/investor-relations";
+import Link from "next/link";
 
 export default function BoardAndKmpPage() {
   return (
@@ -35,6 +36,17 @@ export default function BoardAndKmpPage() {
             ))}
           </TableBody>
         </Table>
+
+        <div className="mt-8">
+          <Link
+            href="/docs/investor-relations/Board and KMP/Brief Profile of Board of Director and KMP.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-600 hover:underline"
+          >
+            View Brief Profile of Board of Directors and KMP
+          </Link>
+        </div>
       </div>
     </section>
   );
