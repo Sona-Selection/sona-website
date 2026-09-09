@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# local document parsing artifacts
+/.firecrawl/
+
 # next.js
 /.next/
 /out/

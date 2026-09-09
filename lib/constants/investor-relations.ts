@@ -266,36 +266,60 @@ export const investorRelationsContent: InvestorRelationsContent = {
 
 export const boardMembers: BoardMember[] = [
   {
-    name: "Mr. Harshil Nuwal",
+    name: "Harshil Nuwal",
     category: "Managing Director",
+    image: "/images/investor-relations/board-and-kmp/harshil-nuwal.webp",
+    biography:
+      "Harshil Nuwal is the Managing Director of our Company. He holds a bachelor’s degree in commerce from the University of Mumbai. He is also a director in our Subsidiary and has experience of over 14 years in the textile industry. He has been associated with Sona Processors (India) Limited in the capacity of a director since January 2011. He has been associated with our Company since its incorporation and has played a key role in formulating our business strategy, operational framework, and long-term vision. He is responsible for the overall management of the Company, including strategic planning, business development, procurement and operations.",
   },
   {
-    name: "Mr. Subhash Chandra Nuwal",
-    category: "Non-executive Director and Chairman",
+    name: "Subhash Chandra Nuwal",
+    category: "Chairman, Non-Executive & Non-Independent Director",
+    image: "/images/investor-relations/board-and-kmp/subhash-chandra-nuwal.webp",
+    biography:
+      "Subhash Chandra Nuwal is the Chairman, Non-Executive & Non-Independent Director of our Company. He holds a bachelor’s degree in commerce from the University of Rajasthan. He has been associated with our Company since incorporation. He possesses over 32 years of experience in the textile industry in which our Company operates. He has been associated with Sona Processors (India) Limited in the capacity of a director since 1993. With over three decades of industry experience, his strategic oversight, deep industry knowledge, and business acumen have played a significant role in guiding the Company’s direction and supporting the continuity and growth of our operations.",
   },
   {
-    name: "Ms. Uma Nuwal",
+    name: "Uma Nuwal",
     category: "Whole-time Director",
+    image: "/images/investor-relations/board-and-kmp/uma-nuwal.webp",
+    biography:
+      "Uma Nuwal is the Whole-time Director of our Company. She has passed the examination for a bachelor’s degree in commerce from the University of Rajasthan. She has been associated with our Company since incorporation. She was previously associated with Sona Processors (India) Limited in the capacity of a director since 1995. Further, she has been associated with Sona Texfab Private Limited as a director since 2012. She has over 26 years of experience in administrative functions and is responsible for oversight of administrative decisions pertaining to the affairs of our Company, including supervision over our Company’s functions and corporate social responsibility related matters.",
   },
   {
-    name: "Ms. Aditi Kakhani",
-    category: "Independent Director",
+    name: "Kamlesh Kumar Choudhary",
+    category: "Non-Executive & Independent Director",
+    image: "/images/investor-relations/board-and-kmp/kamlesh-kumar-choudhary.webp",
+    biography:
+      "Kamlesh Kumar Choudhary is a Non-Executive & Independent Director of our Company. He holds a bachelor’s degree in commerce and a master’s degree in commerce from the University of Rajasthan. Additionally, he is an associate of the Indian Institute of Bankers. He was previously associated with Bank of Baroda and retired as General Manager. He has over 39 years of experience in the banking and finance sector.",
   },
   {
-    name: "Mr. Kanhaiya Lal Acharya",
-    category: "Independent Director",
+    name: "Aditi Kakhani",
+    category: "Non-Executive & Independent Director",
+    image: "/images/investor-relations/board-and-kmp/aditi-kakhani.webp",
+    biography:
+      "Aditi Kakhani is a Non-Executive & Independent Director of our Company. She holds a bachelor’s degree in commerce and a master’s degree in commerce from Maharshi Dayanand Saraswati University, Ajmer. Additionally, she is an associate member of the Institute of Company Secretaries of India. She is associated with Janki Corp Limited as an Independent Director and has experience of over 5 years in corporate governance and compliance.",
   },
   {
-    name: "Mr. Kamlesh Kumar Choudhary",
-    category: "Independent Director",
+    name: "Kanhaiya Lal Acharya",
+    category: "Non-Executive & Independent Director",
+    image: "/images/investor-relations/board-and-kmp/kanhaiya-lal-acharya.webp",
+    biography:
+      "Kanhaiya Lal Acharya is a Non-Executive & Independent Director of our Company. He holds a bachelor’s degree in commerce and a bachelor’s degree in law from Maharshi Dayanand Saraswati University, Ajmer. He was previously associated with Krishana Phoschem Limited as a statutory and compliance officer and also served as an independent director in Sona Processors (India) Limited and Janki Corp Limited. He has over 7 years of experience in the fields of law, commerce and corporate governance.",
   },
   {
-    name: "Mr. Ramesh Chandra Vyas",
+    name: "Ramesh Chandra Vyas",
     category: "Chief Financial Officer",
+    image: "/images/investor-relations/board-and-kmp/ramesh-chandra-vyas.webp",
+    biography:
+      "Ramesh Chandra Vyas is the Chief Financial Officer of our Company. He has been associated with our Company since September 1, 2022 as Accounts Manager and was thereafter redesignated as Chief Financial Officer on February 3, 2025. He holds a master’s degree in commerce from Maharshi Dayanand Saraswati University, Ajmer. Additionally, he is an associate member of the Institute of Chartered Accountants of India. He has 7 years of experience in the finance sector. He was previously associated with Manomy Tex India Limited as the Head of the Accounts department. He is responsible for accounting, taxation and auditing. In Fiscal 2026, he received remuneration of ₹0.63 million.",
   },
   {
-    name: "Mr. Harish Sharma",
+    name: "Harish Sharma",
     category: "Company Secretary & Compliance Officer",
+    image: "/images/investor-relations/board-and-kmp/harish-sharma.webp",
+    biography:
+      "Harish Sharma is the Company Secretary and Compliance Officer of our Company. He has been associated with our Company since October 20, 2024. He holds a bachelor’s degree in business administration and a master’s degree in commerce from Maharshi Dayanand Saraswati University, Ajmer. Additionally, he is an associate member of the Institute of Company Secretaries of India. He has approximately 3 years of experience in compliance and secretarial matters. He was previously associated as Company Secretary with Sudiva Spinners Private Limited, Bhilwara. He is responsible for secretarial compliance, corporate compliance, planning and handling of regulatory matters. In Fiscal 2026, he received remuneration of ₹0.79 million.",
   },
 ];
 
@@ -607,7 +631,7 @@ export const policiesAndOthers: DisclosureDocument[] = [
 export const annualReports: DisclosureDocument[] = [
   {
     srNo: 1,
-    description: "4th Annual Report of Sonaselection India Limited",
+    description: "Annual Report FY 2026",
     fileName: "4th Annual Report of Sonaselection India Limited.pdf",
   },
   {

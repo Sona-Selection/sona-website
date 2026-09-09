@@ -280,6 +280,8 @@ export interface InvestorRelationsContent {
 export interface BoardMember {
   name: string;
   category: string;
+  image: string;
+  biography: string;
 }
 
 export interface CommitteeMember {
