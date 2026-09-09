@@ -1,17 +1,12 @@
-import "server-only";
-
-import { readdirSync } from "node:fs";
-import path from "node:path";
 import type {
   MaterialDocumentFile,
   MaterialDocumentGroup,
 } from "@/components/sections/investor/MaterialDocuments";
-
-const publicRoot = path.join(
-  process.cwd(),
-  "public/docs/investor-relations/Material Contracts and Documents"
-);
-const publicBase = "/docs/investor-relations/Material Contracts and Documents";
+import {
+  materialContractFiles,
+  materialDocumentFiles,
+  type DriveDocumentRecord,
+} from "@/lib/constants/material-document-files";
 
 const exactTitles: Record<string, string> = {
   "CDSL DG TPA SONASELECTION INDIA LIMITED":
@@ -70,6 +65,9 @@ function cleanTitle(fileName: string): string {
     .replace(/\s+-\s+Copy$/i, "")
     .replace(/_Final_?/gi, "")
     .replace(/_/g, " ")
+    .replace(/\bCERTIFICATE\b/gi, "Certificate")
+    .replace(/\bCONSENT LETTER\b/gi, "Consent Letter")
+    .replace(/\bCONSENT\b/gi, "Consent")
     .replace(/\bPEICE\b/gi, "Price")
     .replace(/\bPRIMIARY\b/gi, "Primary")
     .replace(/\bCerticate\b/gi, "Certificate")
@@ -97,47 +95,46 @@ function cleanTitle(fileName: string): string {
     .replace(/\bSebi\b/g, "SEBI");
 }
 
-function encodePath(parts: string[]): string {
-  return parts.map(encodeURIComponent).join("/");
+function driveUrl(id: string): string {
+  return `https://drive.google.com/file/d/${id}/view?usp=sharing`;
 }
 
-function readGroup(directory: string, relativeParts: string[], title: string): MaterialDocumentGroup {
-  const entries = readdirSync(directory, { withFileTypes: true }).sort((a, b) =>
-    a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: "base" })
-  );
+function toFile(record: DriveDocumentRecord): MaterialDocumentFile {
+  const fileName = record.path.split("/").at(-1) ?? record.path;
+  return { title: cleanTitle(fileName), href: driveUrl(record.id) };
+}
 
-  const files: MaterialDocumentFile[] = entries
-    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".pdf"))
-    .map((entry) => ({
-      title: cleanTitle(entry.name),
-      href: `${publicBase}/${encodePath([...relativeParts, entry.name])}`,
-    }));
+function buildDocumentTree(records: DriveDocumentRecord[]): MaterialDocumentGroup {
+  const root: MaterialDocumentGroup = {
+    title: "Material Documents to the Offer",
+    files: [],
+    groups: [],
+  };
 
-  const groups = entries
-    .filter((entry) => entry.isDirectory())
-    .map((entry) =>
-      readGroup(
-        path.join(directory, entry.name),
-        [...relativeParts, entry.name],
-        groupTitles[entry.name] ?? entry.name
-      )
-    );
+  for (const record of records) {
+    const parts = record.path.split("/");
+    const fileName = parts.pop()!;
+    let current = root;
 
-  return { title, files, groups };
+    for (const folder of parts) {
+      let group = current.groups.find((item) => item.title === (groupTitles[folder] ?? folder));
+      if (!group) {
+        group = { title: groupTitles[folder] ?? folder, files: [], groups: [] };
+        current.groups.push(group);
+      }
+      current = group;
+    }
+
+    current.files.push({ title: cleanTitle(fileName), href: driveUrl(record.id) });
+  }
+
+  return root;
 }
 
 export function getMaterialContracts(): MaterialDocumentFile[] {
-  return readGroup(
-    path.join(publicRoot, "Material Contracts to the Offer"),
-    ["Material Contracts to the Offer"],
-    "Material Contracts to the Offer"
-  ).files;
+  return materialContractFiles.map(toFile);
 }
 
 export function getMaterialDocuments(): MaterialDocumentGroup {
-  return readGroup(
-    path.join(publicRoot, "Material Documents to the Offer"),
-    ["Material Documents to the Offer"],
-    "Material Documents to the Offer"
-  );
+  return buildDocumentTree(materialDocumentFiles);
 }
