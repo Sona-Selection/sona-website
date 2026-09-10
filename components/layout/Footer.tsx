@@ -293,13 +293,6 @@ export default function Footer() {
               Terms & Conditions
             </Link>
           </div>
-          <div className="text-xs text-right">
-            <p className="font-medium">Backed by S45 →</p>
-            <p className="opacity-80">
-              Proudly supported by S45, a venture studio committed to
-              sustainable innovation in supply chains.
-            </p>
-          </div>
         </div>
       </div>
     </footer>

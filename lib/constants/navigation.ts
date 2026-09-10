@@ -60,6 +60,10 @@ export const navigationItems: NavItem[] = [
             href: "/docs/investor-relations/RHP.pdf",
             target: "_blank",
           },
+          {
+            label: "RHP and Price Band Advertisement AV",
+            href: "/investor-relations/rhp-and-price-band-advertisement-av",
+          },
           { label: "Abridged Prospectus" },
           { label: "Prospectus" },
         ],
