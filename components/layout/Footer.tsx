@@ -27,7 +27,6 @@ export default function Footer() {
               size="lg"
               href="/"
               className="text-[#FBFBEF]"
-              iconVariant="white"
             />
 
             {/* Contact Info */}

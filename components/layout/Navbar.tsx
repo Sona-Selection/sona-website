@@ -45,7 +45,6 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
   // Variant-specific styles
   const bgColor = variant === "cream" ? colors.cream : colors.primary;
   const logoTextColor = variant === "cream" ? colors.primary : colors.white;
-  const logoIconVariant = variant === "cream" ? "orange" : "white";
   const menuIconColor = variant === "cream" ? colors.navy : colors.white;
   const mobileSheetBg = variant === "cream" ? colors.cream : colors.primary;
 
@@ -60,7 +59,6 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
           <Logo
             size="md"
             className="transition-colors"
-            iconVariant={logoIconVariant}
           />
         </div>
 
@@ -213,7 +211,6 @@ export default function Navbar({ variant = "default" }: NavbarProps) {
                     <Logo
                       size="md"
                       className="transition-colors"
-                      iconVariant={logoIconVariant}
                     />
                   </div>
                 </SheetHeader>

@@ -274,7 +274,7 @@ export const structuredDataOrganization: StructuredDataOrganization = {
   name: companyInfo.name,
   description: companyInfo.description,
   url: siteMetadata.siteUrl,
-  logo: `${siteMetadata.siteUrl}/logo.png`,
+  logo: `${siteMetadata.siteUrl}/Icons/sona-logo.webp`,
   email: companyInfo.email,
   telephone: companyInfo.phone,
   address: {
