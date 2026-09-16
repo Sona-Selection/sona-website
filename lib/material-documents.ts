@@ -30,6 +30,26 @@ const exactTitles: Record<string, string> = {
   "hh. SEBI Exemption Letter": "SEBI Exemption Letter",
   "KK. Final Observation SEBI Letter": "Final SEBI Observation Letter",
   "s Resolution of KPI": "Resolution Approving Key Performance Indicators",
+  "(j). Statement Of Possible Special Tax Benefits":
+    "Certificate on Statement of Possible Special Tax Benefits",
+  "(k)key performance indicators": "Certificate on Key Performance Indicators",
+  "(m). CONSENT LETTER FROM STATUTORY AUDITOR":
+    "Consent Letter from Statutory Auditor",
+  "(t)CERTIFICATE ON REVENUE FROM OPERATIONS CUSTOMERS_0001 - Copy":
+    "Certificate on Revenue from Operations/Customers",
+  "(w)CERTIFICATE ON REVENUE State and UT":
+    "Certificate on Revenue State and UT",
+  "ANNEXURE IV A": "Annexure IV A",
+  "Consent Letter_Banker to the Company":
+    "Consent Letter from the Bankers to the Company",
+  "Consent Syndicate Member": "Consent Letter from the Syndicate Member",
+  "MonitoringAgency_Consent Letter Final": "Consent from Monitoring Agency",
+  "Harish as CS":
+    "Consent Letter of the Company Secretary and Compliance Officer",
+  "Ramesh Chandra Vyas as CFO":
+    "Consent Letter of the Chief Financial Officer of the Company",
+  "(p) Sonaselection CARE consent letter":
+    "Consent Letter from CARE Analytics and Advisory Private Limited",
   "Annual Report -2025": "Annual Report FY 2024–25",
   "ANNUAL REPORT 2024": "Annual Report FY 2023–24",
   "Audited Consolidated Financials 2025-26":
